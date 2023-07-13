@@ -27,36 +27,37 @@
   <!-- ここにheaderが入る -->
   <!-- Header -->
   <header class="Header">
-    <div class="Header__inner">
-      <h1 class="Header__link"><a href="#" class="Header__linkText">いえざきゆめみ</a></h1>
+    <div class="Header__link">
+      <h1 class="Header__linkText"><a href="#" class="Header__linkTextInner">いえざきゆめみ</a></h1>
       <nav class="Nav">
         <ul class="Nav__inner">
-          <li class="Header__link"><a href="#" class="Header__linkText">つくったもの</a></li>
-          <li class="Header__link"><a href="#" class="Header__linkText">れんしゅう</a></li>
+          <li class="Header__linkText"><a href="#" class="Header__linkTextInner">つくったもの</a></li>
+          <li class="Header__linkText"><a href="#" class="Header__linkTextInner">れんしゅう</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Home -->
-  <main class="Home">
+  <main class="Main">
     <!-- Works -->
     <div class="Works">
-      <div class="ImgList">
-        <div class="ImgList__inner">
-          <a href="https://qiita.com/manabuyasuda/items/dbb76ed36970bec95470" class="ImgList__link"><img src="#" class="ImgList__link__image" alt="ここに作品それぞれの説明をいれとく"></a>
-          <a href="https://qiita.com/manabuyasuda/items/dbb76ed36970bec95470" class="ImgList__link"><img src="#" class="ImgList__link__image" alt="ここに作品それぞれの説明をいれとく"></a>
-          <a href="https://qiita.com/manabuyasuda/items/dbb76ed36970bec95470" class="ImgList__link"><img src="#" class="ImgList__link__image" alt="ここに作品それぞれの説明をいれとく"></a>
-          <a href="https://qiita.com/manabuyasuda/items/dbb76ed36970bec95470" class="ImgList__link"><img src="#" class="ImgList__link__image" alt="ここに作品それぞれの説明をいれとく"></a>
+      <div class="WorksList">
+        <div class="ImgList">
+          <a href="https://qiita.com/manabuyasuda/items/dbb76ed36970bec95470" class="ImgList__link"><img src="#" class="ImgList__linkImage" alt="ここに作品それぞれの説明をいれとく"></a>
+          <a href="https://qiita.com/manabuyasuda/items/dbb76ed36970bec95470" class="ImgList__link"><img src="#" class="ImgList__linkImage" alt="ここに作品それぞれの説明をいれとく"></a>
+          <a href="https://qiita.com/manabuyasuda/items/dbb76ed36970bec95470" class="ImgList__link"><img src="#" class="ImgList__linkImage" alt="ここに作品それぞれの説明をいれとく"></a>
+          <a href="https://qiita.com/manabuyasuda/items/dbb76ed36970bec95470" class="ImgList__link"><img src="#" class="ImgList__linkImage" alt="ここに作品それぞれの説明をいれとく"></a>
         </div>
+
+        <!-- ここにスクロール用のドットが入る -->
         <div class="ScrollDot"></div>
       </div>
       <div class="Introduce">
         <h1 class="SectionTitle">つくったもの</h1>
         <p class="Introduce__description">長期間単位で制作した作品・制作過程をを掲載しています</p>
-
       </div>
-      <div class="Works__Button"><a href="#" class="Button__linkText">もっとみる</a></div>
+      <div class="Works__Button"><a href="#" class="Button">もっとみる</a></div>
     </div>
 
     <!-- Practice -->
@@ -69,32 +70,339 @@
         <ul class="ScrollList">
           <!-- ScrollList__item -->
           <li class="ScrollList__item">
-            <a href="#" class="ScrollList__item__link">
-              <div class="scrollList__item__hover">
-                <p class="ScrollList__item__name">作品名</p>
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
                 <!-- この作品についての一言キャプション（30文字程度） -->
-                <p class="ScrollList__item__description">この作品についての一言キャプション（30文字程度）</p>
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
               </div>
-              <img class="ScrollList__image" src="/assets/image/test-1.png" alt="作品名・説明文">
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
             </a>
           </li>
 
           <li class="ScrollList__item">
-            <a href="#" class="ScrollList__item__link">
-              <div class="scrollList__item__hover">
-                <p class="ScrollList__item__name">作品名</p>
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
                 <!-- この作品についての一言キャプション（30文字程度） -->
-                <p class="ScrollList__item__description">この作品についての一言キャプション（30文字程度）</p>
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
               </div>
-              <img class="ScrollList__image" src="/assets/image/test-1.png" alt="作品名・説明文">
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
             </a>
           </li>
 
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
+
+          <li class="ScrollList__item">
+            <a href="#" class="ScrollList__itemLink">
+              <div class="scrollHover">
+                <p class="ScrollHover__name">作品名</p>
+                <!-- この作品についての一言キャプション（30文字程度） -->
+                <p class="ScrollHover__description">この作品についての一言キャプション（30文字程度）</p>
+              </div>
+              <img class="ScrollList__itemLinkImage" src="/assets/image/test-1.png" alt="作品名・説明文">
+            </a>
+          </li>
 
           <!-- ScrollList__item ここまで-->
         </ul>
-        <div class="Practice__Button"><a href="#" class="Button__linkText">もっとみる</a></div>
-      </div>
+      <div class="Practice__Button"><a href="#" class="Button">もっとみる</a></div>
+    </div>
 
     </div>
     <!-- About -->
@@ -102,10 +410,10 @@
       <h1 class="SectionTitle">わたしについて</h1>
       <p class="About__name">
         家崎夢見
-        <span class="About__name__furigana">（いえざきゆめみ）</span>
+        <span class="About__nameFurigana">（いえざきゆめみ）</span>
       </p>
       <p class="About__Description">1999年愛知県生まれ、名古屋造形大学を卒業。</p>
-      <p class="About__Icon"><img src="" class="About__iconImage" alt="家崎夢見 顔写真" class="About__IconInner"></p>
+      <p class="About__Icon"><img src="" class="About__iconImage" alt="家崎夢見 顔写真"></p>
     </div>
   </main>
   <footer class="Footer">
