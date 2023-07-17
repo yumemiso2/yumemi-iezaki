@@ -3,16 +3,16 @@
   cursor: pointer;
 }
 
-#pop-up {
+#PopupButton {
   display: none;
 }
 
-.overlay {
+.Overlay {
   display: none;
   /* position: fixed; */
 }
 
-#pop-up:checked + .overlay {
+#PopupButton:checked + .Overlay {
   display: block;
   z-index: 9999;
   background-color: #ECECE3;
@@ -88,16 +88,42 @@
   margin-top: 36px;
 }
 
-.PopupCloseButton__inner {
+
+/* .PopupCloseButton__inner {
   position: absolute;
 
 
-}
+} */
 
 .PopupCloseButton__innerText {
   cursor: pointer;
   border: solid;
   background-color: aquamarine;
   padding: 16px;
+  display: block;
+}
 
+
+/* Header */
+
+.Header__link {
+  font-size: 16px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  /* align-items: center; */
+}
+
+.Nav__inner {
+  display: flex;
+}
+
+.Header__linkText {
+  padding-left:  24px;
+
+}
+
+.Header__linkText:nth-child(1) {
+  padding: 0 0 0 0px;
 }
