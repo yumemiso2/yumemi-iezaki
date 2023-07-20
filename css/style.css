@@ -19,6 +19,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
+
   top: 0;
   left: 0;
 }
@@ -27,27 +28,27 @@
 .PracticePopupContainer {
   width: 100%;
   height: 100%;
+
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 130px;
+
 }
 
 .Practice__Popup {
 
-  /* width: 380px;
-  height: 500px; */
-  /* background-color: #FFF; */
+  /* max-height: 80%; */
+  /* width: 70%; */
 
+  /* max-height: 600px; */
   display: flex;
   justify-content: center;
   align-items: center;
 
-
-
-  /* position: absolute;
-  top: center;
-  left: 0;
+  width: 400px;
+/*
+  position: absolute;
+  top: ; */
+  /* left: 0;
   transform: translate(0%, 0%); */
 
   /* -webkit-transform: translate(-50%, -50%);
@@ -57,15 +58,23 @@
 
 .PopupItem {
   /* max-width = 画像のサイズに則る */
-  border-radius: 50px;
+  padding: 36px 200px;
   background-color: #FFF;
-  max-width: 720px;
+  /* max-width: 50vw;
+  max-height: 100vh; */
+  border-radius: 50px;
+
   display: flex;
   flex-direction: column;
+
   text-align: center;
-  position: absolute;
-  top: 36px;
-  padding: 36px;
+}
+
+
+.PopupItem__date {
+  overflow-y: scroll;
+  /* margin: 0 -36px; */
+  max-height: 10vh;
 }
 
 .PopupItem__image {
@@ -76,8 +85,8 @@
 }
 
 .PopupItem__imageInner {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 .PopupCloseButton {
@@ -92,7 +101,8 @@
 .PopupCloseButton__innerText {
   cursor: pointer;
   border: solid;
-  background-color: aquamarine;
+  border-radius: 50px;
+  background-color: #FFF;
   padding: 16px;
   display: block;
 }
@@ -114,7 +124,7 @@
 }
 
 .Header__linkText {
-  padding-left:  24px;
+  padding-left: 24px;
 
 }
 
