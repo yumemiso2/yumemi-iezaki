@@ -1,5 +1,6 @@
 
-.open {
+/* popup */
+.PracticeList__ItemLink {
   cursor: pointer;
 }
 
@@ -106,14 +107,14 @@
   font-size: 1em;
 }
 
-.PopupItem__image {
+.PopupItem__Image {
 
   display: flex;
   justify-content: center;
 
 }
 
-.PopupItem__imageInner {
+.PopupItem__ImageInner {
   width: 400px;
   height: 400px;
 }
