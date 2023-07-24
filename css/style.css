@@ -182,6 +182,7 @@
   border: 1px solid;
   border-radius: 50px;
   background-color: #FFF;
+
 }
 
 .Button--small{
@@ -191,4 +192,76 @@
 
 .Button--large {
   padding: 24px 200px;
+}
+
+
+/* Works */
+
+.Works {
+  /* background-color: #fffef2; */
+  background-color: aquamarine;
+}
+
+.SectionTitle {
+  text-align: center;
+  padding: 72px 0 88px 0  ;
+}
+
+.SectionTitleImage {
+  width: 320px;
+}
+
+.ImgList {
+  display: flex;
+  justify-content: start;
+  /* width: 720px; */
+  /* margin: 0 auto; */
+}
+
+.ImgList__link  {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 40px 0 0;
+}
+.ImgList__linkImage {
+  border-radius: 50px;
+}
+
+.WorksItem {
+  display: flex;
+  flex-direction: column;
+  padding: 160px 0 ;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  /* z-index: 0; */
+
+}
+
+/* .WorksItem__Img {
+  margin: 0 auto;
+} */
+
+.WorksItem--LB {
+  background-color: #f6f5de;
+
+
+}
+
+.WorksItem--PY {
+  background-color: #fffef2;
+  /* z-index: 0; */
+}
+
+
+.WorksItem--PY::before {
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
