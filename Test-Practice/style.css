@@ -1,10 +1,5 @@
-
-.Practice {
-  background-color: #FFFEF2;
-/* padding: 0 0 300px 0; */
-  /* padding: 0 0 72px 0; */
-
-
+Body {
+  background-color: #fffef2;
 }
 
 .PracticeWrapper {
@@ -13,7 +8,7 @@
   margin: 0 auto;
   background-color: #F6F5DE;
   border-radius: 50px 50px 0 0 ;
-  padding: 72px 150px;
+  padding: 72px 150px 0 150px;
 
 }
 
@@ -93,10 +88,48 @@
   align-items: center;
   /* width: 100%; */
   /* justify-content: start; */
-  margin: 160px  0;
+  padding: 160px  0;
 
 }
 
 /* .TopButton {
   display: block;
 } */
+
+
+/* footer */
+
+.Footer__Inner {
+  display: flex;
+  justify-content: end;
+  background-color: #FFF;
+}
+
+.Footer__InnerCopyright {
+  /* display: inline-block; */
+  padding: 48px 64px;
+}
+
+
+/* Header */
+
+.Header__Link {
+  font-size: 16px;
+  background-color:transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 64px ;
+  align-items: center;
+}
+
+.Header__LinkText {
+  padding-left: 24px;
+}
+
+.Nav__Inner {
+  display: flex;
+}
+
+.Header__LinkText:nth-child(1) {
+  padding: 0 0 0 0px;
+}

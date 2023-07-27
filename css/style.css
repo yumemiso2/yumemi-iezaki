@@ -201,8 +201,14 @@
   /* width: 100%; */
 }
 
+.Section__FooterButton--Works {
+  background-color: #f6f5de;
+}
 
-.Section__FooterButton {
+.Section__FooterButtonInner {
+
+  background-color: #fffef2;
+  border-radius: 50px 50px 0 0 ;
   padding: 72px 90px;
   display: flex;
   /* flex-direction: row; */
@@ -210,7 +216,7 @@
   /* justify-content: space-between; */
 }
 
-.Section__FooterButton::before {
+.Section__FooterButtonInner::before {
   content: "";
   flex: 1;
 }
