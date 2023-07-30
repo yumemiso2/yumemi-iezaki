@@ -248,6 +248,12 @@
 
 
 
+
+
+
+
+
+
 /* Works */
 
 Body {
@@ -258,17 +264,20 @@ Body {
   position: relative;
 }
 
-.WorksItem__text {
+.TextContainer {
   margin: 0 auto;
   padding: 24px 0 0 0;
 }
 
 .SectionTitle {
   text-align: center;
+}
+
+.SectionTitle--Other {
   padding: 72px 0 88px 0  ;
 }
 
-.Introduce--SectionTitle {
+.SectionTitle--Introduce {
   padding: 0 0 8px 0 ;
   font-size: 24px;
 }
@@ -277,7 +286,7 @@ Body {
   width: 320px;
 }
 
-.Introduce__description {
+.Introduce__Description {
   padding: 0 0 32px 0;
 }
 
@@ -345,3 +354,20 @@ Body {
 .WorksItem--PY {
     background-color: #f6f5de;
 }
+
+
+
+/* Home */
+
+.SectionTitle--Home {
+  padding: 40px 0 ;
+}
+
+.ImgList__linkImage--Home {
+  width: 1000px;
+  /* max-height: 1000px; */
+}
+
+/* .Introduce {
+  text-align: center;
+} */
