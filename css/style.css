@@ -379,6 +379,11 @@ Body {
 
 
 
+/* Practice */
+.SectionTitle--Vartical .SectionTitleImage {
+  height: 320px;
+}
+
 .ScrollHover {
   position: absolute;
   top: 150px;
@@ -420,7 +425,7 @@ Body {
   /* margin: 0 auto; */
   background-color: #F6F5DE;
   border-radius: 50px 50px 0 0 ;
-  padding: 72px 150px 0 150px;
+  padding: 160px;
 
 }
 
@@ -437,18 +442,8 @@ Body {
 .ScrollList__Item {
   padding: 20px;
 
-  /* flex: 0 0 30%; */
+}
 
-}
-.ScrollList__Item:nth-child(3n + 3) {
-  padding-top: 0;
-}
-.ScrollList__Item:nth-child(2) {
-  padding-top: 0;
-}
-.ScrollList__Item:nth-child(3) {
-  padding-top: 0;
-}
 
 
 .ScrollList__ItemLinkImage {
@@ -461,25 +456,50 @@ Body {
 
 .Introduce__Description--Vertical {
   writing-mode: vertical-rl;
-  /* transform: translate(50%, 0%); */
 }
 
 
 /* About */
+.About {
+  background-color: #fffef2;
+  border-radius: 50px
+}
+
+.About__Item {
+  background-color: #F6F5DE;
+}
 
 .About__Inner {
   display: flex;
+  padding: 88px 0;
+
+  justify-content: center;
+
+  /* transform: translate(50%); */
 }
 
 .About__InnerText {
   display: flex;
   flex-direction: column;
+
 }
 
-.About__Name {
+.About__InnerTextName{
   font-size: 24px;
+  margin: 0 0 49px 0;
 }
 
 .About__InnerIcon {
   order: -1;
+}
+
+.About__InnerIcon{
+  border-radius: 50px;
+  overflow: hidden;
+  outline: solid 1px #C2C19B;
+  margin: 0 72px 0 0;
+}
+
+.SectionTitle--About {
+  width: 400px;
 }
