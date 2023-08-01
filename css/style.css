@@ -461,12 +461,15 @@ Body {
 
 /* About */
 .About {
-  background-color: #fffef2;
-  border-radius: 50px
+  background-color: #F6F5DE;
+
 }
 
 .About__Item {
-  background-color: #F6F5DE;
+  background-color: #fffef2;
+  border-radius: 50px 50px 0 0 ;
+  position: relative;
+
 }
 
 .About__Inner {
