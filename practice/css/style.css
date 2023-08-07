@@ -40,7 +40,7 @@
   border-radius: 50px;
 }
 
-.Section__FooterButton--Practice {
+.Section__Footer--Practice .Section__FooterButton {
   display: flex;
   align-items: center;
   /* width: 100%; */

@@ -5,7 +5,33 @@
   justify-content: flex-end;
 }
 
+.WorksItem--LB {
+  background-color: #fffef2;
+}
 
-.Section__FooterButton--Works {
+.WorksItem--PY {
   background-color: #f6f5de;
 }
+
+.WorksItem--LB .WorksItem__Inner {
+  background-color: #f6f5de;
+}
+
+.WorksItem--PY .WorksItem__Inner {
+  background-color: #fffef2;
+}
+
+
+
+
+.Section__Footer--Works .Section__FooterButton {
+  background-color: #f6f5de;
+}
+
+/* .WorksItem--LB .WorksItem__Inner {
+  background-color: #f6f5de;
+} */
+
+/* .WorksItem--PY .WorksItem__Inner {
+  background-color: #fffef2;
+} */

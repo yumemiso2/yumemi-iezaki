@@ -139,7 +139,7 @@
 
 
 
-
+/* Button */
 
 
 
@@ -211,13 +211,7 @@
 
 }
 
-.WorksItemInner--LB {
-  background-color: #f6f5de;
-}
 
-.WorksItem__Inner--PY {
-  background-color: #fffef2;
-}
 
 .WorksItem::before {
   content: '';
@@ -229,7 +223,7 @@
   left: 0;
 }
 
-
+/*
 .WorksItem--LB {
     background-color: #fffef2;
 
@@ -238,7 +232,7 @@
 
 .WorksItem--PY {
     background-color: #f6f5de;
-}
+} */
 
 
 .Works {
