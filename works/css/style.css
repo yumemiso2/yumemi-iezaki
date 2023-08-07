@@ -94,23 +94,6 @@
 }
 
 
-
-/* Home */
-
-.Works {
-  margin: 0 0 160px 0;
-}
-
-.SectionTitle--Home {
-  padding: 40px 0 ;
-}
-
-.ImgList__linkImage--Home {
-  width: 1000px;
-  /* max-height: 1000px; */
-}
-
-
-.WorksItem__Inner--Home {
-  padding: 0;
+.Section__FooterButton--Works {
+  background-color: #f6f5de;
 }
