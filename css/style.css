@@ -239,7 +239,7 @@
   justify-content: flex-end;
 }
 
-/* 旧WorksItem__TextButton*/
+  /* 旧WorksItem__TextButton*/
 .TextButton {
   display: flex;
   align-items: center;
