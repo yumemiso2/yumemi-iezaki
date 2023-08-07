@@ -89,12 +89,12 @@ Body {
   flex: 1;
 }
 
-/* .TopButton {
+.TopButton--Works{
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-} */
+}
 
   /* 旧WorksItem__TextButton*/
 .TextButton {
@@ -104,7 +104,7 @@ Body {
 }
 
 
-.Section__FooterButton {
+.Section__FooterButton--Practice {
   display: flex;
   align-items: center;
   /* width: 100%; */
