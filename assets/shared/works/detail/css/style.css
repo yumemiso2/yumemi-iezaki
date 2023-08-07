@@ -89,26 +89,11 @@ Body {
   flex: 1;
 }
 
-.TopButton--Works{
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
+
 
   /* 旧WorksItem__TextButton*/
 .TextButton {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-
-.Section__FooterButton--Practice {
-  display: flex;
-  align-items: center;
-  /* width: 100%; */
-  /* justify-content: start; */
-  padding: 160px  0;
-
 }

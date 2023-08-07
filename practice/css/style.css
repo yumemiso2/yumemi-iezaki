@@ -39,3 +39,12 @@
 
   border-radius: 50px;
 }
+
+.Section__FooterButton--Practice {
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  /* justify-content: start; */
+  padding: 160px  0;
+
+}
