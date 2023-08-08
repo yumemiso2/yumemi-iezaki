@@ -19,7 +19,7 @@ Body {
 
 .ImageRounded {
   border-radius: 50px;
-  outline: solid 1px #000;
+  /* outline: solid 1px #000; */
   overflow: hidden;
 }
 
@@ -171,7 +171,6 @@ Body {
 
 .ImgList__Link {
   margin: 0 50% 0 50%;
-  display: inline-block;
 
 }
 
@@ -211,11 +210,16 @@ Body {
   padding: 20px;
 }
 
-.ScrollList__ItemLink {
+/* 先生に書いてもらったとこ */
+/* .ScrollList__ItemLink {
   display: block;
   border-radius: 50px;
   outline: solid 1px #000;
   overflow: hidden;
+} */
+
+.ScrollList__ItemLink {
+  display: block;
 }
 
 .ScrollList__ItemLinkInner {

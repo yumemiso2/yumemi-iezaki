@@ -66,13 +66,11 @@
   margin: 0 0 49px 0;
 }
 
-.About__InnerIcon {
-  order: -1;
-}
 
 .About__InnerIcon{
-  border-radius: 50px;
-  overflow: hidden;
+  order: -1;
+  /* border-radius: 50px;
+  overflow: hidden; */
   outline: solid 1px #C2C19B;
   margin: 0 72px 0 0;
 }
