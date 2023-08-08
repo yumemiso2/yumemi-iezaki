@@ -8,24 +8,19 @@ Body {
   text-align: center;
 }
 
-.SectionTitle--Other {
-  padding: 72px 0 88px 0  ;
-}
-
-.SectionTitle--Introduce {
-  padding: 0 0 8px 0 ;
-  font-size: 24px;
-}
-
 .SectionTitleImage {
   width: 320px;
 }
 
-.Introduce__Description {
-  padding: 0 0 32px 0;
+.SectionTitle--Other {
+  padding: 72px 0 88px 0  ;
 }
 
 
+.ImageRounded {
+  border-radius: 50px;
+  overflow: hidden;
+}
 
 
 /* Header */
@@ -43,17 +38,17 @@ Body {
   padding-left: 24px;
 }
 
+.Nav__Inner {
+  display: flex;
+}
+
 .Header__LinkTextInnerImage {
   width: 160px;
 }
 
 .Header__LinkTextInnerImage--Practice {
- margin: -10px 0 0 0;
- width: 128px;
-}
-
-.Nav__Inner {
-  display: flex;
+  margin: -10px 0 0 0;
+  width: 128px;
 }
 
 .Header__LinkText:nth-child(1) {
@@ -173,7 +168,7 @@ Body {
   /* margin: 0 auto; */
 }
 
-.ImgList__link  {
+.ImgList__Link {
   display: block;
   /* margin: 0 auto; */
   /* width: 60%; */
@@ -192,6 +187,15 @@ Body {
 .TextContainer {
   margin: 0 auto;
   padding: 24px 0 0 0;
+}
+
+.SectionTitle--Introduce {
+  padding: 0 0 8px 0 ;
+  font-size: 24px;
+}
+
+.Introduce__Description {
+  padding: 0 0 32px 0;
 }
 
 

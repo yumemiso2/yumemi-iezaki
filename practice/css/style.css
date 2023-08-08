@@ -1,6 +1,7 @@
 /* popup */
 .PracticeList__ItemLink {
   cursor: pointer;
+  display: inline-block;
 }
 
 #PopupButton {
@@ -99,7 +100,6 @@
 
   display: flex;
   justify-content: center;
-
 }
 
 .PopupItem__ImageInner {
@@ -116,14 +116,14 @@
 }
 
 
-.PopupCloseButton__innerText {
+/* .PopupCloseButton__innerText {
   cursor: pointer;
   border: solid;
   border-radius: 50px;
   background-color: #FFF;
   padding: 16px;
   display: block;
-}
+} */
 
 /* popupここまで */
 
