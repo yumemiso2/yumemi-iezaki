@@ -32,8 +32,6 @@
   overflow-y: auto;
   display: flex;
   justify-content: center;
-
-
 }
 
 .PracticePopupContainer::-webkit-scrollbar{
@@ -50,15 +48,6 @@
   margin: auto 0 ;
 
   width: 400px;
-/*
-  position: absolute;
-  top: ; */
-  /* left: 0;
-  transform: translate(0%, 0%); */
-
-  /* -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
-
 }
 
 .PopupItem {
@@ -136,11 +125,11 @@
   display: block;
 }
 
+/* popupここまで */
 
 
 
-
-
+/* practice */
 .PracticeWrapper {
   /* background-color: bisque; */
 
