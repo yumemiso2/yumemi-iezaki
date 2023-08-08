@@ -12,9 +12,9 @@
   padding: 0;
 }
 
-.WorksItem--Home .ImgList__linkImage {
+.WorksItem--Home .ImgList__LinkImage {
   width: 1000px;
-  /* max-height: 1000px; */
+  max-height: 700px;
 }
 
 

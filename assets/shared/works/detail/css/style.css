@@ -19,6 +19,7 @@ Body {
 
 .ImageRounded {
   border-radius: 50px;
+  outline: solid 1px #000;
   overflow: hidden;
 }
 
@@ -155,7 +156,7 @@ Body {
 .WorksItem__Inner {
   display: flex;
   flex-direction: column;
-  position: relative;
+  /* position: relative; */
   padding: 160px 0 ;
   border-radius: 50px 50px 0 0;
 }
@@ -169,18 +170,13 @@ Body {
 }
 
 .ImgList__Link {
-  display: block;
-  /* margin: 0 auto; */
-  /* width: 60%; */
-  /* padding: 0 40px 0 0; */
   margin: 0 50% 0 50%;
+  display: inline-block;
+
 }
 
-.ImgList__linkImage {
-  display: block;
-
+.ImgList__LinkImage {
   transform: translate(-50%);
-  border-radius: 50px;
 }
 
 
@@ -252,5 +248,4 @@ Body {
   width: 300px;
   display: block;
   position: relative;
-
 }
