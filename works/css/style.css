@@ -1,0 +1,49 @@
+/*
+.WorksContainer {
+  position: relative;
+} */
+
+.TopButton--Works{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.WorksItem__Img {
+  width: 100%;
+  overflow: scroll;
+}
+
+
+.WorksItem--LB {
+  background-color: #fffef2;
+}
+
+.WorksItem--PY {
+  background-color: #f6f5de;
+}
+
+.WorksItem--LB .WorksItem__Inner {
+  background-color: #f6f5de;
+}
+
+.WorksItem--PY .WorksItem__Inner {
+  background-color: #fffef2;
+}
+
+
+
+
+.Section__Footer--Works .Section__FooterButton {
+  background-color: #f6f5de;
+}
+
+/* .WorksItem--LB .WorksItem__Inner {
+  background-color: #f6f5de;
+} */
+
+/* .WorksItem--PY .WorksItem__Inner {
+  background-color: #fffef2;
+} */

@@ -1,0 +1,252 @@
+/* all */
+Body {
+  background-color: #fffef2;
+}
+
+.SectionTitle {
+  text-align: center;
+}
+
+.SectionTitleImage {
+  width: 320px;
+}
+
+.SectionTitle--Other {
+  padding: 72px 0 88px;
+}
+
+
+.ImageRounded {
+  border-radius: 50px;
+  /* outline: solid 1px #000; */
+  overflow: hidden;
+}
+
+
+/* Header */
+
+.Header__Link {
+  font-size: 16px;
+  background-color:transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 64px;
+  align-items: center;
+}
+
+.Header__LinkText {
+  padding-left: 24px;
+}
+
+.Nav__Inner {
+  display: flex;
+}
+
+.Header__LinkTextInnerImage {
+  width: 160px;
+}
+
+.Header__LinkTextInnerImage--Practice {
+  margin: -10px 0 0;
+  width: 128px;
+}
+
+.Header__LinkText:nth-child(1) {
+  padding: 0;
+}
+
+
+
+/* footer */
+
+.Footer__Inner {
+  display: flex;
+  justify-content: end;
+  background-color: #FFF;
+}
+
+.Footer__InnerCopyright {
+  /* display: inline-block; */
+  padding: 48px 64px;
+}
+
+
+
+/* Button */
+.Button {
+  /* display: inline-block; */
+  font-size: 1em;
+  border: 1px solid;
+  border-radius: 50px;
+  background-color: #FFF;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.Button--Small{
+  padding: 8px 72px;
+}
+
+.Button--Large {
+  padding: 24px 200px;
+  /* width: 100%; */
+}
+
+.Section__FooterButtonInner {
+
+  background-color: #fffef2;
+  border-radius: 50px 50px 0 0;
+  padding: 72px 90px;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.Section__FooterButtonInner::before {
+  content: "";
+  flex: 1;
+}
+
+
+
+  /* 旧WorksItem__TextButton*/
+.TextButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+/* Practice */
+.TextContainer--Vartical .SectionTitleImage {
+  height: 320px;
+}
+
+.TextContainer--Vartical .Introduce__Description {
+  writing-mode: vertical-rl;
+}
+
+
+
+/* home,works */
+
+/* .WorksItem {
+  position: relative;
+}
+
+.WorksItem::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+
+.WorksItem__Inner {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  padding: 160px 0;
+  border-radius: 50px 50px 0 0;
+}
+
+.ImgList {
+  display: flex;
+  justify-content: start;
+  width: 400%;
+}
+
+.ImgList__Link {
+  /* margin: 0 50% 0 50%; */
+  width: 25%;
+}
+
+.ImgList__LinkImage {
+  /* transform: translate(-50%); */
+  width: 100%;
+}
+
+.TextContainer {
+  margin: 0 auto;
+  padding: 24px 0 0;
+}
+
+.SectionTitle--Introduce {
+  padding: 0 0 8px;
+  font-size: 24px;
+}
+
+.Introduce__Description {
+  padding: 0 0 32px 0;
+}
+
+
+
+/* home,practice */
+.ScrollList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+
+  /* margin: 0 auto; */
+}
+
+.ScrollList__Item {
+  padding: 20px;
+}
+
+/* 先生に書いてもらったとこ */
+/* .ScrollList__ItemLink {
+  display: block;
+  border-radius: 50px;
+  outline: solid 1px #000;
+  overflow: hidden;
+} */
+
+.ScrollList__ItemLink {
+  display: block;
+}
+
+.ScrollList__ItemLinkInner {
+  position: relative;
+  z-index: 2;
+}
+
+.ScrollHover {
+  position: absolute;
+  top: 150px;
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 150px;
+  font-size: 16px;
+  padding: 36px;
+}
+
+.ScrollHover__Name {
+  border-bottom: 2px dotted;
+  padding: 0 0 8px;
+}
+
+.ScrollHover__Description {
+  padding: 16px 0 0;
+}
+
+.ScrollList__ItemLinkImage {
+  width: 300px;
+  display: block;
+  position: relative;
+}

@@ -1,462 +1,36 @@
 
-/* popup */
-.PracticeList__ItemLink {
-  cursor: pointer;
-}
-
-#PopupButton {
-  display: none;
-}
-
-.Overlay {
-  display: none;
-  /* position: fixed; */
-  position: relative;
-}
-
-#PopupButton:checked + .Overlay {
-  display: block;
-  z-index: 9999;
-  background-color: #ECECE3;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-
-  top: 0;
-  left: 0;
-}
-
-
-.PracticePopupContainer {
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  display: flex;
-  justify-content: center;
-
-
-}
-
-.PracticePopupContainer::-webkit-scrollbar{
-  display: none;
-}
-
-
-.Practice__Popup {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  margin: auto 0 ;
-
-  width: 400px;
-/*
-  position: absolute;
-  top: ; */
-  /* left: 0;
-  transform: translate(0%, 0%); */
-
-  /* -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
-
-}
-
-.PopupItem {
-  /* max-width = 画像のサイズに則る */
-  /* padding: 36px 200px; */
-
-  /* ポップアップの位置、センターにしたければ.PopupItemのpositionのプロパティ、.Practice__Popupのposition:relative;、widthとheightを消す */
-  position: absolute;
-  top: 64px;
-  padding: 36px 232px;
-  background-color: #FFF;
-  border-radius: 50px;
-
-  display: flex;
-  flex-direction: column;
-
-  text-align: center;
-}
-
-.PopupItem__Desctiption {
-  padding: 32px 0 16px 0;
-
-  border-bottom: 2px dotted;
-}
-
-.PopupItem__DesctiptionTitle {
-  font-size: 24px;
-  padding: 0 0 8px 0;
-
-}
-
-.PopupItem__DescriptionText {
-  overflow-y: auto;
-  /* margin: 0 -36px; */
-  max-height: 10vh;
-  margin: 24px 0 32px 0;
-}
-
-.PopupItem__DescriptionText::-webkit-scrollbar{
-  display: none;
-}
-
-.PopupItem__DesctiptionDate {
-  display: block;
-  font-size: 1em;
-}
-
-.PopupItem__Image {
-
-  display: flex;
-  justify-content: center;
-
-}
-
-.PopupItem__ImageInner {
-  width: 400px;
-  height: 400px;
-}
-
-.PopupCloseButton {
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  /* padding: 36px 0 0 0; */
-}
-
-
-.PopupCloseButton__innerText {
-  cursor: pointer;
-  border: solid;
-  border-radius: 50px;
-  background-color: #FFF;
-  padding: 16px;
-  display: block;
-}
-
-
-/* Header */
-
-.Header__Link {
-  font-size: 16px;
-  background-color:transparent;
-  display: flex;
-  justify-content: space-between;
-  padding: 48px 64px ;
-  align-items: center;
-}
-
-.Header__LinkText {
-  padding-left: 24px;
-}
-
-.Header__LinkTextInnerImage {
-  width: 160px;
-}
-
-.Header__LinkTextInnerImage--Practice {
- margin: -10px 0 0 0;
- width: 128px;
-}
-
-
-
-.Nav__Inner {
-  display: flex;
-}
-
-.Header__LinkText:nth-child(1) {
-  padding: 0 0 0 0px;
-}
-
-
-
-/* footer */
-
-.Footer__Inner {
-  display: flex;
-  justify-content: end;
-  background-color: #FFF;
-}
-
-.Footer__InnerCopyright {
-  /* display: inline-block; */
-  padding: 48px 64px;
-}
-
-
-
-
-/* Button */
-
-.Button {
-  /* display: inline-block; */
-  font-size: 1em;
-  border: 1px solid;
-  border-radius: 50px;
-  background-color: #FFF;
-  margin: 0 auto;
-  display: inline-block;
-}
-
-
-.Button--Small{
-  padding: 8px 72px;
-}
-
-.Button--Large {
-  padding: 24px 200px;
-  /* width: 100%; */
-}
-
-.Section__FooterButton--Works {
-  background-color: #f6f5de;
-}
-
-.Section__FooterButtonInner {
-
-  background-color: #fffef2;
-  border-radius: 50px 50px 0 0 ;
-  padding: 72px 90px;
-  display: flex;
-  /* flex-direction: row; */
-  align-items: center;
-  /* justify-content: space-between; */
-}
-
-.Section__FooterButtonInner::before {
-  content: "";
-  flex: 1;
-}
-
-.TopButton {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-/* 旧WorksItem__TextButton*/
-.TextButton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-
-
-
-
-
-
-
-/* Works */
-
-Body {
-  background-color: #fffef2;
-}
-
-.WorksContainer {
-  position: relative;
-}
-
-.TextContainer {
-  margin: 0 auto;
-  padding: 24px 0 0 0;
-}
-
-.SectionTitle {
-  text-align: center;
-}
-
-.SectionTitle--Other {
-  padding: 72px 0 88px 0  ;
-}
-
-.SectionTitle--Introduce {
-  padding: 0 0 8px 0 ;
-  font-size: 24px;
-}
-
-.SectionTitleImage {
-  width: 320px;
-}
-
-.Introduce__Description {
-  padding: 0 0 32px 0;
-}
-
-.ImgList {
-  display: flex;
-  justify-content: start;
-  /* overflow: hidden; */
-  /* width: 720px; */
-  /* margin: 0 auto; */
-}
-
-.ImgList__link  {
-  display: block;
-  /* margin: 0 auto; */
-  /* width: 60%; */
-  /* padding: 0 40px 0 0; */
-  margin: 0 50% 0 50%;
-}
-
-.ImgList__linkImage {
-  display: block;
-
-  transform: translate(-50%);
-  border-radius: 50px;
-}
-
-.WorksItem {
-  position: relative;
-}
-
-.WorksItem__Inner {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 160px 0 ;
-  border-radius: 50px 50px 0 0;
-
-}
-
-.WorksItemInner--LB {
-  background-color: #f6f5de;
-}
-
-.WorksItem__Inner--PY {
-  background-color: #fffef2;
-}
-
-.WorksItem::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-
-.WorksItem--LB {
-    background-color: #fffef2;
-
-
-}
-
-.WorksItem--PY {
-    background-color: #f6f5de;
-}
-
-
-
-/* Home */
-
+/* Home--Works */
 .Works {
-  margin: 0 0 160px 0;
+  margin: 0 0 160px;
 }
 
 .SectionTitle--Home {
-  padding: 40px 0 ;
+  padding: 40px 0;
 }
 
-.ImgList__linkImage--Home {
-  width: 1000px;
-  /* max-height: 1000px; */
-}
-
-
-.WorksItem__Inner--Home {
+.WorksItem--Home .WorksItem__Inner {
   padding: 0;
 }
 
-
-
-/* Practice */
-.SectionTitle--Vartical .SectionTitleImage {
-  height: 320px;
+.WorksItem--Home .ImgList__LinkImage {
+  width: 1000px;
+  max-height: 700px;
 }
 
-.ScrollHover {
-  position: absolute;
-  top: 150px;
-  text-align: center;
-
-  background-color: rgba(255, 255, 255, 0.7);;
-  width: 100%;
-  height: 150px;
-  font-size: 16px;
-  padding: 36px;
 
 
-}
 
-.ScrollHover__Name {
-  border-bottom: 2px dotted;
-  padding: 0 0 8px 0 ;
-}
 
-.ScrollHover__Description {
-  padding: 16px 0 0 0 ;
-}
 
-.ScrollList__ItemLink {
-  display: block;
-  border-radius: 50px;
-  outline: solid 1px #000;
-  overflow: hidden;
 
-}
-
-.ScrollList__ItemLinkInner {
-  position: relative;
-  z-index: 2;
-
-}
-
+/* Home--Practice */
 .Practice__ScrollList {
   /* margin: 0 auto; */
   background-color: #F6F5DE;
-  border-radius: 50px 50px 0 0 ;
+  border-radius: 50px 50px 0 0;
   padding: 160px;
-
 }
 
-.ScrollList {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  /* justify-content: space-between; */
-  flex-wrap: wrap;
-
-  /* margin: 0 auto; */
-}
-
-.ScrollList__Item {
-  padding: 20px;
-
-}
-
-
-
-.ScrollList__ItemLinkImage {
-  width: 300px;
-  display: block;
-  position: relative;
-
-}
-
-
-.Introduce__Description--Vertical {
-  writing-mode: vertical-rl;
-}
 
 
 /* About */
@@ -489,16 +63,14 @@ Body {
 
 .About__InnerTextName{
   font-size: 24px;
-  margin: 0 0 49px 0;
+  margin: 0 0 49px;
 }
 
-.About__InnerIcon {
-  order: -1;
-}
 
 .About__InnerIcon{
-  border-radius: 50px;
-  overflow: hidden;
+  order: -1;
+  /* border-radius: 50px;
+  overflow: hidden; */
   outline: solid 1px #C2C19B;
   margin: 0 72px 0 0;
 }
