@@ -12,7 +12,7 @@ Body {
 }
 
 .SectionTitle--Other {
-  padding: 72px 0 88px 0  ;
+  padding: 72px 0 88px;
 }
 
 
@@ -30,7 +30,7 @@ Body {
   background-color:transparent;
   display: flex;
   justify-content: space-between;
-  padding: 48px 64px ;
+  padding: 48px 64px;
   align-items: center;
 }
 
@@ -47,12 +47,12 @@ Body {
 }
 
 .Header__LinkTextInnerImage--Practice {
-  margin: -10px 0 0 0;
+  margin: -10px 0 0;
   width: 128px;
 }
 
 .Header__LinkText:nth-child(1) {
-  padding: 0 0 0 0px;
+  padding: 0;
 }
 
 
@@ -95,7 +95,7 @@ Body {
 .Section__FooterButtonInner {
 
   background-color: #fffef2;
-  border-radius: 50px 50px 0 0 ;
+  border-radius: 50px 50px 0 0;
   padding: 72px 90px;
   display: flex;
   /* flex-direction: row; */
@@ -156,7 +156,7 @@ Body {
   display: flex;
   flex-direction: column;
   /* position: relative; */
-  padding: 160px 0 ;
+  padding: 160px 0;
   border-radius: 50px 50px 0 0;
 }
 
@@ -178,11 +178,11 @@ Body {
 
 .TextContainer {
   margin: 0 auto;
-  padding: 24px 0 0 0;
+  padding: 24px 0 0;
 }
 
 .SectionTitle--Introduce {
-  padding: 0 0 8px 0 ;
+  padding: 0 0 8px;
   font-size: 24px;
 }
 
@@ -229,7 +229,7 @@ Body {
   top: 150px;
   text-align: center;
 
-  background-color: rgba(255, 255, 255, 0.7);;
+  background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   height: 150px;
   font-size: 16px;
@@ -242,7 +242,7 @@ Body {
 }
 
 .ScrollHover__Description {
-  padding: 16px 0 0 0 ;
+  padding: 16px 0 0;
 }
 
 .ScrollList__ItemLinkImage {

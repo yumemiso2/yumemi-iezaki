@@ -1,11 +1,11 @@
 
 /* Home--Works */
 .Works {
-  margin: 0 0 160px 0;
+  margin: 0 0 160px;
 }
 
 .SectionTitle--Home {
-  padding: 40px 0 ;
+  padding: 40px 0;
 }
 
 .WorksItem--Home .WorksItem__Inner {
@@ -27,7 +27,7 @@
 .Practice__ScrollList {
   /* margin: 0 auto; */
   background-color: #F6F5DE;
-  border-radius: 50px 50px 0 0 ;
+  border-radius: 50px 50px 0 0;
   padding: 160px;
 }
 
@@ -63,7 +63,7 @@
 
 .About__InnerTextName{
   font-size: 24px;
-  margin: 0 0 49px 0;
+  margin: 0 0 49px;
 }
 
 
