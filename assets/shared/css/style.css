@@ -46,9 +46,13 @@ Body {
   width: 160px;
 }
 
+.Header__LinkText--Title .Header__LinkTextInnerImage {
+  width: 260px;
+}
+
 .Header__LinkTextInnerImage--Practice {
   margin: -10px 0 0;
-  width: 128px;
+  width: 130px;
 }
 
 .Header__LinkText:nth-child(1) {
