@@ -50,9 +50,10 @@ Body {
 
 }
 
-.Header__LinkText {
+.Header__LinkText:first-child {
   /* padding-left: 24px; */
   /* margin: 0 -16px 0 0; */
+  /* margin: 0 24px 0 0; */
 }
 
 .Header__LinkTextInner--Practice {
@@ -62,6 +63,8 @@ Body {
 
 .Nav__Inner {
   display: flex;
+  justify-content: space-between;
+
 }
 
 .Header__LinkTextInner {
@@ -84,19 +87,18 @@ Body {
 
 .Header__LinkText--Title {
   /* デザイン上の SVG の幅 / .Header__Link の幅 * 単位（%） */
-  width: calc(260 / (1280 - 64 - 64) * 100%);
+  width: calc(204 / (1280 - 64 - 64) * 100%);
 }
 
 /* いえざきゆめみ コンテナ */
 .Header__LinkText--Title .Header__LinkTextInner {
-
   /* margin: 0; */
-  aspect-ratio: 869 / 139;
+  aspect-ratio: 204 / 32;
 }
 
 .Nav {
-  /* width: 320px; */
-  width: calc(320 / (1280 - 64 - 64) * 100%);
+  /* width: 230px; */
+  width: calc((134 + 102 + 24) / (1280 - 64 - 64) * 100%);
 }
 
 .Nav__Inner {
@@ -105,29 +107,29 @@ Body {
 
 /* つくったもの */
 .Header__LinkText--Works {
-  /* width: 200px; */
-  width: calc(160 / 320 * 100%);
+  /* width: 134px; */
+  width: calc(134 / (134 + 102 + 24) * 100%);
 }
 
 /* つくったもの　SVGコンテナ */
 .Header__LinkText--Works .Header__LinkTextInner {
-  aspect-ratio: 708 / 112;
+  aspect-ratio: 134 / 32;
 }
 
 
 
 /* れんしゅう*/
 .Header__LinkText--Practice {
-  /* width: 200px; */
-  width: calc(160 / 320 * 100%);
+  /* width: 102px; */
+  width: calc(102 / (134 + 102 + 24) * 100%);
 }
 
-/* つくったもの　SVGコンテナ */
+/* れんしゅう　SVGコンテナ */
 .Header__LinkText--Practice  .Header__LinkTextInner {
   /* margin: -24px 0 0 0; */
   /* padding: 18px; */
   /* width: 130px; */
-  aspect-ratio: 661 / 174;
+  aspect-ratio: 102 / 32;
 }
 
 
