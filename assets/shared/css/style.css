@@ -1,4 +1,14 @@
 /* all */
+.is-debug {
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 1px inset;
+  background-color: rgba(204, 204, 204, 0.25);
+}
+
+.is-debug * {
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 1px inset;
+  background-color: rgba(204, 204, 204, 0.25);
+}
+
 Body {
   background-color: #fffef2;
 }
@@ -25,6 +35,11 @@ Body {
 
 /* Header */
 
+.Header {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+}
+
 .Header__Link {
   font-size: 16px;
   background-color:transparent;
@@ -32,28 +47,90 @@ Body {
   justify-content: space-between;
   padding: 48px 64px;
   align-items: center;
+
 }
 
 .Header__LinkText {
-  padding-left: 24px;
+  /* padding-left: 24px; */
+  /* margin: 0 -16px 0 0; */
 }
+
+.Header__LinkTextInner--Practice {
+  /* margin-left: calc(24px + 16px); */
+}
+
 
 .Nav__Inner {
   display: flex;
 }
 
+.Header__LinkTextInner {
+  display: block;
+  position: relative;
+  /* width: 160px; */
+
+}
+
 .Header__LinkTextInnerImage {
-  width: 160px;
+  /* display: block; */
+  /* width: 100%; */
+  /* height: 100%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.Header__LinkText--Title .Header__LinkTextInnerImage {
-  width: 260px;
+.Header__LinkText--Title {
+  /* デザイン上の SVG の幅 / .Header__Link の幅 * 単位（%） */
+  width: calc(260 / (1280 - 64 - 64) * 100%);
 }
 
-.Header__LinkTextInnerImage--Practice {
-  margin: -10px 0 0;
-  width: 130px;
+/* いえざきゆめみ コンテナ */
+.Header__LinkText--Title .Header__LinkTextInner {
+
+  /* margin: 0; */
+  aspect-ratio: 869 / 139;
 }
+
+.Nav {
+  /* width: 320px; */
+  width: calc(320 / (1280 - 64 - 64) * 100%);
+}
+
+.Nav__Inner {
+  width: 100%;
+}
+
+/* つくったもの */
+.Header__LinkText--Works {
+  /* width: 200px; */
+  width: calc(160 / 320 * 100%);
+}
+
+/* つくったもの　SVGコンテナ */
+.Header__LinkText--Works .Header__LinkTextInner {
+  aspect-ratio: 708 / 112;
+}
+
+
+
+/* れんしゅう*/
+.Header__LinkText--Practice {
+  /* width: 200px; */
+  width: calc(160 / 320 * 100%);
+}
+
+/* つくったもの　SVGコンテナ */
+.Header__LinkText--Practice  .Header__LinkTextInner {
+  /* margin: -24px 0 0 0; */
+  /* padding: 18px; */
+  /* width: 130px; */
+  aspect-ratio: 661 / 174;
+}
+
+
 
 .Header__LinkText:nth-child(1) {
   padding: 0;
