@@ -5,7 +5,8 @@
 }
 
 .SectionTitle--Home {
-  padding: 40px 0;
+  /* padding: clamp(1rem, 0.343rem + 2.7vw, 2.5rem) 0; */
+
 }
 
 .WorksItem--Home .WorksItem__Inner {
@@ -18,9 +19,18 @@
 }
 
 
+.SectionTitle__About {
+  height: 32px;
+  position: relative;
+}
 
+.SectionTitle--Home--about {
+  position: absolute;
 
-
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 
 /* Home--Practice */
@@ -36,19 +46,21 @@
 /* About */
 .About {
   background-color: #F6F5DE;
-
 }
 
 .About__Item {
   background-color: #fffef2;
   border-radius: 50px 50px 0 0 ;
-  position: relative;
 
 }
 
+
+
 .About__Inner {
+
   display: flex;
-  padding: 88px 0;
+  /* padding: 88px 0; */
+  padding: calc((88 / 1280) * 100%) 0;
 
   justify-content: center;
 
@@ -62,19 +74,26 @@
 }
 
 .About__InnerTextName{
-  font-size: 24px;
-  margin: 0 0 49px;
+  /* font-size: 24px; */
+  font-size: clamp(1rem, 0.781rem + 0.9vw, 1.5rem);
+  /* margin: 40px */
+  margin: 0 0 clamp(1rem, 0.273rem + 3.64vw, 3rem) 0;
 }
 
 
 .About__InnerIcon{
   order: -1;
-  /* border-radius: 50px;
-  overflow: hidden; */
   outline: solid 1px #C2C19B;
-  margin: 0 72px 0 0;
+  /* margin: 72px */
+  margin: 0 clamp(2rem, 0.904rem + 4.49vw, 4.5rem) 0 0;
 }
 
-.SectionTitle--About {
-  width: 400px;
+/* .About__InnerIconImage {
+  aspect-ratio: 200 / 200;
+} */
+
+.SectionTitleImage--About {
+  width: calc((400 / 1280) * 100%);
+  min-width: 200px;
+  max-width: 400px;
 }
