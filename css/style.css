@@ -6,6 +6,7 @@
 
 .SectionTitle--Home {
   /* padding: clamp(1rem, 0.343rem + 2.7vw, 2.5rem) 0; */
+  width: calc((500 / 1280) * 100%);
 }
 
 .WorksItem--Home .WorksItem__Inner {
@@ -23,7 +24,7 @@
 }
 
 .SectionTitle--Home--about {
-  width: calc((400 / 1280) * 100%);
+  /* width: calc((500 / 1280) * 100%); */
   margin: 0 auto;
   transform: translateY(-50%);
   /* min-width: 200px;
@@ -64,8 +65,7 @@
 .About__InnerTextName {
   /* font-size: 24px; */
   font-size: clamp(1rem, 0.781rem + 0.9vw, 1.5rem);
-  /* margin: 40px */
-  margin: 0 0 clamp(1rem, 0.273rem + 3.64vw, 3rem) 0;
+  margin: 0 0 40px 0;
 }
 
 .About__InnerIcon {

@@ -14,11 +14,13 @@ Body {
 }
 
 .SectionTitle {
-  text-align: center;
+  /* text-align: center; */
+  width: calc((320 / 1280) * 100%);
+  margin: 0 auto;
 }
 
 .SectionTitleImage {
-  width: 320px;
+  /* width: 320px; */
 }
 
 .SectionTitle--Other {
@@ -249,8 +251,12 @@ Body {
 
 
 /* Practice */
+.TextContainer--Vartical {
+  height: calc((320 / 1280) * 100%);
+}
+
 .TextContainer--Vartical .SectionTitleImage {
-  height: 320px;
+  height: 100%;
 }
 
 .TextContainer--Vartical .Introduce__Description {
