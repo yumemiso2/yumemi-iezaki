@@ -14,12 +14,12 @@ Body {
 }
 
 .SectionTitle {
-  text-align: center;
-
+  /* text-align: center; */
+  margin: 0 auto;
 }
 
 .SectionTitleImage {
-  width: 320px;
+  width: 100%;
 }
 
 .SectionTitle--Other {
