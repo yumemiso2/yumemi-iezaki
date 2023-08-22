@@ -11,6 +11,20 @@
 
 Body {
   background-color: #fffef2;
+  font-family: "HigureGothic-Regular";
+
+}
+
+@font-face {
+  font-family: "HigureGothic-Regular";
+  src: url(/fonts/HigureGothic-Regular.ttf) format("truetype");
+  src: url(/fonts/HigureGothic-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "HigureGothic-Medium";
+  src: url(/fonts/HigureGothic-Medium.ttf) format("truetype");
+  src: url(/fonts/HigureGothic-Medium.woff) format("woff");
 }
 
 .SectionTitle {

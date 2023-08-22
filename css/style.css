@@ -81,6 +81,8 @@ width: 100%;
   padding: 160px;
 }
 
+
+
 /* About */
 .About {
   background-color: #F6F5DE;
@@ -128,12 +130,19 @@ width: 100%;
   flex-direction: column;
   padding :0 0 0 calc(72 / 995 * 100%) ;
   width: calc((995 - 200) / 995 * 100%);
+  line-height: 2;
 }
 
 .About__InnerTextName {
   /* font-size: 24px; */
   font-size: clamp(1rem, 0.781rem + 0.9vw, 1.5rem);
   margin: 0 0 40px 0;
+  font-family: "HigureGothic-Medium";
+}
+
+.About__InnerTextDescription {
+
+  /* letter-spacing: 1.2px; */
 }
 
 /* わたしについて　アイコン画像 */
