@@ -63,17 +63,16 @@
   display: flex;
   align-items: flex-start;
   padding: calc((88 / 1280) * 100%) 0;
-  justify-content: center;
-  width: 100%;
-
-
+  width: calc(995 / 1280 * 100%);
+  margin: 0 auto;
+  max-width: 995px;
 }
 
 .About__InnerText {
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
-  margin:0 0 0 calc((72 / 1280) * 100%) ;
+  margin :0 0 0 calc(72 / 995 * 100%) ;
+  width: calc((995 - 200) / 995 * 100%);
 }
 
 .About__InnerTextName {
@@ -88,7 +87,7 @@
   order: -1;
   outline: solid 1px #C2C19B;
   /* margin: 0 calc((72 / 1280) * 100%) 0 0; */
-  width: calc((200 / (1280 - ((72 / 1280)))) * 100%);
+  width: calc(200 / 995 * 100);
 }
 
 .About__InnerIconImage {
