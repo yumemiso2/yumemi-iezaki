@@ -126,7 +126,7 @@ width: 100%;
 .About__InnerText {
   display: flex;
   flex-direction: column;
-  margin :0 0 0 calc(72 / 995 * 100%) ;
+  padding :0 0 0 calc(72 / 995 * 100%) ;
   width: calc((995 - 200) / 995 * 100%);
 }
 
@@ -142,7 +142,9 @@ width: 100%;
   order: -1;
   outline: solid 1px #C2C19B;
   /* margin: 0 calc((72 / 1280) * 100%) 0 0; */
-  width: calc(200 / 995 * 100);
+  width: calc(200 / 995 * 100%);
+  min-width: 100px;
+  max-width: 200px;
 }
 
 .About__InnerIconImage {
