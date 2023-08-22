@@ -9,10 +9,9 @@
   background-color: rgba(204, 204, 204, 0.25);
 }
 
-Body {
+.Body {
   background-color: #fffef2;
   font-family: "HigureGothic-Regular";
-
 }
 
 @font-face {
