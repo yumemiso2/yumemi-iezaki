@@ -18,18 +18,6 @@
 }
 
 
-.SectionTitle__About {
-  position: relative;
-}
-
-.SectionTitle--Home--about {
-  width: calc((500 / 1280) * 100%);
-  margin: 0 auto;
-  transform: translateY(-50%);
-  /* min-width: 200px;
-  max-width: 400px; */
-
-}
 
 
 /* Home--Practice */
@@ -45,6 +33,22 @@
   background-color: #F6F5DE;
 }
 
+/* div */
+.SectionTitle__About {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* h1 */
+.SectionTitle--Home--about {
+  width: calc((400 / 1280) * 100%);
+  margin: 0 auto;
+  transform: translateY(-50%);
+  /* min-width: 200px;
+  max-width: 400px; */
+
+}
+/* svg */
 .SectionTitleImage--About {
   width: 100%;
 }
@@ -57,6 +61,7 @@
 
 .About__Inner {
   display: flex;
+  align-items: flex-start;
   padding: calc((88 / 1280) * 100%) 0;
   justify-content: center;
   width: 100%;
@@ -83,12 +88,10 @@
   order: -1;
   outline: solid 1px #C2C19B;
   /* margin: 0 calc((72 / 1280) * 100%) 0 0; */
-  width: calc((200 / (1280 -((72 / 1280) * 100%))) * 100%);
-  height: calc((200 / 1280) * 100%);
-  aspect-ratio: 200 / 200;
+  width: calc((200 / (1280 - ((72 / 1280)))) * 100%);
 }
 
 .About__InnerIconImage {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
