@@ -43,7 +43,7 @@ Body {
 
 
 .ImageRounded {
-  border-radius: 50px;
+  /* border-radius: 50px; */
   /* outline: solid 1px #000; */
   overflow: hidden;
 }
