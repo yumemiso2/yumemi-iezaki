@@ -16,6 +16,7 @@ Body {
 .SectionTitle {
   /* text-align: center; */
   margin: 0 auto;
+
 }
 
 .SectionTitleImage {
@@ -302,7 +303,7 @@ Body {
 }
 
 .TextContainer {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 24px 0 0;
 }
 
@@ -310,6 +311,7 @@ Body {
   padding: 0 0 8px;
   font-size: 24px;
 }
+
 
 .Introduce__Description {
   padding: 0 0 32px 0;
