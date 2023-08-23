@@ -15,15 +15,17 @@
 }
 
 @font-face {
-  font-family: "HigureGothic-Regular";
-  src: url(/fonts/HigureGothic-Regular.ttf) format("truetype");
-  src: url(/fonts/HigureGothic-Regular.woff) format("woff");
+  font-family: "HigureGothic-Regular", "Helvetica Neue",
+  Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  src: url(/fonts/higuregothic-regular.ttf) format("truetype");
+  src: url(/fonts/higuregothic-regular.woff) format("woff");
 }
 
 @font-face {
-  font-family: "HigureGothic-Medium";
-  src: url(/fonts/HigureGothic-Medium.ttf) format("truetype");
-  src: url(/fonts/HigureGothic-Medium.woff) format("woff");
+  font-family: "HigureGothic-Medium", "Helvetica Neue",
+  Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  src: url(/fonts/higuregothic-medium.ttf) format("truetype");
+  src: url(/fonts/higuregothic-medium.woff) format("woff");
 }
 
 .SectionTitle {
@@ -42,7 +44,7 @@
 
 
 .ImageRounded {
-  /* border-radius: 50px; */
+  border-radius: 50px;
   /* outline: solid 1px #000; */
   overflow: hidden;
 }
