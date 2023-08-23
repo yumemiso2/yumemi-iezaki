@@ -11,6 +11,7 @@
 
 .TextContainer--home .Introduce {
   width: 100%;
+
   /* margin: 0 auto; */
 }
 
@@ -60,18 +61,26 @@
 
 /* Practice */
 /* 紹介文とロゴを囲むdiv */
-.Practice .Introduce {
 
-}
 
 /* h2 */
 .Practice .SectionTitle {
-
+  order: 2;
+  width: calc((88 / (100% / 3)) * 100%);
+  max-width: 88px;
+  min-width: 32px;
 }
 
 .Practice .SectionTitleImage {
-
+  width: 100%;
 }
+
+.Practice .Introduce__Description {
+  /* width: 100%; */
+  padding: calc(160 / 300 * 100%) 40px 0 0;
+  /* max-height: 400px; */
+}
+
 
 
 .Practice .Practice__ScrollList {
@@ -83,11 +92,35 @@
   background-color: #F6F5DE;
   border-radius: 50px 50px 0 0;
   /* padding: 72px 150px 0 150px; */
+  /* position: relative; */
 }
 
 
-.temp {
-  width: (980 / 1280 * 100%);
+.Practice .TextContainer--Vartical {
+  width: calc(980 / 1280 * 100%);
+  max-width: 980px;
+  margin:  0 auto;
+  position: relative;
+}
+
+.Practice .Introduce {
+  display: flex;
+  width: calc(100% / 3);
+  max-width: 300px;
+  /* max-height: 300px; */
+  /* height: calc(300 / 980 * 100); */
+  position: absolute;
+  top: -160px;
+  left: 0;
+}
+
+
+.ScrollListWrapper {
+  /* width: (980 / 1280 * 100%);
+  max-width: 980px;
+  margin: 0 auto;
+  overflow: hidden; */
+  width: calc(980 / 1280 *100%);
   max-width: 980px;
   margin: 0 auto;
   overflow: hidden;
@@ -105,22 +138,21 @@
   overflow: hidden;
 }
 
+.Practice .ScrollList::before {
+  content: "";
+  display: block;
+  /* width・marginは、liで決めたサイズと同じにする （構造を全く同じにする）*/
+  width: calc(100% / 3 - 40px);
+  margin: calc(40px / 2);
+  /* background-color: #C2C19B; */
+}
+
 /* li */
 .Practice .ScrollList__Item {
-  /* width: 300px; */
-  /* flex: 0 0 30%; */
-  /* margin: 40px 0 0; */
-  /* padding: 20px; */
   width: calc(100% / 3 - 40px);
   margin: calc(40px / 2);
   box-sizing: border-box;
-  /* width: 300px; */
-  /* max-width: 300px; */
 }
-
-/* .Practice .ScrollList__Item:nth-child(1) {
-}
- */
 
 /* li > a */
 .Practice .ScrollList__ItemLink {
@@ -147,7 +179,24 @@
   width: 100%;
 }
 
+.ScrollHover {
+  text-align: center;
 
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  min-height: calc(150 / 300 * 100%);
+  font-size: 16px;
+  padding: calc(36 / 300 * 100%);
+}
+
+.ScrollHover__Name {
+  border-bottom: 2px dotted;
+  padding: 0 0 8px;
+}
+
+.ScrollHover__Description {
+  padding: 16px 0 0;
+}
 
 /* Practice ここまで */
 
