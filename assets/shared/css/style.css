@@ -9,16 +9,31 @@
   background-color: rgba(204, 204, 204, 0.25);
 }
 
-Body {
+.Body {
   background-color: #fffef2;
+  font-family: "HigureGothic-Regular", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+@font-face {
+  font-family: "HigureGothic-Regular";
+  src: url(/fonts/higuregothic-regular.ttf) format("truetype");
+  src: url(/fonts/higuregothic-regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "HigureGothic-Medium";
+  src: url(/fonts/higuregothic-medium.ttf) format("truetype");
+  src: url(/fonts/higuregothic-medium.woff) format("woff");
 }
 
 .SectionTitle {
-  text-align: center;
+  /* text-align: center; */
+  margin: 0 auto;
+
 }
 
 .SectionTitleImage {
-  width: 320px;
+  width: 100%;
 }
 
 .SectionTitle--Other {
@@ -35,10 +50,8 @@ Body {
 
 /* Header */
 
-.Header {
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-}
+/* .Header {
+} */
 
 .Header__Link {
   font-size: 16px;
@@ -47,7 +60,6 @@ Body {
   justify-content: space-between;
   padding: 48px 64px;
   align-items: center;
-
 }
 
 .Header__LinkText {
@@ -102,9 +114,6 @@ Body {
   height: 100%;
 
 }
-
-
-
 
 
 .Nav__Inner {
@@ -306,7 +315,7 @@ Body {
 }
 
 .TextContainer {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 24px 0 0;
 }
 
@@ -314,6 +323,7 @@ Body {
   padding: 0 0 8px;
   font-size: 24px;
 }
+
 
 .Introduce__Description {
   padding: 0 0 32px 0;

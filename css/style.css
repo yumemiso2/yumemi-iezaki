@@ -4,23 +4,73 @@
   margin: 0 0 160px;
 }
 
+.TextContainer--home {
+  width: calc(1000 / 1280 * 100%);
+
+}
+
+.TextContainer--home .Introduce {
+  width: 100%;
+  /* margin: 0 auto; */
+}
+
+
+
 .SectionTitle--Home {
-  padding: 40px 0;
+  width: calc(400 / 1000  * 100%);
+  min-width: 150px;
+}
+
+
+.SectionTitle--Home .SectionTitleImage {
+  width: 100%;
+}
+.Introduce__Description {
+  width: 100%;
+
+}
+
+.Works {
+  /* width: calc(1150 / 1280 * 100%); */
+}
+
+.WorksItem--Home {
+  width: calc(1150 / 1280 * 100%);
+  /* margin: 0 auto; */
 }
 
 .WorksItem--Home .WorksItem__Inner {
   padding: 0;
+  width: 100%;
+
+}
+
+
+
+
+.WorksItem--Home .WorksItem__Img {
+  width: 100%;
+  /* width: calc(1000 / 1150 * 100%); */
+  /* margin: 0 auto; */
+}
+
+.WorksItem--Home .ImgList {
+
+  width: calc(1150 / 1280 * 100%);
+}
+
+.WorksItem--Home .ImgList__Link {
+  /* margin: 0 auto; */
+  /* display: block; */
+width: 100%;
+
 }
 
 .WorksItem--Home .ImgList__LinkImage {
-  width: 1000px;
-  max-height: 700px;
+  width: 100%;
+  max-width: 1000px;
+
 }
-
-
-
-
-
 
 
 /* Home--Practice */
@@ -36,45 +86,75 @@
 /* About */
 .About {
   background-color: #F6F5DE;
+}
 
+/* div */
+/* .SectionTitle__About {
+  position: relative;
+  width: 100%;
+  height: 100%;
+} */
+
+/* h1 */
+.SectionTitle--Home--about {
+  width: calc((450 / 1280) * 100%);
+  margin: 0 auto;
+  transform: translateY(-50%);
+  min-width: 200px;
+  max-width: 450px;
+
+}
+/* svg */
+.SectionTitleImage--About {
+  width: 100%;
 }
 
 .About__Item {
   background-color: #fffef2;
-  border-radius: 50px 50px 0 0 ;
-  position: relative;
-
+  border-radius: 50px 50px 0 0;
+  /* padding: 0 calc((160 / 1280) * 100%); */
 }
 
 .About__Inner {
   display: flex;
-  padding: 88px 0;
-
-  justify-content: center;
-
-  /* transform: translate(50%); */
+  align-items: flex-start;
+  /* min: 40px max: 88px */
+  padding: clamp(2.5rem, 1.185rem + 5.39vw, 5.5rem) 0;
+  width: calc(995 / 1280 * 100%);
+  margin: 0 auto;
+  max-width: 995px;
 }
 
 .About__InnerText {
   display: flex;
   flex-direction: column;
-
+  padding :0 0 0 calc(72 / 995 * 100%);
+  width: calc((995 - 200) / 995 * 100%);
+  line-height: 2;
 }
 
-.About__InnerTextName{
-  font-size: 24px;
-  margin: 0 0 49px;
+.About__InnerTextName {
+  /* font-size: 24px; */
+  font-size: clamp(1rem, 0.781rem + 0.9vw, 1.5rem);
+  margin: 0 0 calc(40 / (995 - 200 - 72) * 100%) 0;
+  font-family: "HigureGothic-Medium";
 }
 
+/* わたしについて　アイコン画像 */
 
-.About__InnerIcon{
+.About__InnerIcon {
   order: -1;
-  /* border-radius: 50px;
-  overflow: hidden; */
   outline: solid 1px #C2C19B;
-  margin: 0 72px 0 0;
+  /* margin: 0 calc((72 / 1280) * 100%) 0 0; */
+  width: calc(200 / 995 * 100%);
+  min-width: 100px;
+  max-width: 200px;
 }
 
-.SectionTitle--About {
-  width: 400px;
+.About__InnerIconImage {
+  width: 100%;
+}
+
+.About__Item .ImageRounded {
+  border-radius: calc(50 / 200 * 100%);
 }
