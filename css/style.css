@@ -27,59 +27,126 @@
 }
 .Introduce__Description {
   width: 100%;
-
-}
-
-.Works {
-  /* width: calc(1150 / 1280 * 100%); */
 }
 
 .WorksItem--Home {
   width: calc(1150 / 1280 * 100%);
-  /* margin: 0 auto; */
 }
 
 .WorksItem--Home .WorksItem__Inner {
   padding: 0;
   width: 100%;
-
 }
-
-
-
 
 .WorksItem--Home .WorksItem__Img {
   width: 100%;
-  /* width: calc(1000 / 1150 * 100%); */
-  /* margin: 0 auto; */
 }
 
 .WorksItem--Home .ImgList {
-
   width: calc(1150 / 1280 * 100%);
 }
 
 .WorksItem--Home .ImgList__Link {
-  /* margin: 0 auto; */
-  /* display: block; */
-width: 100%;
-
+  width: 100%;
 }
 
 .WorksItem--Home .ImgList__LinkImage {
   width: 100%;
   max-width: 1000px;
+}
+
+
+
+
+/* Practice */
+/* 紹介文とロゴを囲むdiv */
+.Practice .Introduce {
+
+}
+
+/* h2 */
+.Practice .SectionTitle {
+
+}
+
+.Practice .SectionTitleImage {
 
 }
 
 
-/* Home--Practice */
-.Practice__ScrollList {
+.Practice .Practice__ScrollList {
+  /* margin: 0 auto; */
+  /* background-color: #F6F5DE; */
+  /* border-radius: 50px 50px 0 0; */
+  /* padding: 160px; */
   /* margin: 0 auto; */
   background-color: #F6F5DE;
   border-radius: 50px 50px 0 0;
-  padding: 160px;
+  /* padding: 72px 150px 0 150px; */
 }
+
+
+/* ul */
+.Practice .ScrollList {
+  width: (980 / 1280 * 100%);
+  /* max-width: 980px; */
+  /* height: 100%; */
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  /* margin: 0 auto; */
+  /* padding: 40px; */
+  margin: calc(-40px / 2) ;
+  overflow: hidden;
+}
+
+/* li */
+.Practice .ScrollList__Item {
+  /* width: 300px; */
+  /* flex: 0 0 30%; */
+  /* margin: 40px 0 0; */
+  /* padding: 20px; */
+  width: calc(100% / 3 - 40px);
+  margin: calc(40px / 2);
+  box-sizing: border-box;
+  /* width: 300px; */
+  /* max-width: 300px; */
+}
+
+/* .Practice .ScrollList__Item:nth-child(1) {
+}
+ */
+
+/* li > a */
+.Practice .ScrollList__ItemLink {
+  display: block;
+  border-radius: 50px;
+  outline: solid 1px #000;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+
+.Practice .ScrollList__ItemLinkInner {
+  position: relative;
+  z-index: 2;
+}
+
+/* li > a > img */
+.Practice .ScrollList__ItemLinkImage {
+
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+
+
+/* Practice ここまで */
+
+
+
 
 
 
@@ -87,13 +154,6 @@ width: 100%;
 .About {
   background-color: #F6F5DE;
 }
-
-/* div */
-/* .SectionTitle__About {
-  position: relative;
-  width: 100%;
-  height: 100%;
-} */
 
 /* h1 */
 .SectionTitle--Home--about {
