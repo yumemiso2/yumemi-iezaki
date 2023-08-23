@@ -86,10 +86,15 @@
 }
 
 
+.temp {
+  width: (980 / 1280 * 100%);
+  max-width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 /* ul */
 .Practice .ScrollList {
-  width: (980 / 1280 * 100%);
-  /* max-width: 980px; */
   /* height: 100%; */
   display: flex;
   /* justify-content: space-between; */
@@ -124,12 +129,13 @@
   outline: solid 1px #000;
   overflow: hidden;
   width: 100%;
-
+  position: relative;
 }
 
 
 .Practice .ScrollList__ItemLinkInner {
-  position: relative;
+  position: absolute;
+  bottom:0;
   z-index: 2;
 }
 
