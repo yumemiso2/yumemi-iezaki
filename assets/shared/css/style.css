@@ -11,19 +11,17 @@
 
 .Body {
   background-color: #fffef2;
-  font-family: "HigureGothic-Regular";
+  font-family: "HigureGothic-Regular", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 @font-face {
-  font-family: "HigureGothic-Regular", "Helvetica Neue",
-  Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "HigureGothic-Regular";
   src: url(/fonts/higuregothic-regular.ttf) format("truetype");
   src: url(/fonts/higuregothic-regular.woff) format("woff");
 }
 
 @font-face {
-  font-family: "HigureGothic-Medium", "Helvetica Neue",
-  Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "HigureGothic-Medium";
   src: url(/fonts/higuregothic-medium.ttf) format("truetype");
   src: url(/fonts/higuregothic-medium.woff) format("woff");
 }
@@ -62,7 +60,6 @@
   justify-content: space-between;
   padding: 48px 64px;
   align-items: center;
-
 }
 
 .Header__LinkText {
