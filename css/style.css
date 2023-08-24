@@ -63,12 +63,49 @@
 /* 紹介文とロゴを囲むdiv */
 
 
-/* h2 */
+.Practice .Practice__ScrollList {
+  background-color: #F6F5DE;
+  border-radius: 50px 50px 0 0;
+}
+
+.Practice .TextContainer--Vartical {
+  width: 100%;
+  position: absolute;
+}
+
+.TextWrapper {
+  /* Introduce_Innerを収めるための箱1つ目 */
+  width: calc(980 / 1280 * 100%);
+  max-width: 980px;
+  margin:  0 auto;
+}
+
+.TextWrapper__Inner {
+  margin: calc(-40px / 2);
+}
+
+
+.Practice .Introduce {
+  /* 要素３カラム、そこから余白-20px-20px */
+  width: calc(100% / 3 - 40px);
+  /* Introduce-Innerのrelative */
+  position: relative;
+  margin: calc(40px / 2);
+  /* 300pxの箱の縦横比を保持 */
+  aspect-ratio: 1;
+}
+
+.Introduce__Inner {
+  display: flex;
+  /* Introduceに対してwidth :100%; */
+  width: 100%;
+  position: absolute;
+  /* .TextWrapperからみて bottom: 0;?*/
+   bottom: 0;
+}
+
 .Practice .SectionTitle {
   order: 2;
-  /* width: calc((88 / (100% / 3)) * 100%); */
-  /* max-width: 88px;
-  min-width: 32px; */
 }
 
 .Practice .SectionTitleImage {
@@ -76,51 +113,14 @@
 }
 
 .Practice .Introduce__Description {
-  /* width: 100%; */
   padding: calc(160 / 300 * 100%) 40px 0 0;
-  /* max-height: 400px; */
 }
 
-
-
-.Practice .Practice__ScrollList {
-  /* margin: 0 auto; */
-  /* background-color: #F6F5DE; */
-  /* border-radius: 50px 50px 0 0; */
-  /* padding: 160px; */
-  /* margin: 0 auto; */
-  background-color: #F6F5DE;
-  border-radius: 50px 50px 0 0;
-  /* padding: 72px 150px 0 150px; */
-  /* position: relative; */
-}
-
-
-.Practice .TextContainer--Vartical {
-  width: calc(980 / 1280 * 100%);
-  max-width: 980px;
-  margin:  0 auto;
-  position: relative;
-}
-
-.Practice .Introduce {
-  display: flex;
-  width: calc(100% / 3);
-  max-width: 300px;
-  /* max-height: 300px; */
-  /* height: calc(300 / 980 * 100); */
-  position: absolute;
-  top: -160px;
-  left: 0;
-}
 
 
 .ScrollListWrapper {
-  /* width: (980 / 1280 * 100%);
-  max-width: 980px;
-  margin: 0 auto;
-  overflow: hidden; */
-  width: calc(980 / 1280 *100%);
+  /* 作品コンポーネントを並べるための箱 */
+  width: calc(980 / 1280 * 100%);
   max-width: 980px;
   margin: 0 auto;
   overflow: hidden;
@@ -128,12 +128,8 @@
 
 /* ul */
 .Practice .ScrollList {
-  /* height: 100%; */
   display: flex;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
-  /* margin: 0 auto; */
-  /* padding: 40px; */
   margin: calc(-40px / 2) ;
   overflow: hidden;
 }
