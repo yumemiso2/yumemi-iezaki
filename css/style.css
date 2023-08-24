@@ -159,6 +159,9 @@
   position: relative;
 }
 
+.Practice .ScrollList__ItemLink:hover .ScrollList__ItemLinkInner {
+  opacity: 1;
+}
 
 .Practice .ScrollList__ItemLinkInner {
   position: absolute;
@@ -168,9 +171,9 @@
 }
 
 
-.Practice .ScrollList__ItemLinkInner:hover {
+/* .Practice .ScrollList__ItemLinkInner:hover {
   opacity: 1;
-}
+} */
 
 
 /* li > a > img */
@@ -190,11 +193,6 @@
   padding: calc(36 / 300 * 100%);
   z-index: 50;
 }
-
-/* .Practice .ScrollList__ItemLink {
-  display: none;
-} */
-
 
 .ScrollHover__Name {
   border-bottom: 2px dotted;
