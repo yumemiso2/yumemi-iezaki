@@ -81,16 +81,16 @@
 }
 
 .TextWrapper__Inner {
-  margin: calc(-40px / 2);
+  margin: calc(-24px / 2);
 }
 
 
 .Practice .Introduce {
   /* 要素３カラム、そこから余白-20px-20px */
-  width: calc(100% / 3 - 40px);
+  width: calc(100% / 3 - 24px);
   /* Introduce-Innerのrelative */
   position: relative;
-  margin: calc(40px / 2);
+  margin: calc(24px / 2);
   /* 300pxの箱の縦横比を保持 */
   aspect-ratio: 1;
 }
@@ -113,7 +113,8 @@
 }
 
 .Practice .Introduce__Description {
-  padding: calc(160 / 300 * 100%) 40px 0 0;
+  /* ここを、相対値で指定する方法がよくわからん */
+  padding: calc(160 / 300 * 100%) calc(40 / 300 * 100%) 0 0;
 }
 
 
@@ -130,7 +131,7 @@
 .Practice .ScrollList {
   display: flex;
   flex-wrap: wrap;
-  margin: calc(-40px / 2) ;
+  margin: calc(-24px / 2) ;
   overflow: hidden;
 }
 
@@ -138,16 +139,16 @@
   content: "";
   display: block;
   /* width・marginは、liで決めたサイズと同じにする （構造を全く同じにする）*/
-  width: calc(100% / 3 - 40px);
-  /* width: calc(326.666666667 / 980 * 100% - 40px); */
-  margin: calc(40px / 2);
+  width: calc(100% / 3 - 24px);
+  /* width: calc(326.666666667 / 980 * 100% - 24px); */
+  margin: calc(24px / 2);
   /* background-color: #C2C19B; */
 }
 
 /* li */
 .Practice .ScrollList__Item {
-  width: calc(100% / 3 - 40px);
-  margin: calc(40px / 2);
+  width: calc(100% / 3 - 24px);
+  margin: calc(24px / 2);
   box-sizing: border-box;
 }
 
@@ -203,6 +204,10 @@
 
 .ScrollHover__Description {
   padding: 16px 0 0;
+}
+
+.Practice .TextButton {
+  margin: 64px 0 0 0;
 }
 
 /* Practice ここまで */
