@@ -63,6 +63,8 @@
 
 .Practice .Practice__ScrollList {
   background-color: #F6F5DE;
+  /* padding: 160px 0; */
+  padding: clamp(2.5rem, -0.787rem + 13.48vw, 10rem) 0;
   border-radius: 50px 50px 0 0;
 }
 
