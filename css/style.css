@@ -24,9 +24,10 @@
 .SectionTitle--Home .SectionTitleImage {
   width: 100%;
 }
-.Introduce__Description {
+
+/* .Introduce__Description {
   width: 100%;
-}
+} */
 
 .WorksItem--Home {
   width: calc(1150 / 1280 * 100%);
@@ -62,6 +63,7 @@
 
 
 .Practice .Practice__ScrollList {
+  /* font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem); */
   background-color: #F6F5DE;
   /* padding: 160px 0; */
   padding: clamp(2.5rem, -0.787rem + 13.48vw, 10rem) 0;
@@ -97,27 +99,32 @@
 
 .Introduce__Inner {
   display: flex;
+  justify-content: flex-end;
   /* Introduceに対してwidth :100%; */
   width: 100%;
   position: absolute;
   /* .TextWrapperからみて bottom: 0;?*/
    bottom: 0;
+   /* align-items: flex-end; */
 }
 
 .Practice .SectionTitle {
+  width: calc((88 / ((980 - 24 - 24) / 3)) * 100%);
+  /* padding: 0 0 clamp(2.5rem, -0.787rem + 13.48vw, 10rem)  0; */
   order: 2;
-}
+}  /* padding: 160px 0; */
+
 
 .Practice .SectionTitleImage {
   width: 100%;
 }
 
 .Practice .Introduce__Description {
+  line-height: 2;
   /* ここを、相対値で指定する方法がよくわからん */
-  margin: calc((160 /( (980 - 24 - 24) / 3)) * 100%) calc((40 / ( (980 - 24 - 24) / 3)) * 100%) 0 0;
+  margin: calc((240 / ( (980 - 24 - 24) / 3)) * 100%) calc((40 / ( (980 - 24 - 24) / 3)) * 100%) 0 0;
+  /*元々、 calc((160 / ( (980 - 24 - 24) / 3)) * 100%) 0 0 0 していた*/
 }
-
-
 
 .ScrollListWrapper {
   /* 作品コンポーネントを並べるための箱 */
