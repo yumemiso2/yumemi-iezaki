@@ -176,21 +176,37 @@
   position: relative;
 }
 
-.Practice .ScrollList__ItemLink:hover .ScrollList__ItemLinkInner {
+/* .Practice .ScrollList__ItemLink:hover .ScrollList__ItemLinkInner {
   opacity: 1;
-}
+} */
+
+.Practice .ScrollList__ItemLink:hover .ScrollList__ItemLinkInner {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  /* opacity:0; */
+  }
+
+  @keyframes fadeUpAnime{
+    from {
+      transform: translateY(calc((150 / ((980 - 24 - 24) / 3)) * 100%));
+      /* transform: translateY(100%); */
+      opacity: 0;
+      }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 .Practice .ScrollList__ItemLinkInner {
   position: absolute;
-  bottom:0;
+  bottom: 0;
   z-index: 2;
   opacity: 0;
 }
 
-
-/* .Practice .ScrollList__ItemLinkInner:hover {
-  opacity: 1;
-} */
 
 
 /* li > a > img */
@@ -208,8 +224,8 @@
   width: 100%;
   min-height: calc(150 / 300 * 100%);
   font-size: 16px;
-  padding: calc(36 / 300 * 100%);
-  z-index: 50;
+  padding: calc(36 / ((980 - 24 - 24) / 3) * 100%);
+
 }
 
 .ScrollHover__Name {
