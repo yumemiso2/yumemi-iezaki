@@ -60,9 +60,6 @@
 
 /* Practice */
 /* 紹介文とロゴを囲むdiv */
-.Practice {
-  font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
-}
 
 .Practice .Practice__ScrollList {
   /* font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem); */
@@ -107,6 +104,7 @@
   position: absolute;
   /* .TextWrapperからみて bottom: 0;?*/
    bottom: 0;
+   font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
    /* align-items: flex-end; */
 }
 
@@ -200,6 +198,7 @@
 
 .Practice .ScrollHover {
   text-align: center;
+  font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   min-height: calc(150 / 300 * 100%);
@@ -211,10 +210,17 @@
 .ScrollHover__Name {
   border-bottom: 2px dotted;
   padding: 0 0 8px;
+  font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
 }
 
 .ScrollHover__Description {
   padding: 16px 0 0;
+  font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+
 }
 
 .Practice .TextButton {
