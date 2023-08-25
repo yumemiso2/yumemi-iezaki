@@ -293,6 +293,7 @@
   /* margin: 0 calc((72 / 1280) * 100%) 0 0; */
   width: calc(200 / 995 * 100%);
   border-radius: calc(50 / 200 * 100%);
+  overflow: hidden;
   min-width: 100px;
   max-width: 200px;
 }
