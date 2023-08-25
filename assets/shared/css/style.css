@@ -224,7 +224,17 @@
   background-color: #FFF;
   margin: 0 auto;
   display: inline-block;
+  transition: 0.5s;
+  color: #000;
+  text-decoration:none;
 }
+
+.Button:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
 
 .Button--Small{
   padding: 8px 72px;

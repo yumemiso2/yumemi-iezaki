@@ -6,14 +6,11 @@
 
 .TextContainer--home {
   width: calc(1000 / 1280 * 100%);
-
 }
 
 .TextContainer--home .Introduce {
   width: 100%;
 }
-
-
 
 .SectionTitle--Home {
   width: calc(400 / 1000  * 100%);
@@ -24,10 +21,6 @@
 .SectionTitle--Home .SectionTitleImage {
   width: 100%;
 }
-
-/* .Introduce__Description {
-  width: 100%;
-} */
 
 .WorksItem--Home {
   width: calc(1150 / 1280 * 100%);
@@ -159,17 +152,13 @@
   width: calc(100% / 3 - 24px);
   margin: calc(24px / 2);
   box-sizing: border-box;
-}
-
-.ScrollList__Item .ImageRounded {
   border-radius: calc((50 / ( (980 - 24 - 24) / 3)) * 100%);
 }
 
-
 /* li > a */
 .Practice .ScrollList__ItemLink {
+  border-radius: calc((50 / ( (980 - 24 - 24) / 3)) * 100%);
   display: block;
-  /* border-radius: 50px; */
   /* outline: solid 1px #000; */
   overflow: hidden;
   width: 100%;
@@ -180,23 +169,23 @@
   opacity: 1;
 } */
 
+/* hover したときに、説明文がふわっと浮き上がるアニメーション */
 .Practice .ScrollList__ItemLink:hover .ScrollList__ItemLinkInner {
   animation-name: fadeUpAnime;
-  animation-duration: 0.4s;
+  animation-duration: .4s;
   animation-fill-mode: forwards;
-  /* opacity:0; */
+
+  animation-timing-function: ease-out;
   }
 
   @keyframes fadeUpAnime{
     from {
-      transform: translateY(calc((150 / ((980 - 24 - 24) / 3)) * 100%));
-      /* transform: translateY(100%); */
-      opacity: 0;
+      /* transform: translateY(calc((150 / ((980 - 24 - 24) / 3)) * 100%)); */
+      transform: translateY(100%);
       }
 
     to {
       transform: translateY(0);
-      opacity: 1;
     }
   }
 
@@ -204,7 +193,9 @@
   position: absolute;
   bottom: 0;
   z-index: 2;
-  opacity: 0;
+  /* transform: translateY(calc((172 / 171) * 100%)); と同じ*/
+  /* アニメーションしていないときも、紹介文を隠しておくため */
+  transform: translateY(100%);
 }
 
 
@@ -237,29 +228,25 @@
 .ScrollHover__Description {
   padding: 16px 0 0;
   font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
+
+/* …に省略するところ */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
-
 }
 
 .Practice .TextButton {
   margin: 64px 0 0 0;
-
 }
 
 /* Practice ここまで */
-
-
-
 
 .Button:hover {
   background: #000;
   color: #fff;
   border: 1px solid #000;
 }
-
 
 /* About */
 /* h1 */
@@ -269,8 +256,8 @@
   transform: translateY(-50%);
   min-width: 200px;
   max-width: 450px;
-
 }
+
 /* svg */
 .SectionTitleImage--About {
   width: 100%;
@@ -314,6 +301,7 @@
   outline: solid 1px #C2C19B;
   /* margin: 0 calc((72 / 1280) * 100%) 0 0; */
   width: calc(200 / 995 * 100%);
+  border-radius: calc(50 / 200 * 100%);
   min-width: 100px;
   max-width: 200px;
 }
