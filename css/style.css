@@ -66,7 +66,7 @@
   background-color: #F6F5DE;
   /* padding: 160px 0; */
   padding: clamp(2.5rem, -0.787rem + 13.48vw, 10rem) 0;
-  border-radius: 50px 50px 0 0;
+  /* border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem) clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem) 0 0; */
 }
 
 .Practice .TextContainer--Vartical {
@@ -161,10 +161,15 @@
   box-sizing: border-box;
 }
 
+.ScrollList__Item .ImageRounded {
+  border-radius: calc((50 / ( (980 - 24 - 24) / 3)) * 100%);
+}
+
+
 /* li > a */
 .Practice .ScrollList__ItemLink {
   display: block;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   /* outline: solid 1px #000; */
   overflow: hidden;
   width: 100%;
@@ -239,15 +244,8 @@
   border: 1px solid #000;
 }
 
-.Button:hover .Button__Inner:hover {
-/* color: #fffef2; */
-}
 
 /* About */
-.About {
-  background-color: #F6F5DE;
-}
-
 /* h1 */
 .SectionTitle--Home--about {
   width: calc((450 / 1280) * 100%);
@@ -264,7 +262,7 @@
 
 .About__Item {
   background-color: #fffef2;
-  border-radius: 50px 50px 0 0;
+  /* border-radius: calc(50 / 200 * 100%); */
   /* padding: 0 calc((160 / 1280) * 100%); */
 }
 
@@ -306,8 +304,4 @@
 
 .About__InnerIconImage {
   width: 100%;
-}
-
-.About__Item .ImageRounded {
-  border-radius: calc(50 / 200 * 100%);
 }

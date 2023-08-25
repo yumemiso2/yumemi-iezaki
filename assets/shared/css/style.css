@@ -40,13 +40,18 @@
   padding: 72px 0 88px;
 }
 
-
-.ImageRounded {
-  border-radius: 50px;
-  /* outline: solid 1px #000; */
-  overflow: hidden;
+/* 背景の角丸と、背景色を制御するclass */
+.BackgroundRounded {
+  border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem) clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem) 0 0;
 }
 
+.BackgroundCover--A {
+  background-color: #fffef2;
+}
+
+.BackgroundCover--B {
+  background-color: #F6F5DE;
+}
 
 /* Header */
 
