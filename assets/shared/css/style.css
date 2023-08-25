@@ -28,7 +28,7 @@
 
 .SectionTitle {
   /* text-align: center; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
 
 }
 
@@ -40,13 +40,18 @@
   padding: 72px 0 88px;
 }
 
-
-.ImageRounded {
-  border-radius: 50px;
-  /* outline: solid 1px #000; */
-  overflow: hidden;
+/* 背景の角丸と、背景色を制御するclass */
+.BackgroundRounded {
+  border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem) clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem) 0 0;
 }
 
+.BackgroundCover--A {
+  background-color: #fffef2;
+}
+
+.BackgroundCover--B {
+  background-color: #F6F5DE;
+}
 
 /* Header */
 
@@ -219,7 +224,17 @@
   background-color: #FFF;
   margin: 0 auto;
   display: inline-block;
+  transition: 0.5s;
+  color: #000;
+  text-decoration:none;
 }
+
+.Button:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
 
 .Button--Small{
   padding: 8px 72px;
@@ -264,7 +279,7 @@
 
 /* Practice */
 .TextContainer--Vartical .SectionTitleImage {
-  height: 320px;
+  /* height: 320px; */
 }
 
 .TextContainer--Vartical .Introduce__Description {
@@ -316,7 +331,7 @@
 
 .TextContainer {
   /* margin: 0 auto; */
-  padding: 24px 0 0;
+  /* padding: 24px 0 0; */
 }
 
 .SectionTitle--Introduce {
@@ -325,26 +340,26 @@
 }
 
 
-.Introduce__Description {
+/* .Introduce__Description {
   padding: 0 0 32px 0;
-}
+} */
 
 
 
 /* home,practice */
-.ScrollList {
-  width: 100%;
+/* .ScrollList { */
+  /* width: 100%;
   height: 100%;
-  display: flex;
+  display: flex; */
   /* justify-content: space-between; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 
   /* margin: 0 auto; */
-}
+/* } */
 
-.ScrollList__Item {
+/* .ScrollList__Item {
   padding: 20px;
-}
+} */
 
 /* 先生に書いてもらったとこ */
 /* .ScrollList__ItemLink {
@@ -354,38 +369,19 @@
   overflow: hidden;
 } */
 
-.ScrollList__ItemLink {
+/* .ScrollList__ItemLink {
   display: block;
-}
+} */
 
-.ScrollList__ItemLinkInner {
+/* .ScrollList__ItemLinkInner {
   position: relative;
   z-index: 2;
-}
+} */
 
-.ScrollHover {
-  position: absolute;
-  top: 150px;
-  text-align: center;
 
-  background-color: rgba(255, 255, 255, 0.7);
-  width: 100%;
-  height: 150px;
-  font-size: 16px;
-  padding: 36px;
-}
 
-.ScrollHover__Name {
-  border-bottom: 2px dotted;
-  padding: 0 0 8px;
-}
-
-.ScrollHover__Description {
-  padding: 16px 0 0;
-}
-
-.ScrollList__ItemLinkImage {
+/* .ScrollList__ItemLinkImage {
   width: 300px;
   display: block;
   position: relative;
-}
+} */
