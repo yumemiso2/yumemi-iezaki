@@ -165,7 +165,7 @@
 .Practice .ScrollList__ItemLink {
   display: block;
   border-radius: 50px;
-  outline: solid 1px #000;
+  /* outline: solid 1px #000; */
   overflow: hidden;
   width: 100%;
   position: relative;
@@ -225,6 +225,7 @@
 
 .Practice .TextButton {
   margin: 64px 0 0 0;
+
 }
 
 /* Practice ここまで */
@@ -232,7 +233,15 @@
 
 
 
+.Button:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
 
+.Button:hover .Button__Inner:hover {
+/* color: #fffef2; */
+}
 
 /* About */
 .About {
