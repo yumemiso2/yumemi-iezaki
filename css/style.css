@@ -96,9 +96,9 @@
   width: 100%;
   position: absolute;
   /* .TextWrapperからみて bottom: 0;?*/
-   bottom: 0;
-   font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
-   /* align-items: flex-end; */
+  bottom: 0;
+  font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
+  /* align-items: flex-end; */
 }
 
 .Practice .SectionTitle {
@@ -106,7 +106,7 @@
   min-width: 32px;
   /* padding: 0 0 clamp(2.5rem, -0.787rem + 13.48vw, 10rem)  0; */
   order: 2;
-}  /* padding: 160px 0; */
+}
 
 
 .Practice .SectionTitleImage {
@@ -116,7 +116,6 @@
 .Practice .Introduce__Description {
   line-height: 2;
 
-  /* ここを、相対値で指定する方法がよくわからん */
   margin: calc((240 / ( (980 - 24 - 24) / 3)) * 100%) calc((40 / ( (980 - 24 - 24) / 3)) * 100%) 0 0;
   /*元々、 calc((160 / ( (980 - 24 - 24) / 3)) * 100%) 0 0 0 していた*/
 }
@@ -151,7 +150,6 @@
 .Practice .ScrollList__Item {
   width: calc(100% / 3 - 24px);
   margin: calc(24px / 2);
-  box-sizing: border-box;
   border-radius: calc((50 / ( (980 - 24 - 24) / 3)) * 100%);
 }
 
@@ -171,18 +169,17 @@
 
 /* hover したときに、説明文がふわっと浮き上がるアニメーション */
 .Practice .ScrollList__ItemLink:hover .ScrollList__ItemLinkInner {
-  animation-name: fadeUpAnime;
+  animation-name: SlideUpAnime;
   animation-duration: .4s;
   animation-fill-mode: forwards;
-
   animation-timing-function: ease-out;
-  }
+}
 
-  @keyframes fadeUpAnime{
+  @keyframes SlideUpAnime {
     from {
       /* transform: translateY(calc((150 / ((980 - 24 - 24) / 3)) * 100%)); */
       transform: translateY(100%);
-      }
+    }
 
     to {
       transform: translateY(0);
@@ -210,13 +207,13 @@
 
 .Practice .ScrollHover {
   text-align: center;
+    /* font-size: 14-16px; */
   font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   min-height: calc(150 / 300 * 100%);
-  font-size: 16px;
-  padding: calc(36 / ((980 - 24 - 24) / 3) * 100%);
 
+  padding: calc(36 / ((980 - 24 - 24) / 3) * 100%);
 }
 
 .ScrollHover__Name {
@@ -229,7 +226,7 @@
   padding: 16px 0 0;
   font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
 
-/* …に省略するところ */
+  /* …に省略するところ */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -237,16 +234,10 @@
 }
 
 .Practice .TextButton {
-  margin: 64px 0 0 0;
+  margin: 64px 0 0;
 }
 
 /* Practice ここまで */
-
-.Button:hover {
-  background: #000;
-  color: #fff;
-  border: 1px solid #000;
-}
 
 /* About */
 /* h1 */
