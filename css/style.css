@@ -60,7 +60,9 @@
 
 /* Practice */
 /* 紹介文とロゴを囲むdiv */
-
+.Practice {
+  font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
+}
 
 .Practice .Practice__ScrollList {
   /* font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem); */
@@ -110,6 +112,7 @@
 
 .Practice .SectionTitle {
   width: calc((88 / ((980 - 24 - 24) / 3)) * 100%);
+  min-width: 32px;
   /* padding: 0 0 clamp(2.5rem, -0.787rem + 13.48vw, 10rem)  0; */
   order: 2;
 }  /* padding: 160px 0; */
@@ -121,6 +124,7 @@
 
 .Practice .Introduce__Description {
   line-height: 2;
+
   /* ここを、相対値で指定する方法がよくわからん */
   margin: calc((240 / ( (980 - 24 - 24) / 3)) * 100%) calc((40 / ( (980 - 24 - 24) / 3)) * 100%) 0 0;
   /*元々、 calc((160 / ( (980 - 24 - 24) / 3)) * 100%) 0 0 0 していた*/
