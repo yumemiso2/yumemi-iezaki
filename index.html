@@ -104,24 +104,41 @@
     </div>
   </header>
 
+
+
+
   <!-- Home -->
   <main class="Main">
     <!-- Works -->
-    <div class="Works">
+    <div class="Works is-debug">
 
       <div class="WorksItem WorksItem--Home">
         <div class="WorksItem__Inner">
-          <div class="WorksItem__Img">
-            <div class="ImgList">
-              <a href="/works/works-item/index.html" class="ImgList__Link"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage ImageRounded" alt="ここに作品それぞれの説明をいれとく"></a>
-              <a href="/works/works-item/index.html" class="ImgList__Link"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage ImageRounded" alt="ここに作品それぞれの説明をいれとく"></a>
-              <a href="/works/works-item/index.html" class="ImgList__Link"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage ImageRounded" alt="ここに作品それぞれの説明をいれとく"></a>
-              <a href="/works/works-item/index.html" class="ImgList__Link"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage ImageRounded" alt="ここに作品それぞれの説明をいれとく"></a>
+          <div class="WorksItem__Img swiper mySwiper">
+            <div class="ImgList swiper-wrapper">
+              <a href="/works/works-item/index.html" class="ImgList__Link swiper-slide"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage ImageRounded" alt="ここに作品それぞれの説明をいれとく"></a>
+              <a href="/works/works-item/index.html" class="ImgList__Link swiper-slide"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage ImageRounded" alt="ここに作品それぞれの説明をいれとく"></a>
+              <a href="/works/works-item/index.html" class="ImgList__Link swiper-slide"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage ImageRounded" alt="ここに作品それぞれの説明をいれとく"></a>
+              <a href="/works/works-item/index.html" class="ImgList__Link swiper-slide"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage ImageRounded" alt="ここに作品それぞれの説明をいれとく"></a>
 
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+
+
+
             <!-- ここにスクロール用のドットが入る -->
-            <div class="ScrollDot"></div>
+            <!-- <div class="ScrollDot"></div> -->
           </div>
+
+
           <div class="TextContainer TextContainer--home">
             <div class="Introduce">
               <h2 class="SectionTitle SectionTitle--Home"><img src="/assets/images/logo-works2.svg" alt="つくったもの" class="SectionTitleImage"></h2>

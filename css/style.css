@@ -1,15 +1,48 @@
+/* Swiperスタイル */
 
-/* Home--Works */
-.Works {
-  margin: 0 0 160px;
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-.TextContainer--home {
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  font-size: 18px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
   width: calc(1000 / 1280 * 100%);
 }
 
-.TextContainer--home .Introduce {
-  width: 100%;
+.swiper-scrollbar {
+  display: none;
+}
+
+/* .swiper-slide:nth-child(2n) {
+  width: 40%;
+} */
+
+/* .swiper-slide:nth-child(3n) {
+  width: 20%;
+} */
+
+
+
+
+/* Home--Works */
+.Works {
+  padding: 0 0 300px;
 }
 
 .SectionTitle--Home {
@@ -23,7 +56,7 @@
 }
 
 .WorksItem--Home {
-  width: calc(1150 / 1280 * 100%);
+  width: 100%;
 }
 
 .WorksItem--Home .WorksItem__Inner {
@@ -40,12 +73,44 @@
 }
 
 .WorksItem--Home .ImgList__Link {
-  width: 100%;
+  /* width: 100%; */
+  width: calc(1000 / 1150 * 100%);
+  max-width: 1000px;
+    /* border-radius: 25 - 50px; */
+  border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
+  overflow: hidden;
 }
 
 .WorksItem--Home .ImgList__LinkImage {
   width: 100%;
+  /* max-width: 1000px; */
+}
+
+.Works .TextContainer {
+  /* width: calc(1000 / 1150 * 100%); */
+  width: calc(1000 / 1280 * 100%);
+  margin: 0 auto;
   max-width: 1000px;
+
+}
+
+
+.Works .Introduce {
+  width: 100%;
+  /* width: calc(500 / 1000 *100%); */
+  margin: 0 auto;
+}
+
+
+.Works .Introduce__Description {
+  text-align: center;
+}
+
+.Works .SectionTitle--Home {
+    width: calc((400 / 1000) * 100%);
+    margin: 0 auto;
+    min-width: 180px;
+    max-width: 400px;
 }
 
 
@@ -238,6 +303,7 @@
 }
 
 /* Practice ここまで */
+
 
 /* About */
 /* h1 */
