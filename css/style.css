@@ -8,7 +8,7 @@
 .swiper-slide {
   text-align: center;
   display: flex;
-  font-size: 18px;
+  /* font-size: 18px; */
   /* background: #fff; */
   justify-content: center;
   align-items: center;
@@ -53,8 +53,9 @@
 }
 
 
-.SectionTitle--Home .SectionTitleImage {
+.Works .SectionTitle--Home .SectionTitleImage {
   width: 100%;
+  margin: 0 0 40px 0;
 }
 
 .WorksItem--Home {
@@ -67,12 +68,13 @@
 }
 
 .WorksItem--Home .WorksItem__Img {
-  width: 100%;
+  /* width: 100%; */
+  position: relative;
 }
 
 .WorksItem--Home .ImgList {
   width: calc(1150 / 1280 * 100%);
-  margin: 0 0 40px 0;
+  /* margin: 0 0 72px 0; */
 }
 
 .WorksItem--Home .ImgList__Link {
@@ -87,21 +89,20 @@
 
 .WorksItem--Home .ImgList__LinkImage {
   width: 100%;
-  /* max-width: 1000px; */
 }
 
 .Works .TextContainer {
   /* width: calc(1000 / 1150 * 100%); */
   width: calc(1000 / 1280 * 100%);
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto ;
 }
 
 
 .Works .Introduce {
   width: 100%;
   /* width: calc(500 / 1000 *100%); */
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 
@@ -116,7 +117,25 @@
     max-width: 400px;
 }
 
+.Works .ScrollDot {
+  /* padding: 36px 0  0; */
+  position: relative;
+  height: 32px;
+}
 
+.Works .ScrollDot__Inner {
+  /* display: inline; */
+  /* padding: 40px 0; */
+  /* margin: 40px 0; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* bottom: 50%; */
+  /* left: 0; */
+  /* display: block; */
+  /* padding: 8px 0; */
+  margin: auto 0;
+
+}
 
 
 /* Practice */
