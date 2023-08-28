@@ -40,23 +40,52 @@
 } */
 
 
+:root {
+  --swiper-navigation-size: clamp(1rem, -0.972rem + 8.09vw, 5.5rem);
+  /* --swiper-navigation-top-offset: 50%; */
+}
 
+.SwiperButton {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+
+}
+
+.SwiperButton_Inner {
+  width: calc(1000 / 1280 * 100%);
+  /* height: 10px; */
+  /* background-color: red; */
+  margin: 0 auto;
+  position: relative;
+  max-width: 1000px;
+}
+
+
+.Works .SwiperButton--L {
+  left: auto;
+  right: 100%;
+}
+
+.Works .SwiperButton--R {
+  left: 100%;
+}
+
+.SwiperButtonArrow {
+  color: #989550;
+}
 
 /* Home--Works */
 .Works {
   padding: 0 0 300px;
 }
 
-.SectionTitle--Home {
+/* .SectionTitle--Home {
   width: calc(400 / 1000 * 100%);
   min-width: 150px;
-}
+} */
 
 
-.Works .SectionTitle--Home .SectionTitleImage {
-  width: 100%;
-  margin: 0 0 40px 0;
-}
 
 .WorksItem--Home {
   width: 100%;
@@ -85,11 +114,52 @@
   border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
   overflow: hidden;
   display: block;
+  position: relative;
 }
 
-.WorksItem--Home .ImgList__LinkImage {
-  width: 100%;
+.WorksItem--Home .ImgList__Link:hover{
+  background-color: #606060;
+  /* mix-blend-mode: exclusion; */
 }
+
+.WorksItem--Home .ImgList__Link:hover .ImgList__LinkImage {
+  width: 100%;
+  /* opacity: .4; */
+}
+
+.ImgLink__TextContainerHover {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  font-family: "HigureGothic-Black";
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #989550; */
+  justify-content: center;
+  background-color: rgba(96, 96, 96, .4);
+  transition: opacity .3s;
+}
+
+.WorksItem--Home .ImgList__Link:hover .ImgLink__TextContainerHover {
+
+  opacity: 1;
+
+}
+
+.TextContainerHover__Title {
+  font-size: clamp(0.875rem, 0.163rem + 2.92vw, 2.5rem);
+  margin:  0 0 calc(64 / 960 * 100%);
+}
+
+.TextContainerHover__Description {
+  font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
+}
+
+
 
 .Works .TextContainer {
   /* width: calc(1000 / 1150 * 100%); */
@@ -102,41 +172,52 @@
 .Works .Introduce {
   width: 100%;
   /* width: calc(500 / 1000 *100%); */
-  margin: 0 auto 40px;
+  margin: 0 auto calc(40 / 1000 * 100%);
 }
 
 
 .Works .Introduce__Description {
   text-align: center;
+  font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
 }
 
 .Works .SectionTitle--Home {
     width: calc((400 / 1000) * 100%);
-    margin: 0 auto;
+    margin: 0 auto calc(40 / 1000 * 100%);
     min-width: 180px;
     max-width: 400px;
 }
 
+
+.Works .SectionTitleImage {
+  width: 100%;
+
+}
+
 .Works .ScrollDot {
-  /* padding: 36px 0  0; */
+  padding: clamp(0.5rem, 0.062rem + 1.8vw, 1.5rem) 0;
+}
+
+:root {
+  --swiper-pagination-bottom: 0;
+}
+
+
+.ScrollDot {
+  /* background-color: var(--first-color); */
   position: relative;
-  height: 32px;
 }
 
-.Works .ScrollDot__Inner {
-  /* display: inline; */
-  /* padding: 40px 0; */
-  /* margin: 40px 0; */
-  /* position: absolute; */
-  /* top: 0; */
-  /* bottom: 50%; */
-  /* left: 0; */
-  /* display: block; */
-  /* padding: 8px 0; */
-  margin: auto 0;
-
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 4px;
 }
-
+/* ページネーションのサイズと色 */
+.swiper-pagination-bullet {
+  background-color: #989550;
+  width: 16px;
+  height: 16px;
+}
 
 /* Practice */
 /* 紹介文とロゴを囲むdiv */

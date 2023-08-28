@@ -26,6 +26,12 @@
   src: url(/fonts/higuregothic-medium.woff) format("woff");
 }
 
+@font-face {
+  font-family: "HigureGothic-Black";
+  src: url(/fonts/higuregothic-black.ttf) format("truetype");
+  src: url(/fonts/higuregothic-black.woff) format("woff");
+}
+
 .SectionTitle {
   /* text-align: center; */
   /* margin: 0 auto; */
