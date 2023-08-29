@@ -212,12 +212,13 @@
   display: flex;
   justify-content: end;
   background-color: #FFF;
+  padding: clamp(1.5rem, 0.843rem + 2.7vw, 3rem) clamp(2rem, 1.124rem + 3.6vw, 4rem);
+  font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
 }
 
-.Footer__InnerCopyright {
-  /* display: inline-block; */
-  padding: 48px 64px;
-}
+/* .Footer__InnerCopyright {
+
+} */
 
 
 
@@ -248,11 +249,9 @@
 
 .Button--Large {
   padding: 24px 200px;
-  /* width: 100%; */
 }
 
 .Section__FooterButtonInner {
-
   background-color: #fffef2;
   border-radius: 50px 50px 0 0;
   padding: 72px 90px;
