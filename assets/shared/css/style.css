@@ -32,19 +32,6 @@
   src: url(/fonts/higuregothic-black.woff) format("woff");
 }
 
-.SectionTitle {
-  /* text-align: center; */
-  /* margin: 0 auto; */
-
-}
-
-.SectionTitleImage {
-  width: 100%;
-}
-
-.SectionTitle--Other {
-  padding: 72px 0 88px;
-}
 
 /* 背景の角丸と、背景色を制御するclass */
 .BackgroundRounded {
@@ -61,14 +48,11 @@
 
 /* Header */
 
-/* .Header {
-} */
-
 .Header__Link {
-  font-size: 16px;
-  background-color:transparent;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
+  /* 相対値にする */
   padding: 48px 64px;
   align-items: center;
 }
@@ -97,6 +81,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   aspect-ratio: 156 / 56;
+
 }
 
 
@@ -123,7 +108,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-
 }
 
 
@@ -141,9 +125,6 @@
 }
 
 .Header__LinkTextInnerImage {
-  /* display: block; */
-  /* width: 100%; */
-  /* height: 100%; */
   position: absolute;
   top: 0;
   left: 0;
@@ -158,12 +139,10 @@
 
 /* いえざきゆめみ コンテナ */
 .Header__LinkText--Title .Header__LinkTextInner {
-  /* margin: 0; */
   aspect-ratio: 204 / 32;
 }
 
 .Nav {
-  /* width: 230px; */
   width: calc((134 + 102 + 24) / (1280 - 64 - 64) * 100%);
 }
 
@@ -173,7 +152,6 @@
 
 /* つくったもの */
 .Header__LinkText--Works {
-  /* width: 134px; */
   width: calc(134 / (134 + 102 + 24) * 100%);
 }
 
@@ -186,15 +164,11 @@
 
 /* れんしゅう*/
 .Header__LinkText--Practice {
-  /* width: 102px; */
   width: calc(102 / (134 + 102 + 24) * 100%);
 }
 
 /* れんしゅう　SVGコンテナ */
 .Header__LinkText--Practice  .Header__LinkTextInner {
-  /* margin: -24px 0 0 0; */
-  /* padding: 18px; */
-  /* width: 130px; */
   aspect-ratio: 102 / 32;
 }
 
@@ -216,15 +190,10 @@
   font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
 }
 
-/* .Footer__InnerCopyright {
-
-} */
-
-
 
 /* Button */
+
 .Button {
-  /* display: inline-block; */
   font-size: 1em;
   border: 1px solid;
   border-radius: 50px;
@@ -242,7 +211,6 @@
   border: 1px solid #000;
 }
 
-
 .Button--Small{
   padding: 8px 72px;
 }
@@ -256,9 +224,7 @@
   border-radius: 50px 50px 0 0;
   padding: 72px 90px;
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .Section__FooterButtonInner::before {
@@ -266,122 +232,8 @@
   flex: 1;
 }
 
-  /* 旧WorksItem__TextButton*/
 .TextButton {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-
-
-
-
-
-
-
-/* Practice */
-
-.TextContainer--Vartical .Introduce__Description {
-  writing-mode: vertical-rl;
-}
-
-
-
-/* home,works */
-
-/* .WorksItem {
-  position: relative;
-}
-
-.WorksItem::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
-
-/* .WorksItem__Inner {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 160px 0;
-  border-radius: 50px 50px 0 0;
-} */
-
-/* .ImgList {
-  display: flex;
-  justify-content: start;
-  width: 400%;
-} */
-
-/* .ImgList__Link {
-  margin: 0 50% 0 50%;
-  width: 25%;
-} */
-
-/* .ImgList__LinkImage {
-  transform: translate(-50%);
-  width: 100%;
-} */
-
-/* .TextContainer {
-  margin: 0 auto;
-  padding: 24px 0 0;
-} */
-
-/* .SectionTitle--Introduce {
-  padding: 0 0 8px;
-  font-size: 24px;
-} */
-
-
-/* .Introduce__Description {
-  padding: 0 0 32px 0;
-} */
-
-
-
-/* home,practice */
-/* .ScrollList { */
-  /* width: 100%;
-  height: 100%;
-  display: flex; */
-  /* justify-content: space-between; */
-  /* flex-wrap: wrap; */
-
-  /* margin: 0 auto; */
-/* } */
-
-/* .ScrollList__Item {
-  padding: 20px;
-} */
-
-/* 先生に書いてもらったとこ */
-/* .ScrollList__ItemLink {
-  display: block;
-  border-radius: 50px;
-  outline: solid 1px #000;
-  overflow: hidden;
-} */
-
-/* .ScrollList__ItemLink {
-  display: block;
-} */
-
-/* .ScrollList__ItemLinkInner {
-  position: relative;
-  z-index: 2;
-} */
-
-
-
-/* .ScrollList__ItemLinkImage {
-  width: 300px;
-  display: block;
-  position: relative;
-} */
