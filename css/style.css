@@ -398,8 +398,6 @@
 
 .About__Item {
   background-color: #fffef2;
-  /* border-radius: calc(50 / 200 * 100%); */
-  /* padding: 0 calc((160 / 1280) * 100%); */
 }
 
 .About__Inner {
