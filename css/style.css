@@ -200,7 +200,11 @@
   background-color: #F6F5DE;
   /* padding: 64 - 160px; (相対値で余白取ったほうが見栄えが良いから)*/
   padding: clamp(4rem, 0.494rem + 14.38vw, 12rem) 0;
+}
 
+
+.TextContainer--Vartical .Introduce__Description {
+  writing-mode: vertical-rl;
 }
 
 .Practice .TextContainer--Vartical {
