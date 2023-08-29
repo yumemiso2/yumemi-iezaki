@@ -1,3 +1,9 @@
+:root {
+  --swiper-navigation-size: clamp(1rem, -0.972rem + 8.09vw, 5.5rem);
+  /* --swiper-navigation-top-offset: 50%; */
+  --swiper-pagination-bottom: 0;
+}
+
 /* Swiperスタイル */
 .swiper-slide {
   text-align: center;
@@ -19,19 +25,6 @@
 }
 
 
-/* .swiper-slide:nth-child(2n) {
-  width: 40%;
-} */
-
-/* .swiper-slide:nth-child(3n) {
-  width: 20%;
-} */
-
-
-:root {
-  --swiper-navigation-size: clamp(1rem, -0.972rem + 8.09vw, 5.5rem);
-  /* --swiper-navigation-top-offset: 50%; */
-}
 
 .SwiperButton {
   width: 100%;
@@ -147,7 +140,7 @@
   /* width: calc(1000 / 1150 * 100%); */
   width: calc(1000 / 1280 * 100%);
   max-width: 1000px;
-  margin: 0 auto ;
+  margin: 0 auto;
 }
 
 
@@ -180,9 +173,6 @@
   padding: clamp(0.5rem, 0.062rem + 1.8vw, 1.5rem) 0;
 }
 
-:root {
-  --swiper-pagination-bottom: 0;
-}
 
 
 .ScrollDot {

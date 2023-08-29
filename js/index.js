@@ -2,6 +2,9 @@
 
 const swiper = new Swiper('.swiper', {
   loop: false,//スライドを繰り返しする
+  keyboard: {
+    enabled: true,
+  },
 
   navigation: {
     nextEl: '.swiper-button-next',//次へボタン
@@ -20,8 +23,6 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-// swiper のスライドをキーボードで操作する
-swiper.keyboard.enable();   // ←これを追加
 
 // let previndex = swiper.activeIndex;
 // // swiper の最後のスライドのインデックスを取得する
