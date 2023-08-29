@@ -26,6 +26,12 @@
   src: url(/fonts/higuregothic-medium.woff) format("woff");
 }
 
+@font-face {
+  font-family: "HigureGothic-Black";
+  src: url(/fonts/higuregothic-black.ttf) format("truetype");
+  src: url(/fonts/higuregothic-black.woff) format("woff");
+}
+
 .SectionTitle {
   /* text-align: center; */
   /* margin: 0 auto; */
@@ -261,8 +267,6 @@
   flex: 1;
 }
 
-
-
   /* 旧WorksItem__TextButton*/
 .TextButton {
   display: flex;
@@ -278,9 +282,6 @@
 
 
 /* Practice */
-.TextContainer--Vartical .SectionTitleImage {
-  /* height: 320px; */
-}
 
 .TextContainer--Vartical .Introduce__Description {
   writing-mode: vertical-rl;
@@ -305,39 +306,39 @@
 } */
 
 
-.WorksItem__Inner {
+/* .WorksItem__Inner {
   display: flex;
   flex-direction: column;
-  /* position: relative; */
+  position: relative;
   padding: 160px 0;
   border-radius: 50px 50px 0 0;
-}
+} */
 
-.ImgList {
+/* .ImgList {
   display: flex;
   justify-content: start;
   width: 400%;
-}
+} */
 
-.ImgList__Link {
-  /* margin: 0 50% 0 50%; */
+/* .ImgList__Link {
+  margin: 0 50% 0 50%;
   width: 25%;
-}
+} */
 
-.ImgList__LinkImage {
-  /* transform: translate(-50%); */
+/* .ImgList__LinkImage {
+  transform: translate(-50%);
   width: 100%;
-}
+} */
 
-.TextContainer {
-  /* margin: 0 auto; */
-  /* padding: 24px 0 0; */
-}
+/* .TextContainer {
+  margin: 0 auto;
+  padding: 24px 0 0;
+} */
 
-.SectionTitle--Introduce {
+/* .SectionTitle--Introduce {
   padding: 0 0 8px;
   font-size: 24px;
-}
+} */
 
 
 /* .Introduce__Description {
