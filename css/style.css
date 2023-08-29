@@ -1,18 +1,9 @@
 /* Swiperスタイル */
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
 .swiper-slide {
   text-align: center;
   display: flex;
-  /* font-size: 18px; */
-  /* background: #fff; */
   justify-content: center;
   align-items: center;
-  display: inline;
 
   width: calc(1000 / 1150 * 100%);
   max-width: 1000px;
@@ -20,16 +11,13 @@
   padding: 0 clamp(0.625rem, 0.351rem + 1.12vw, 1.25rem);
 }
 
-.swiper-slide img {
+.swiper-slide .ImgList__LinkImage {
   display: block;
   width: 100%;
   /* height: 100%; */
   object-fit: cover;
 }
 
-.swiper-scrollbar {
-  display: none;
-}
 
 /* .swiper-slide:nth-child(2n) {
   width: 40%;
@@ -77,15 +65,9 @@
 
 /* Home--Works */
 .Works {
-  padding: 0 0 300px;
+  /* 相対値にすると、れんしゅうの縦幅がつくったものに侵食するので固定値 */
+  padding: 0 0 308px;
 }
-
-/* .SectionTitle--Home {
-  width: calc(400 / 1000 * 100%);
-  min-width: 150px;
-} */
-
-
 
 .WorksItem--Home {
   width: 100%;
@@ -222,12 +204,13 @@
 /* Practice */
 /* 紹介文とロゴを囲むdiv */
 
+
 .Practice .Practice__ScrollList {
   /* font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem); */
   background-color: #F6F5DE;
-  /* padding: 160px 0; */
-  padding: clamp(2.5rem, -0.787rem + 13.48vw, 10rem) 0;
-  /* border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem) clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem) 0 0; */
+  /* padding: 64 - 160px; (相対値で余白取ったほうが見栄えが良いから)*/
+  padding: clamp(4rem, 0.494rem + 14.38vw, 12rem) 0;
+
 }
 
 .Practice .TextContainer--Vartical {
