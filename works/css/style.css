@@ -53,7 +53,7 @@
 .Works .ImgList {
   /* スライドを包括 */
   /* スライドコンテナのサイズ （swiper-wrapper）*/
-  /* width: calc(1067 / 1280 * 100%); */
+  width: calc(1067 / 1280 * 100%);
 }
 
 .Works .ImgList__Inner {
@@ -96,11 +96,10 @@
   width: 100%;
   position: absolute;
   top: 50%;
-
 }
 
 .Works .SwiperButton_Inner {
-  width: calc(854 / 1067 * 100%);
+  width: calc(854 / 1280 * 100%);
   margin: 0 auto;
   position: relative;
   max-width: 854px;
@@ -142,16 +141,18 @@
 
 .Works .TextContainer {
   /* タイトル・紹介文・ボタンを包括 */
-  width: calc(854 / 1067 * 100%);
-
+  width: calc(854 / 1280 * 100%);
   max-width: 854px;
   /* padding: 10-20px */
-  /* margin: 0 clamp(0.625rem, 0.351rem + 1.12vw, 1.25rem); */
+
   margin: 0 auto;
 }
 
+
+
 .Works .Introduce {
   /* タイトル・紹介文を包括 */
+  /* margin: 0 clamp(0.625rem, 0.351rem + 1.12vw, 1.25rem); */
   width: 100%;
 }
 
