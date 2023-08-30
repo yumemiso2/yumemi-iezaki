@@ -5,21 +5,8 @@
   --swiper-pagination-bottom: 0;
 }
 
-/* Swiperスタイル */
 
-
-
-
-
-
-
-
-/* Home--Works */
-
-
-/* .Works {
-
-} */
+/* .Works {} */
 
 .Works .SectionTitle {
   width: calc((400 / 1280) * 100%);
@@ -199,12 +186,6 @@
 
 .Section__Footer--Works .Section__FooterButton {
   background-color: #f6f5de;
-}
-
-
-
-.Works .ImgList__Inner {
-  /* width: 100%; */
 }
 
 

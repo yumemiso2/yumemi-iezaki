@@ -215,13 +215,14 @@
   padding: 8px 72px;
 }
 
+/* 390px 以下は、Button--Smallを適用する */
 .Button--Large {
-  padding: 24px 200px;
+  /* 16 - 24px , 56 - 200px */
+  padding: clamp(1rem, 0.781rem + 0.9vw, 1.5rem) clamp(3.5rem, -0.444rem + 16.18vw, 12.5rem);
 }
 
 .Section__FooterButtonInner {
   background-color: #fffef2;
-  border-radius: 50px 50px 0 0;
   padding: 72px 90px;
   display: flex;
   align-items: center;
@@ -229,7 +230,7 @@
 
 .Section__FooterButtonInner::before {
   content: "";
-  flex: 1;
+  /* flex: 1; */
 }
 
 .TextButton {
