@@ -164,7 +164,7 @@
 
 
 
-.WorksItem--LB {
+/* .WorksItem--LB {
   background-color: #fffef2;
 }
 
@@ -178,13 +178,34 @@
 
 .WorksItem--PY .WorksItem__Inner {
   background-color: #fffef2;
+} */
+
+
+/* 奇数 odd*/
+.WorksItem:nth-child(odd) {
+  background-color: #fffef2;
 }
 
+.WorksItem:nth-child(odd) .WorksItem__Inner {
+  background-color: #f6f5de;
+ }
+
+
+/* 偶数　even　0 ~ */
+.WorksItem:nth-child(even) {
+  background-color: #f6f5de;
+}
+
+.WorksItem:nth-child(even) .WorksItem__Inner {
+  background-color: #fffef2;
+ }
 
 
 
 
-
+ .Works .Section__Footer .WorksItem__Inner {
+  padding: 72px 90px;
+ }
 
 
 

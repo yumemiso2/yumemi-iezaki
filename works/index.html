@@ -89,6 +89,7 @@
   <!-- コンテンツここから -->
   <main class="Works _is-debug">
     <h1 class="SectionTitle"><img src="/assets/images/logo-works.svg" class="SectionTitleImage" alt="つくったもの" ></h1>
+    <div class="WorksItem__Wrapper">
       <div class="WorksItem WorksItem--LB">
         <div class="WorksItem__Inner BackgroundRounded">
           <div class="WorksItem__Img swiper mySwiper">
@@ -221,9 +222,52 @@
           </div>
         </div>
       </div>
-
-      <div class="Section__Footer">
-        <div class="Section__FooterInner Section__Footer--Works BackgroundRounded">
+      <div class="WorksItem WorksItem--LB">
+        <div class="WorksItem__Inner BackgroundRounded">
+          <div class="WorksItem__Img swiper mySwiper">
+            <div class="ImgList swiper-wrapper">
+              <div class="ImgList__Inner swiper-slide">
+                <a href="/works/works-item/index.html" class="ImgList__Link"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage" alt="ここに作品それぞれの説明をいれとく">
+                </a>
+              </div>
+              <div class="swiper-slide ImgList__Inner">
+                <a href="/works/works-item/index.html" class="ImgList__Link"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage" alt="ここに作品それぞれの説明をいれとく">
+                </a>
+              </div>
+              <div class="swiper-slide ImgList__Inner">
+                <a href="/works/works-item/index.html" class="ImgList__Link"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage" alt="ここに作品それぞれの説明をいれとく">
+                </a>
+              </div>
+              <div class="swiper-slide ImgList__Inner">
+                <a href="/works/works-item/index.html" class="ImgList__Link"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage" alt="ここに作品それぞれの説明をいれとく">
+                </a>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="SwiperButton">
+              <div class="SwiperButton_Inner">
+                <div class="swiper-button-prev SwiperButton--L SwiperButtonArrow"></div>
+                <div class="swiper-button-next SwiperButton--R SwiperButtonArrow"></div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="ScrollDot swiper-pagination"></div>
+          <div class="TextContainer">
+            <div class="Introduce">
+              <h2 class="SectionTitleSub">Moogle</h2>
+              <p class="Introduce__Description">長期間単位で制作した作品・制作過程をを掲載しています</p>
+            </div>
+            <div class="TextButton TextButton--Small">
+              <a class="Button Button--Small">
+                <span href="#" class="Button__Inner">もっとみる</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="WorksItem Section__Footer">
+        <div class="Section__FooterInner Section__Footer--Works BackgroundRounded WorksItem__Inner">
           <div class="Section__FooterButton">
             <div class="Section__FooterButtonInner">
               <a class="Button Button--Large Section__FooterButton--Large ">
@@ -234,9 +278,10 @@
           </div>
         </div>
       </div>
+    </div>
   </main>
 
-  <foter class="Footer">
+  <footer class="Footer">
     <div class="Footer__Inner">
       <small class="Footer__InnerCopyright">&copy;2023&nbsp;Yumemi&nbsp;Iezaki</small>
     </div>
