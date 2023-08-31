@@ -213,6 +213,10 @@
   border: 1px solid #000;
 }
 
+.TextButton--Small {
+  display: flex;
+}
+
 .Button--Small{
   padding: 8px 72px;
 }
@@ -236,20 +240,15 @@
 .Section__FooterButton {
   /* footerの背景色 */
   background-color: #fffef2;
-}
-
-.Section__FooterButton {
   padding: 72px 90px;
 }
+
 
 .Section__FooterButtonInner {
   display: flex;
   position: relative;
 }
 
-.TextButton--Small {
-  display: flex;
-}
 
 /* .Section__FooterButton--Large {
 
