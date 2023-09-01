@@ -1,4 +1,5 @@
 :root {
+  /* 16px - 88px */
   --swiper-navigation-size: clamp(1rem, -0.972rem + 8.09vw, 5.5rem);
   --swiper-pagination-bottom: 0;
 }
