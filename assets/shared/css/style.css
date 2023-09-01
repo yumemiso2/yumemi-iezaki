@@ -158,7 +158,6 @@
 /* つくったもの */
 .Header__LinkText--Works {
   width: calc(134 / (134 + 102 + 24) * 100%);
-  min-width: 67px;
 }
 
 /* つくったもの　SVGコンテナ */
@@ -171,7 +170,6 @@
 /* れんしゅう*/
 .Header__LinkText--Practice {
   width: calc(102 / (134 + 102 + 24) * 100%);
-  min-width: 51px;
 }
 
 /* れんしゅう　SVGコンテナ */
