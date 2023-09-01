@@ -53,7 +53,8 @@
   display: flex;
   justify-content: space-between;
   /* 相対値にする */
-  padding: 48px 64px;
+  /* 24 - 48px , 24px - 64px*/
+  padding: clamp(1.5rem, 0.843rem + 2.7vw, 3rem) clamp(1.5rem, 0.404rem + 4.49vw, 4rem);
   align-items: center;
 }
 
@@ -135,6 +136,8 @@
 .Header__LinkText--Title {
   /* デザイン上の SVG の幅 / .Header__Link の幅 * 単位（%） */
   width: calc(204 / (1280 - 64 - 64) * 100%);
+  max-width: 204px;
+  min-width: 102px;
 }
 
 /* いえざきゆめみ コンテナ */
@@ -144,6 +147,8 @@
 
 .Nav {
   width: calc((134 + 102 + 24) / (1280 - 64 - 64) * 100%);
+  max-width: 260px;
+  min-width: 130px;
 }
 
 .Nav__Inner {
