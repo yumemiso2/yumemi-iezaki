@@ -1,23 +1,170 @@
-/*
-.WorksContainer {
-  position: relative;
-} */
 
-.TopButton--Works{
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+:root {
+  /* 16px - 72px */
+  --swiper-navigation-size: clamp(1rem, -0.534rem + 6.29vw, 4.5rem);
+  --swiper-pagination-bottom: 0;
 }
 
 
-.WorksItem__Img {
+/* .Works {} */
+
+.Works .SectionTitle {
+  width: calc((400 / 1280) * 100%);
+  margin: calc(72 / 1280 * 100%) auto calc(180 / 1280 *100%);
+  min-width: 180px;
+  max-width: 400px;
+}
+
+.Works .SectionTitleImage {
   width: 100%;
-  overflow: scroll;
+}
+
+.Works .WorksItem {
+  /* コンポーネントすべてを包括、ここにclassつけて色変えてる */
+  /* width: 100%; */
+}
+
+.Works .WorksItem__Inner {
+  /* .WorksItemと包んでるものは同じ、 BackgroundRounded つけてる */
+  /* 40px-160px */
+  /* width: 100%; */
+  padding: clamp(2.5rem, -0.787rem + 13.48vw, 10rem) 0;
+}
+
+.Works .WorksItem__Img {
+  /*コンポーネントのコンテンツ〜矢印ボタンまで、 swiper mySwiperのとこ */
+  width: 100%;
 }
 
 
-.WorksItem--LB {
+.Works .ImgList {
+  /* スライドを包括 */
+  /* スライドコンテナのサイズ （swiper-wrapper）*/
+  width: calc(1067 / 1280 * 100%);
+}
+
+.Works .ImgList__Inner {
+  /* リンクと img タグを包括、swiper-slide のこと */
+  /* width: 100%; */
+  /* width は swiper-slide で指定済み*/
+}
+
+.Works .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/* スライドの大きさ */
+  width: calc(854 / 1067 * 100%);
+  max-width: 854px;
+  /* padding: 10-20px */
+  padding: 0 clamp(0.625rem, 0.351rem + 1.12vw, 1.25rem);
+}
+
+
+.Works .ImgList__Link {
+ /* swiper-slide の中の a タグ */
+  /* border-radius: 25 - 50px; */
+  border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.Works .ImgList__LinkImage {
+ /* aタグの中の画像 */
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ここに矢印ボタンが入る（SwiperButton） */
+.Works .SwiperButton {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+
+.Works .SwiperButton_Inner {
+  width: calc(854 / 1280 * 100%);
+  margin: 0 auto;
+  position: relative;
+  max-width: 854px;
+}
+
+
+.Works .SwiperButton--L {
+  left: auto;
+  right: 100%;
+}
+
+.Works .SwiperButton--R {
+  left: 100%;
+}
+
+.Works .SwiperButtonArrow {
+  color: #989550;
+}
+
+
+.Works .ScrollDot {
+  /* swiper-paginationのこと */
+  padding: clamp(1rem, 0.781rem + 0.9vw, 1.5rem);
+  position: relative;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 4px;
+}
+
+/* ページネーションのサイズと色 */
+.swiper-pagination-bullet {
+  background-color: #989550;
+  width: clamp(0.5rem, 0.281rem + 0.9vw, 1rem);
+  height: clamp(0.5rem, 0.281rem + 0.9vw, 1rem);
+}
+
+
+.Works .TextContainer {
+  /* タイトル・紹介文・ボタンを包括 */
+  width: calc(854 / 1280 * 100%);
+  max-width: 854px;
+  /* padding: 10-20px */
+
+  margin: 0 auto;
+}
+
+
+.Works .Introduce {
+  /* タイトル・紹介文を包括 */
+  /* margin: 0 clamp(0.625rem, 0.351rem + 1.12vw, 1.25rem); */
+  width: 100%;
+}
+
+.Works .SectionTitleSub {
+  margin: calc(24 / 854 * 100%) auto;
+  text-align: center;
+  font-size: 24px;
+  font-family: "HigureGothic-Medium";
+  margin: 0 auto calc(8 / 854 * 100%);
+}
+
+.Works .Introduce__Description {
+  text-align: center;
+  margin: 0 auto calc(32 / 854 * 100%);
+  font-family: "HigureGothic-Regular";
+  /* 14px - 16px */
+  font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
+}
+
+/* ここにボタンが入る（TextButton） */
+
+
+
+
+
+/* .WorksItem--LB {
   background-color: #fffef2;
 }
 
@@ -31,19 +178,77 @@
 
 .WorksItem--PY .WorksItem__Inner {
   background-color: #fffef2;
-}
-
-
-
-
-.Section__Footer--Works .Section__FooterButton {
-  background-color: #f6f5de;
-}
-
-/* .WorksItem--LB .WorksItem__Inner {
-  background-color: #f6f5de;
 } */
 
-/* .WorksItem--PY .WorksItem__Inner {
+
+/* 奇数 odd*/
+.WorksItem:nth-child(odd) {
   background-color: #fffef2;
+}
+
+.WorksItem:nth-child(odd) .WorksItem__Inner {
+  background-color: #f6f5de;
+ }
+
+
+/* 偶数　even　0 ~ */
+.WorksItem:nth-child(even) {
+  background-color: #f6f5de;
+}
+
+.WorksItem:nth-child(even) .WorksItem__Inner {
+  background-color: #fffef2;
+ }
+
+
+
+
+ .Works .Section__Footer .WorksItem__Inner {
+  padding: 72px 90px;
+ }
+
+
+
+
+
+
+
+
+
+
+/* .WorksItem--Home .ImgList__Link:hover{
+  background-color: #606060;
+} */
+
+/* .WorksItem--Home .ImgList__Link:hover .ImgList__LinkImage {
+  width: 100%;
+} */
+
+/* .ImgLink__TextContainerHover {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  font-family: "HigureGothic-Black";
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(96, 96, 96, .4);
+  transition: opacity .3s;
+} */
+
+/* .WorksItem--Home .ImgList__Link:hover .ImgLink__TextContainerHover {
+  opacity: 1;
+} */
+
+/* .TextContainerHover__Title {
+  font-size: clamp(0.875rem, 0.163rem + 2.92vw, 2.5rem);
+  margin:  0 0 calc(64 / 960 * 100%);
+}
+
+.TextContainerHover__Description {
+  font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
 } */
