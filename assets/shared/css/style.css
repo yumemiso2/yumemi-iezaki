@@ -158,7 +158,6 @@
 /* つくったもの */
 .Header__LinkText--Works {
   width: calc(134 / (134 + 102 + 24) * 100%);
-  max-width: 134px;
   min-width: 67px;
 }
 
@@ -172,7 +171,6 @@
 /* れんしゅう*/
 .Header__LinkText--Practice {
   width: calc(102 / (134 + 102 + 24) * 100%);
-  max-width: 102px;
   min-width: 51px;
 }
 
