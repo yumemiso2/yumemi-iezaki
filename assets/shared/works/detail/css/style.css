@@ -2,33 +2,37 @@
 
 
 .WorkIntroduce__Inner {
-
+  font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
 
 }
 
 .WorkIntroduce__Top {
-  /* display: flex; */
 
 }
 
 .WorkIntroduce__TopInner {
   border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
   overflow: hidden;
-  padding: 72px;
-  width: 1150px;
+  /* 72px　- 40px , 24px - 78px*/
+  padding: clamp(2.5rem, 1.624rem + 3.6vw, 4.5rem) clamp(1.5rem, 0.021rem + 6.07vw, 4.875rem);
+  width: calc(1150 / 1280 * 100%);
+  max-width: 1150px;
   background-color: #F6F5DE;
   line-height: calc(32 / 16);
   margin: 0 auto;
 }
 
 .WorkIntroduce__TopText {
+  /* 同じなので相対値なし */
   margin: 0 0 32px 0;
 }
 
 .WorkIntroduce__TopSectionTitle {
   font-family: "HigureGothic-Black";
-  font-size: 48px;
-  margin: 0 0 24px 0;
+  /* 32px - 48px */
+  font-size: clamp(2rem, 1.562rem + 1.8vw, 3rem);
+  /* 8px - 24px */
+  margin: 0 0 clamp(0.5rem, 0.062rem + 1.8vw, 1.5rem) 0;
 }
 
 .WorkIntroduce__TopDate {
@@ -51,13 +55,16 @@
 
 .WorkIntroduce__TopWorkIntroduceDescription {
   width: 378px;
-  margin: 0 64px 0 0;
+  /* 24px - 64px */
+  margin: 0 clamp(1.5rem, 0.404rem + 4.49vw, 4rem) 0 0;
 }
 
 .WorkIntroduce__TopWorkIntroduceMv {
   width: 552px;
+  /* 角丸はSP版も25px */
   border-radius: 25px;
   overflow: hidden;
+  height: 100%;
 }
 
 .WorkIntroduce__TopWorkIntroduceMvImage {
@@ -74,9 +81,31 @@
 }
 
 .WorkIntroduce__ButtonInnerText {
+  /* 矢印のmarginは、SPも16px */
   margin: 0 16px 0 0;
 }
 
 .WorkIntroduce__ButtonArrow {
   display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.WorkIntroduce__ComponentImgInner {
+  width: 552px;
+}
+
+.WorkIntroduce__ComponentImgInnerImage {
+  width: 100%;
 }
