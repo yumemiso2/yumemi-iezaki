@@ -1,4 +1,82 @@
 /* これは、Worksの下層ページの、共通するスタイルを当てるためのCSSファイルです */
-.WorkIntroduce__TopText {
 
+
+.WorkIntroduce__Inner {
+
+
+}
+
+.WorkIntroduce__Top {
+  /* display: flex; */
+
+}
+
+.WorkIntroduce__TopInner {
+  border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
+  overflow: hidden;
+  padding: 72px;
+  width: 1150px;
+  background-color: #F6F5DE;
+  line-height: calc(32 / 16);
+  margin: 0 auto;
+}
+
+.WorkIntroduce__TopText {
+  margin: 0 0 32px 0;
+}
+
+.WorkIntroduce__TopSectionTitle {
+  font-family: "HigureGothic-Black";
+  font-size: 48px;
+  margin: 0 0 24px 0;
+}
+
+.WorkIntroduce__TopDate {
+
+}
+
+.WorkIntroduce__TopPart {
+  border-bottom: dotted;
+  margin: 0 0 8px 0;
+}
+
+
+.WorkIntroduce__TopWorkIntroduceContainer {
+
+}
+
+.WorkIntroduce__TopWorkIntroduce {
+  display: flex;
+}
+
+.WorkIntroduce__TopWorkIntroduceDescription {
+  width: 378px;
+  margin: 0 64px 0 0;
+}
+
+.WorkIntroduce__TopWorkIntroduceMv {
+  width: 552px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.WorkIntroduce__TopWorkIntroduceMvImage {
+  width: 100%;
+}
+
+.WorkIntroduce__LinkButton {
+  display: inline-block;
+}
+
+.WorkIntroduce__LinkButtonInner {
+  display: flex;
+  border-bottom: solid 1px;
+}
+
+.WorkIntroduce__ButtonInnerText {
+  margin: 0 16px 0 0;
+}
+
+.WorkIntroduce__ButtonArrow {
+  display: block;
 }
