@@ -93,7 +93,7 @@
 }
 
 .WorkIntroduce__LinkButton {
-  display: inline-block;
+  /* display: inline-block; */
   width: calc(378 / 994 * 100%);
   /* 24px - 64px */
   margin: 0 clamp(1.5rem, 0.404rem + 4.49vw, 4rem) 0 0;
