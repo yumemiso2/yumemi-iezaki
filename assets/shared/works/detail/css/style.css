@@ -47,13 +47,13 @@
 .WorkIntroduce__TopPart {
   position: relative;
   /* 8px SP: 16px （メディアクエリ）*/
-  padding: 0 0 8px 0;
+  padding: 0 0 8px;
 }
 
 
 .WorkIntroduce__TopWorkIntroduceContainer::before {
   content: "";
-
+  height: 1px;
   background-size: 10px 1px;
   background-image: linear-gradient(to right, #000, 5px, transparent 5px, transparent 10px);
   background-repeat: repeat-x;
@@ -118,8 +118,9 @@
   transform-origin: left top;
   transition: transform .4s;
 }
+
 .WorkIntroduce__LinkButtonInner:hover::after {
-  transform: scale(1, 1);
+  transform: scale(1);
 }
 
 .WorkIntroduce__ButtonInnerText {
@@ -210,7 +211,6 @@
 
 .WorkIntroduce__ComponentVideo {
   aspect-ratio: 16 / 9;
-
   border-radius: 25px;
   overflow: hidden;
 }
