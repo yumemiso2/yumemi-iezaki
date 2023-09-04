@@ -8,9 +8,9 @@
 }
 
 .WorkIntroduce__Top {
-/* 72px - 160px */
-margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem);
-/* width: calc(1150 / 1280 * 100%); */
+  /* 72px - 160px */
+  margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem);
+
 }
 
 .WorkIntroduce__TopInner {
@@ -37,7 +37,7 @@ margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem);
   /* 32px - 48px */
   font-size: clamp(2rem, 1.562rem + 1.8vw, 3rem);
   /* 8px - 24px */
-  margin: 0 0 clamp(0.5rem, 0.062rem + 1.8vw, 1.5rem) 0;
+  margin: 0 0 clamp(0.5rem, 0.062rem + 1.8vw, 1.5rem);
 }
 
 .WorkIntroduce__TopDate {
@@ -103,7 +103,6 @@ margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem);
 
 .WorkIntroduce__LinkButtonInner {
   display: flex;
-  /* border-bottom: solid 1px; */
   position: relative;
 }
 
@@ -118,7 +117,6 @@ margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem);
   transform: scale(0, 1);
   transform-origin: left top;
   transition: transform .4s;
-
 }
 .WorkIntroduce__LinkButtonInner:hover::after {
   transform: scale(1, 1);
@@ -133,7 +131,6 @@ margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem);
   display: block;
   width: 16px;
 }
-
 
 
 
@@ -191,13 +188,9 @@ margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem);
 
 .WorkIntroduce__ComponentImg {
   width: 100%;
-  /* 40px - 64px */
-  /* margin: 0 0 clamp(2.5rem, 1.843rem + 2.7vw, 4rem) 0; */
 }
 
 .WorkIntroduce__ComponentImgInner {
-
-  /* width: calc(720 / 1150 * 100%); */
   margin: 0 auto;
   border-radius: 25px;
   overflow: hidden;
@@ -208,10 +201,6 @@ margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem);
 }
 
 .WorkIntroduce__ComponentText {
-  /* width: calc(720 / 1150 * 100%); */
-  /* 40px - 64px */
-  /* margin: 0 auto clamp(2.5rem, 1.843rem + 2.7vw, 4rem); */
-
 
 }
 
@@ -220,9 +209,6 @@ margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem);
 }
 
 .WorkIntroduce__ComponentVideo {
-  /* width: calc(720 / 1150 * 100%); */
-  /* 40px - 64px */
-  /* margin: 0 auto clamp(2.5rem, 1.843rem + 2.7vw, 4rem); */
   aspect-ratio: 16 / 9;
 
   border-radius: 25px;
@@ -247,5 +233,4 @@ margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem);
   margin: 0 0 0 -40px;
     /* 90 * 2 は両サイドの padding の値 */
   width: calc(68 / (1150 - (90 * 2)) * 100%);
-
 }
