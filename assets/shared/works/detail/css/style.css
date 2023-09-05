@@ -77,6 +77,11 @@
   padding: 0 0 8px;
 }
 
+@media (width < 768px) {
+  .WorkIntroduce__TopPart {
+    padding: 0 0 calc(16 / 342 * 100%);
+  }
+}
 
 .WorkIntroduce__TopWorkIntroduceContainer::before {
   content: "";
@@ -195,8 +200,8 @@
 .WorkIntroduce__ComponentWrapper {
   /* width: calc(1150 / 1280 * 100%); */
   margin: 0 auto ;
-  /* 48px　- 160px */
-  padding: clamp(3rem, -0.067rem + 12.58vw, 10rem) 0;
+  /* 40px　- 160px */
+  padding: clamp(2.5rem, -0.787rem + 13.48vw, 10rem) 0;
   width: calc(1150 / 1280 * 100%);
   max-width: 1150px;
   background-color: #F6F5DE;
@@ -204,12 +209,23 @@
   overflow: hidden;
 }
 
-
+@media (width < 768px) {
+  .WorkIntroduce__ComponentWrapper {
+    width: 100%;
+    padding-bottom: calc(72 / 390 * 100%);
+  }
+}
 
 .WorkIntroduce__ComponentWrapperInner {
   margin: 0 auto;
   width: calc(720 / 994 * 100%);
   max-width: 720px;
+}
+
+@media (width < 768px) {
+  .WorkIntroduce__ComponentWrapperInner {
+    width: calc(342 / 390 * 100%);
+  }
 }
 
 .WorkIntroduce__ComponentItem {
@@ -229,19 +245,24 @@
 
 
 .WorkIntroduce__ComponentItem--Other.WorkIntroduce__ComponentTitle {
-  /* 8px - 24px */
-  padding-bottom: clamp(0.5rem, 0.062rem + 1.8vw, 1.5rem) ;
+  /* 16px - 24px */
+  padding-bottom: clamp(1rem, 0.781rem + 0.9vw, 1.5rem) ;
 }
 
 .WorkIntroduce__ComponentTitle {
   margin-bottom: calc(clamp(2.5rem, 1.843rem + 2.7vw, 4rem) *-1 );
 }
 
-
 .WorkIntroduce__ComponentTitleInner {
   font-family: "HigureGothic-Black";
   /* 24px - 32px */
   font-size: clamp(1.5rem, 1.281rem + 0.9vw, 2rem);
+}
+
+@media (width < 768px) {
+  .WorkIntroduce__ComponentTitleInner {
+    line-height: 1;
+  }
 }
 
 .WorkIntroduce__ComponentImg {
@@ -286,8 +307,25 @@
 }
 
 
+
 .WorkIntroduce .TopButton--Works {
-  margin: 0 0 0 -40px;
+  /* margin: 0 0 0 -40px; */
     /* 90 * 2 は両サイドの padding の値 */
   width: calc(68 / (1150 - (90 * 2)) * 100%);
+}
+
+.WorkIntroduce .Button--Small {
+  display: none;
+}
+
+@media (width < 768px) {
+  .WorkIntroduce .Button--Small {
+    display: block;
+  }
+}
+
+@media (width < 768px) {
+  .WorkIntroduce .Button--Large {
+    display: none;
+  }
 }
