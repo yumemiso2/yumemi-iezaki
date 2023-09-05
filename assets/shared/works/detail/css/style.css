@@ -323,18 +323,18 @@
   width: calc(68 / (1150 - (90 * 2)) * 100%);
 }
 
-.WorkIntroduce .Button--Small {
+/* .WorkIntroduce .Button--Small {
   display: none;
-}
+} */
 
-@media (width < 768px) {
+/* @media (width < 768px) {
   .WorkIntroduce .Button--Small {
     display: block;
   }
-}
+} */
 
-@media (width < 768px) {
+/* @media (width < 768px) {
   .WorkIntroduce .Button--Large {
     display: none;
   }
-}
+} */

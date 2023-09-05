@@ -233,6 +233,12 @@
   padding: clamp(1rem, 0.781rem + 0.9vw, 1.5rem) clamp(3.5rem, -0.444rem + 16.18vw, 12.5rem);
 }
 
+@media (width < 768px) {
+  .Button--Large{
+    padding: 8px 72px;
+  }
+}
+
 /*
 .Section__FooterInner {
   overflow: hidden;
