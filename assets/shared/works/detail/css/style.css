@@ -1,23 +1,54 @@
 /* これは、Worksの下層ページの、共通するスタイルを当てるためのCSSファイルです */
 
+/* 画面サイズ 600px 未満
+@media (width < 600px) {
+  スタイルルール
+}
+
+画面サイズ 600px 以上 1200px 未満
+ @media (600px <= width < 1200px) {
+  スタイルルール
+ }
+
+画面サイズ 1200px 以上
+@media (1200px <= width) {
+  スタイルルール
+}  */
+
+
 
 .WorkIntroduce__Inner {
   /* 14px - 16px */
   font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
-  line-height: calc(32 / 16);
+  /*本文の文字サイズ calc(32 / 16) */
+  line-height: 2;
 }
+
+@media (width < 768px) {
+  .WorkIntroduce__Inner {
+    /* 本文の文字サイズ 1.71428571429*/
+    line-height: calc(24 / 14) ;
+  }
+}
+
 
 .WorkIntroduce__Top {
   /* 72px - 160px */
   margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem);
+}
 
+@media (width < 768px) {
+  .WorkIntroduce__Top {
+    /* 72px - 160px */
+    margin: calc(24 / 390 * 100%) 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem);
+  }
 }
 
 .WorkIntroduce__TopInner {
   border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
   overflow: hidden;
-  /* 72px　- 40px , 24px - 78px*/
-  padding: clamp(2.5rem, 1.624rem + 3.6vw, 4.5rem) clamp(1.5rem, 0.021rem + 6.07vw, 4.875rem);
+  /* 32px　- 72px , 24px - 78px*/
+  padding: clamp(2rem, 0.904rem + 4.49vw, 4.5rem) clamp(1.5rem, 0.021rem + 6.07vw, 4.875rem);
   width: calc(1150 / 1280 * 100%);
   max-width: 1150px;
   background-color: #f6f5de;
@@ -25,10 +56,15 @@
   margin: 0 auto;
 }
 
+@media (width < 768px) {
+  .WorkIntroduce__TopInner {
+    width: 100%;
+  }
+}
+
 .WorkIntroduce__TopText {
-
-
-
+/* 12px - 16px */
+  font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
 }
 
 
@@ -38,6 +74,8 @@
   font-size: clamp(2rem, 1.562rem + 1.8vw, 3rem);
   /* 8px - 24px */
   margin: 0 0 clamp(0.5rem, 0.062rem + 1.8vw, 1.5rem);
+  /*SP: calc(32 / 32) ,PC: calc(48 / 48)*/
+  line-height: 1;
 }
 
 .WorkIntroduce__TopDate {
@@ -50,6 +88,11 @@
   padding: 0 0 8px;
 }
 
+@media (width < 768px) {
+  .WorkIntroduce__TopPart {
+    padding: 0 0 calc(16 / 342 * 100%);
+  }
+}
 
 .WorkIntroduce__TopWorkIntroduceContainer::before {
   content: "";
@@ -60,14 +103,11 @@
   position: absolute;
   top: 0;
   width: 100%;
-  /* bottom: 0;
-  left: 0;
-  right: 0; */
 }
 
 .WorkIntroduce__TopWorkIntroduceContainer {
   position: relative;
-  /* 同じなので相対値なし */
+  /* SPと同じなので相対値なし */
   padding: 32px 0 0;
 }
 
@@ -75,10 +115,24 @@
   display: flex;
 }
 
+@media (width < 768px) {
+  .WorkIntroduce__TopWorkIntroduce  {
+    flex-direction: column;
+  }
+}
+
+
 .WorkIntroduce__TopWorkIntroduceDescription {
   width: calc(378 / 994 * 100%);
   /* 24px - 64px , SP:48px(メディアクエリ)*/
   margin: 0 clamp(1.5rem, 0.404rem + 4.49vw, 4rem) 24px 0;
+}
+
+@media (width < 768px) {
+  .WorkIntroduce__TopWorkIntroduceDescription  {
+    width: 100%;
+    margin: calc(24 / 342 * 100%) 0 calc(48 / 342 * 100%);
+  }
 }
 
 .WorkIntroduce__TopWorkIntroduceMv {
@@ -89,9 +143,18 @@
   height: 100%;
 }
 
+@media (width < 768px) {
+  .WorkIntroduce__TopWorkIntroduceMv {
+    width: 100%;
+    order: -1;
+  }
+}
+
 .WorkIntroduce__TopWorkIntroduceMvImage {
   width: 100%;
 }
+
+
 
 .WorkIntroduce__LinkButton {
   /* display: inline-block; */
@@ -102,10 +165,19 @@
   justify-content: end;
 }
 
+@media (width < 768px) {
+  .WorkIntroduce__LinkButton {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .WorkIntroduce__LinkButtonInner {
   display: flex;
   position: relative;
 }
+
+
 
 .WorkIntroduce__LinkButtonInner::after {
   content: "";
@@ -139,8 +211,8 @@
 .WorkIntroduce__ComponentWrapper {
   /* width: calc(1150 / 1280 * 100%); */
   margin: 0 auto ;
-  /* 48px　- 160px */
-  padding: clamp(3rem, -0.067rem + 12.58vw, 10rem) 0;
+  /* 40px　- 160px */
+  padding: clamp(2.5rem, -0.787rem + 13.48vw, 10rem) 0;
   width: calc(1150 / 1280 * 100%);
   max-width: 1150px;
   background-color: #F6F5DE;
@@ -148,12 +220,24 @@
   overflow: hidden;
 }
 
-
+@media (width < 768px) {
+  .WorkIntroduce__ComponentWrapper {
+    width: 100%;
+    /* 40px　- 160px */
+    padding: clamp(2.5rem, -0.787rem + 13.48vw, 10rem) 0 calc(72 / 390 * 100%) ;
+  }
+}
 
 .WorkIntroduce__ComponentWrapperInner {
   margin: 0 auto;
   width: calc(720 / 994 * 100%);
   max-width: 720px;
+}
+
+@media (width < 768px) {
+  .WorkIntroduce__ComponentWrapperInner {
+    width: calc(342 / 390 * 100%);
+  }
 }
 
 .WorkIntroduce__ComponentItem {
@@ -173,20 +257,22 @@
 
 
 .WorkIntroduce__ComponentItem--Other.WorkIntroduce__ComponentTitle {
-  /* 8px - 24px */
-  padding-bottom: clamp(0.5rem, 0.062rem + 1.8vw, 1.5rem) ;
+  /* 16px - 24px */
+  padding-bottom: clamp(1rem, 0.781rem + 0.9vw, 1.5rem) ;
 }
 
 .WorkIntroduce__ComponentTitle {
   margin-bottom: calc(clamp(2.5rem, 1.843rem + 2.7vw, 4rem) *-1 );
 }
 
-
 .WorkIntroduce__ComponentTitleInner {
   font-family: "HigureGothic-Black";
   /* 24px - 32px */
   font-size: clamp(1.5rem, 1.281rem + 0.9vw, 2rem);
+  /*SP: calc(24 / 24),  PC: calc(32 / 32) */
+  line-height: 1;
 }
+
 
 .WorkIntroduce__ComponentImg {
   width: 100%;
@@ -230,8 +316,25 @@
 }
 
 
+
 .WorkIntroduce .TopButton--Works {
-  margin: 0 0 0 -40px;
+  /* margin: 0 0 0 -40px; */
     /* 90 * 2 は両サイドの padding の値 */
   width: calc(68 / (1150 - (90 * 2)) * 100%);
 }
+
+/* .WorkIntroduce .Button--Small {
+  display: none;
+} */
+
+/* @media (width < 768px) {
+  .WorkIntroduce .Button--Small {
+    display: block;
+  }
+} */
+
+/* @media (width < 768px) {
+  .WorkIntroduce .Button--Large {
+    display: none;
+  }
+} */
