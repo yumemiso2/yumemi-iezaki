@@ -1,19 +1,21 @@
 /* これは、Worksの下層ページの、共通するスタイルを当てるためのCSSファイルです */
 
-/* 画面サイズ 600px 未満 */
-/* @media (width < 600px) { */
-  /* スタイルルール */
-/* } */
+/* 画面サイズ 600px 未満
+@media (width < 600px) {
+  スタイルルール
+}
 
-/* 画面サイズ 600px 以上 1200px 未満 */
-/* @media (600px <= width < 1200px) { */
-  /* スタイルルール */
-/* } */
+画面サイズ 600px 以上 1200px 未満
+ @media (600px <= width < 1200px) {
+  スタイルルール
+ }
 
-/* 画面サイズ 1200px 以上 */
-/* @media (1200px <= width) { */
-  /* スタイルルール */
-/* } */
+画面サイズ 1200px 以上
+@media (1200px <= width) {
+  スタイルルール
+}  */
+
+
 
 .WorkIntroduce__Inner {
   /* 14px - 16px */
@@ -87,12 +89,26 @@
 
 .WorkIntroduce__TopWorkIntroduce {
   display: flex;
+
 }
+
+@media (width < 768px) {
+  .WorkIntroduce__TopWorkIntroduce  {
+    flex-direction: column;
+  }
+}
+
 
 .WorkIntroduce__TopWorkIntroduceDescription {
   width: calc(378 / 994 * 100%);
   /* 24px - 64px , SP:48px(メディアクエリ)*/
   margin: 0 clamp(1.5rem, 0.404rem + 4.49vw, 4rem) 24px 0;
+}
+
+@media (width < 768px) {
+  .WorkIntroduce__TopWorkIntroduceDescription  {
+    width: 100%;
+  }
 }
 
 .WorkIntroduce__TopWorkIntroduceMv {
@@ -103,9 +119,18 @@
   height: 100%;
 }
 
+@media (width < 768px) {
+  .WorkIntroduce__TopWorkIntroduceMv {
+    width: 100%;
+    order: -1;
+  }
+}
+
 .WorkIntroduce__TopWorkIntroduceMvImage {
   width: 100%;
 }
+
+
 
 .WorkIntroduce__LinkButton {
   /* display: inline-block; */
@@ -119,6 +144,12 @@
 .WorkIntroduce__LinkButtonInner {
   display: flex;
   position: relative;
+}
+
+@media (width < 768px) {
+  .WorkIntroduce__LinkButton {
+    width: 100%;
+  }
 }
 
 .WorkIntroduce__LinkButtonInner::after {
