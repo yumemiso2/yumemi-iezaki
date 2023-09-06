@@ -206,11 +206,10 @@
 }
 
 .Works .ScrollDot {
-  padding: clamp(0.5rem, 0.062rem + 1.8vw, 1.5rem) 0;
-}
-
-.Works .ScrollDot {
+  /* 16px - 32px */
+  padding: clamp(1rem, 0.562rem + 1.8vw, 2rem) 0;
   position: relative;
+  line-height: .5;
 }
 
 
@@ -224,6 +223,14 @@
   background-color: #989550;
   width: 16px;
   height: 16px;
+
+}
+
+@media (width < 768px) {
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 /* Practice */
