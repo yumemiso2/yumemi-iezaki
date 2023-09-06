@@ -59,7 +59,7 @@
 /* Home--Works */
 .Works {
   /* 相対値にすると、れんしゅうの縦幅がつくったものに侵食するので固定値 */
-  padding: 0 0 308px;
+  padding: clamp(1.5rem, 0.185rem + 5.39vw, 4.5rem) 0 308px;
 }
 
 .WorksItem--Home {
