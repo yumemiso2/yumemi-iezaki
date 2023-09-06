@@ -12,9 +12,16 @@
   align-items: center;
 
   width: calc(1000 / 1150 * 100%);
-  max-width: 1000px;
-    /* padding: 10-20px */
+
+  /* padding: 10-20px */
   padding: 0 clamp(0.625rem, 0.351rem + 1.12vw, 1.25rem);
+}
+
+@media (width < 768px) {
+  .swiper-slide {
+    /* 334 = 314px(幅) + 10px + 10px（padding） */
+    width: calc(334 / 352 * 100%);
+  }
 }
 
 .swiper-slide .ImgList__LinkImage {
@@ -29,7 +36,6 @@
   width: 100%;
   position: absolute;
   top: 50%;
-
 }
 
 .SwiperButton_Inner {
@@ -37,6 +43,12 @@
   margin: 0 auto;
   position: relative;
   max-width: 1000px;
+}
+
+@media (width < 768px) {
+  .SwiperButton_Inner {
+    width: calc(334 / 390 * 100%);
+  }
 }
 
 
@@ -79,6 +91,12 @@
   width: calc(1150 / 1280 * 100%);
 }
 
+@media (width < 768px) {
+  .WorksItem--Home .ImgList {
+    width: calc(352 / 390 * 100%);
+  }
+}
+
 .WorksItem--Home .ImgList__Link {
   /* border-radius: 25 - 50px; */
   border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
@@ -87,9 +105,16 @@
   position: relative;
 }
 
-.WorksItem--Home .ImgList__Link:hover{
+/* .WorksItem--Home .ImgList__Link:hover{
   background-color: #606060;
-}
+} */
+
+/*
+@media  (width < 768px){
+  .WorksItem--Home .ImgList__Link:hover {
+    transition: unset;
+  }
+} */
 
 .WorksItem--Home .ImgList__Link:hover .ImgList__LinkImage {
   width: 100%;
@@ -111,20 +136,44 @@
   transition: opacity .3s;
 }
 
+@media (width < 768px) {
+  .ImgLink__TextContainerHover {
+    position: relative;
+    text-align: left;
+    background-color: #F6F5DE;
+    color: #000;
+    opacity: 1;
+    transition: unset;
+    align-items: baseline;
+    padding: 16px 16px 24px;
+  }
+}
+
 .WorksItem--Home .ImgList__Link:hover .ImgLink__TextContainerHover {
   opacity: 1;
 }
 
+
 .TextContainerHover__Title {
   font-size: clamp(0.875rem, 0.163rem + 2.92vw, 2.5rem);
-  margin:  0 0 calc(64 / 960 * 100%);
+  margin: 0 0 calc(64 / 960 * 100%);
 }
+
+/* @media (width < 768px) {
+  .TextContainerHover__Title {
+    text-align: left;
+  }
+} */
 
 .TextContainerHover__Description {
   font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
 }
 
-
+@media (width < 768px) {
+  .TextContainerHover__Description {
+    font-family: "HigureGothic-Regular";
+  }
+}
 
 .Works .TextContainer {
   width: calc(1000 / 1280 * 100%);
