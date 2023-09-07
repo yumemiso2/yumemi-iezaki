@@ -300,6 +300,8 @@
   .TextWrapper {
     /* width: calc(324 / 3 * 100%); */
     width: 100%;
+    width: calc(324 / 342 * 100%);
+
   }
 }
 
