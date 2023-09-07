@@ -259,6 +259,12 @@
   padding: clamp(4rem, 0.494rem + 14.38vw, 12rem) 0;
 }
 
+@media (width < 768px) {
+  .Practice .Practice__ScrollList {
+    padding: 40px 0;
+  }
+}
+
 
 .TextContainer--Vartical .Introduce__Description {
   writing-mode: vertical-rl;
@@ -272,8 +278,8 @@
 @media (width < 768px) {
   .Practice .TextContainer--Vartical {
     position: relative;
-    width: calc(342 / 390 *100%);
-    margin: 0 auto;
+    width: calc(342 / 390 * 100%);
+    margin: 0 auto calc(24 / 390 * 100%);
   }
 }
 
@@ -292,7 +298,8 @@
 
 @media (width < 768px) {
   .TextWrapper {
-    width: calc(324 / 342 * 100%);
+    /* width: calc(324 / 3 * 100%); */
+    width: 100%;
   }
 }
 
@@ -381,10 +388,9 @@
   .Practice .Introduce__Description {
     margin: 0;
     position: absolute;
-    width: calc(276 / 324 * 100%);
+    width: calc(276 / 342 * 100%);
     bottom: 0;
     right: 0;
-
   }
 }
 
@@ -396,12 +402,24 @@
   overflow: hidden;
 }
 
+@media (width < 768px) {
+  .ScrollListWrapper {
+    width: calc(342 / 390 * 100%);
+  }
+}
+
 /* ul */
 .Practice .ScrollList {
   display: flex;
   flex-wrap: wrap;
   margin: calc(-24px / 2) ;
   overflow: hidden;
+}
+
+@media (width < 768px) {
+  .Practice .ScrollList {
+    margin: calc(-8px / 2);
+  }
 }
 
 .Practice .ScrollList::before {
@@ -411,6 +429,13 @@
     /* width: calc(326.666666667 / 980 * 100% - 24px);と同じ */
   width: calc(100% / 3 - 24px);
   margin: calc(24px / 2);
+}
+
+@media (width < 768px) {
+  .Practice .ScrollList::before {
+    width: calc(100% / 3 - 8px);
+    margin: calc(8px / 2);
+  }
 }
 
 .ScrollList__Item:last-child {
@@ -435,6 +460,13 @@
   width: calc(100% / 3 - 24px);
   margin: calc(24px / 2);
   border-radius: calc((50 / ( (980 - 24 - 24) / 3)) * 100%);
+}
+
+@media (width < 768px) {
+  .Practice .ScrollList__Item {
+    width: calc(100% / 3 - 8px);
+    margin: calc(8px / 2);
+  }
 }
 
 /* li > a */
