@@ -85,6 +85,12 @@
   padding: clamp(1.5rem, 0.185rem + 5.39vw, 4.5rem) 0 308px;
 }
 
+@media (width < 768px) {
+  .Works {
+    padding: calc(24 / 390 * 100%) 0 calc(113 / 390 *100%);
+  }
+}
+
 .WorksItem--Home {
   width: 100%;
 }
@@ -171,11 +177,11 @@
   margin: 0 0 calc(64 / 960 * 100%);
 }
 
-/* @media (width < 768px) {
+@media (width < 768px) {
   .TextContainerHover__Title {
-    text-align: left;
+    margin: 0 0 calc(8 / 314 * 100%);
   }
-} */
+}
 
 .TextContainerHover__Description {
   font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
@@ -206,6 +212,12 @@
   margin: 0 auto calc(40 / 1000 * 100%);
 }
 
+@media (width < 768px) {
+  .Works .Introduce {
+    /* 334 = 314px(幅) + 10px + 10px（padding） */
+    margin: 0 auto calc(24 / 334 * 100%);
+  }
+}
 
 .Works .Introduce__Description {
   text-align: center;
@@ -213,11 +225,18 @@
 }
 
 .Works .SectionTitle--Home {
-    width: calc((400 / 1000) * 100%);
-    margin: 0 auto calc(40 / 1000 * 100%);
-    min-width: 180px;
-    max-width: 400px;
+  width: calc((400 / 1000) * 100%);
+  margin: 0 auto calc(40 / 1000 * 100%);
+  min-width: 180px;
+  max-width: 400px;
 }
+
+@media (width < 768px) {
+  .Works .SectionTitle--Home {
+    margin: 0 auto calc(24 / 334 * 100%);
+  }
+}
+
 
 
 .Works .SectionTitleImage {
@@ -229,6 +248,12 @@
   padding: clamp(1rem, 0.562rem + 1.8vw, 2rem) 0;
   position: relative;
   line-height: .5;
+}
+
+@media (width < 768px) {
+  .Works .ScrollDot {
+    padding: clamp(1rem, 0.562rem + 1.8vw, 2rem) 0  calc(24 / 390 * 100%) 0;
+  }
 }
 
 
