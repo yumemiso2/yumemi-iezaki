@@ -261,7 +261,7 @@
 
 @media (width < 768px) {
   .Practice .Practice__ScrollList {
-    padding: 40px 0;
+    padding: 0 0 calc(94 / 390 * 100%) 0;
   }
 }
 
@@ -353,7 +353,8 @@
     position: relative;
     /* display: flex; */
     width: 100%;
-
+    /* .SectionTitle と.Introduce__Description の下が空くのを抑えるため*/
+    max-height: 200px;
     justify-content: flex-start;
   }
 }
@@ -372,6 +373,7 @@
     width: calc(32 / 342 * 100%);
     order: 0;
     margin: 0 calc(16 / 342 * 100%) 0 0;
+    transform: translateY(-50%);
   }
 }
 
@@ -516,6 +518,7 @@
   width: 100%;
 }
 
+/* hover アクション */
 .Practice .ScrollHover {
   text-align: center;
     /* font-size: 14-16px; */
@@ -545,7 +548,7 @@
 }
 
 .Practice .TextButton {
-  margin: 64px 0 0;
+  margin: calc(24 / 390 * 100%) 0 0;
 }
 
 /* Practice ここまで */
