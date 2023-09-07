@@ -12,7 +12,7 @@
   align-items: center;
 
   width: calc(1000 / 1150 * 100%);
-
+  max-width: 1000px;
   /* padding: 10-20px */
   padding: 0 clamp(0.625rem, 0.351rem + 1.12vw, 1.25rem);
 }
@@ -293,7 +293,6 @@
 @media (width < 768px) {
   .TextWrapper {
     width: calc(324 / 342 * 100%);
-    margin: 0;
   }
 }
 
@@ -343,7 +342,10 @@
 @media (width < 768px) {
   .Introduce__Inner {
     position: relative;
-    display: block;
+    /* display: flex; */
+    width: 100%;
+
+    justify-content: flex-start;
   }
 }
 
@@ -381,6 +383,8 @@
     position: absolute;
     width: calc(276 / 324 * 100%);
     bottom: 0;
+    right: 0;
+
   }
 }
 
