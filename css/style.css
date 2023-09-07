@@ -4,6 +4,14 @@
   --swiper-pagination-bottom: 0;
 }
 
+@media (width < 768px) {
+  :root {
+    /* 遷移ボタン、固定値にした */
+    --swiper-navigation-size: 32px;
+  }
+}
+
+
 /* Swiperスタイル */
 .swiper-slide {
   text-align: center;
