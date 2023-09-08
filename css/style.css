@@ -232,6 +232,10 @@
   font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
 }
 
+.Works .Introduce__Description--Br {
+  display: inline-block;
+}
+
 .Works .SectionTitle--Home {
   width: calc((400 / 1000) * 100%);
   margin: 0 auto calc(40 / 1000 * 100%);
@@ -597,11 +601,12 @@
 @media (width < 768px) {
   .ScrollHover__Name {
     border-bottom: none;
-    /* position: absolute; */
-    /* text-align: center; */
-
-    /* margin: auto 0; */
-    /* top: 50%; */
+    font-family: "HigureGothic-Medium";
+      /* …に省略するところ */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
   }
 }
 
@@ -625,6 +630,7 @@
     padding: 0;
   }
 }
+
 
 .Practice .TextButton {
   margin: calc(24 / 390 * 100%) 0 0;
