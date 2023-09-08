@@ -169,7 +169,16 @@
   /* タイトル・紹介文を包括 */
   /* margin: 0 clamp(0.625rem, 0.351rem + 1.12vw, 1.25rem); */
   width: 100%;
+  line-height: calc(32 / 16);
 }
+
+@media (width < 768px) {
+  .Works .Introduce {
+    /* 24 / 14 = 1.71428571429 */
+    line-height: calc(24 / 14);
+  }
+}
+
 
 .Works .SectionTitleSub {
   margin: calc(24 / 854 * 100%) auto;
@@ -177,6 +186,14 @@
   font-size: 24px;
   font-family: "HigureGothic-Medium";
   margin: 0 auto calc(8 / 854 * 100%);
+  /* 32 / 24 = 1.33333333333 */
+  line-height: calc(32 / 24);
+}
+
+@media (width < 768px) {
+  .Works .SectionTitleSub {
+    margin: 0 auto calc(8 / 316 * 100%);
+  }
 }
 
 .Works .Introduce__Description {
@@ -185,6 +202,14 @@
   font-family: "HigureGothic-Regular";
   /* 14px - 16px */
   font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
+}
+
+@media (width < 768px) {
+  .Works .Introduce__Description {
+    margin: 0 auto calc(24 / 316 * 100%);
+    /* 24 / 14 = 1.71428571429 */
+    line-height: calc(24 / 14);
+  }
 }
 
 /* ここにボタンが入る（TextButton） */
@@ -212,9 +237,15 @@
 
 
 
- .Works .Section__Footer .WorksItem__Inner {
+.Works .Section__Footer .WorksItem__Inner {
   padding: 72px 90px;
- }
+}
+
+@media (width < 768px) {
+  .Works .Section__Footer .WorksItem__Inner {
+    padding: calc(40 / 390 * 100%) 90px;
+  }
+}
 
 
 
