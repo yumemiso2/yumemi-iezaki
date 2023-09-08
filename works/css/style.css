@@ -15,9 +15,16 @@
   max-width: 400px;
 }
 
+@media (width < 768px) {
+  .Works .SectionTitle {
+    margin: calc(24 / 390 * 100%) auto calc(40 / 390 * 100%);
+  }
+}
+
 .Works .SectionTitleImage {
   width: 100%;
 }
+
 
 .Works .WorksItem {
   /* コンポーネントすべてを包括、ここにclassつけて色変えてる */
@@ -43,6 +50,12 @@
   width: calc(1067 / 1280 * 100%);
 }
 
+@media (width < 768px) {
+.Works .ImgList {
+  width: calc(352 / 390 * 100%);
+  }
+}
+
 .Works .ImgList__Inner {
   /* リンクと img タグを包括、swiper-slide のこと */
   /* width: 100%; */
@@ -59,6 +72,14 @@
   max-width: 854px;
   /* padding: 10-20px */
   padding: 0 clamp(0.625rem, 0.351rem + 1.12vw, 1.25rem);
+}
+
+@media (width < 768px) {
+  .Works .swiper-slide {
+    padding: 0 calc(8 / 352 * 100%);
+    /* 316 = 300px（幅） + 8px + 8px(padding) */
+    width: calc(316 / 352 * 100%);
+  }
 }
 
 
@@ -111,6 +132,7 @@
   /* swiper-paginationのこと */
   padding: clamp(1rem, 0.781rem + 0.9vw, 1.5rem);
   position: relative;
+  line-height: .5;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -133,6 +155,13 @@
   /* padding: 10-20px */
 
   margin: 0 auto;
+}
+
+@media (width < 768px) {
+  .Works .TextContainer {
+    /* 316 = 300px（幅） + 8px + 8px(padding) */
+    width: calc(316 / 390 * 100%);
+  }
 }
 
 
