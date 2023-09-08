@@ -4,6 +4,14 @@
   --swiper-pagination-bottom: 0;
 }
 
+@media (width < 768px) {
+  :root {
+    /* 遷移ボタン、固定値にした */
+    --swiper-navigation-size: 32px;
+  }
+}
+
+
 /* Swiperスタイル */
 .swiper-slide {
   text-align: center;
@@ -13,8 +21,26 @@
 
   width: calc(1000 / 1150 * 100%);
   max-width: 1000px;
-    /* padding: 10-20px */
+  /* padding: 10-20px */
   padding: 0 clamp(0.625rem, 0.351rem + 1.12vw, 1.25rem);
+}
+
+
+.Body {
+  line-height: calc(24 / 14);
+}
+
+@media (width < 768px) {
+  .Body {
+    line-height: calc(32 / 16);
+  }
+}
+
+@media (width < 768px) {
+  .swiper-slide {
+    /* 334 = 314px(幅) + 10px + 10px（padding） */
+    width: calc(334 / 352 * 100%);
+  }
 }
 
 .swiper-slide .ImgList__LinkImage {
@@ -29,7 +55,6 @@
   width: 100%;
   position: absolute;
   top: 50%;
-
 }
 
 .SwiperButton_Inner {
@@ -37,6 +62,12 @@
   margin: 0 auto;
   position: relative;
   max-width: 1000px;
+}
+
+@media (width < 768px) {
+  .SwiperButton_Inner {
+    width: calc(334 / 390 * 100%);
+  }
 }
 
 
@@ -62,6 +93,12 @@
   padding: clamp(1.5rem, 0.185rem + 5.39vw, 4.5rem) 0 308px;
 }
 
+@media (width < 768px) {
+  .Works {
+    padding: calc(24 / 390 * 100%) 0 calc(113 / 390 *100%);
+  }
+}
+
 .WorksItem--Home {
   width: 100%;
 }
@@ -79,6 +116,12 @@
   width: calc(1150 / 1280 * 100%);
 }
 
+@media (width < 768px) {
+  .WorksItem--Home .ImgList {
+    width: calc(352 / 390 * 100%);
+  }
+}
+
 .WorksItem--Home .ImgList__Link {
   /* border-radius: 25 - 50px; */
   border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
@@ -87,9 +130,16 @@
   position: relative;
 }
 
-.WorksItem--Home .ImgList__Link:hover{
+/* .WorksItem--Home .ImgList__Link:hover{
   background-color: #606060;
-}
+} */
+
+/*
+@media  (width < 768px){
+  .WorksItem--Home .ImgList__Link:hover {
+    transition: unset;
+  }
+} */
 
 .WorksItem--Home .ImgList__Link:hover .ImgList__LinkImage {
   width: 100%;
@@ -111,25 +161,57 @@
   transition: opacity .3s;
 }
 
+@media (width < 768px) {
+  .ImgLink__TextContainerHover {
+    position: relative;
+    text-align: left;
+    background-color: #F6F5DE;
+    color: #000;
+    opacity: 1;
+    transition: unset;
+    align-items: baseline;
+    padding: 16px 16px 24px;
+  }
+}
+
 .WorksItem--Home .ImgList__Link:hover .ImgLink__TextContainerHover {
   opacity: 1;
 }
 
+
 .TextContainerHover__Title {
+  /* 14px - 40px */
   font-size: clamp(0.875rem, 0.163rem + 2.92vw, 2.5rem);
-  margin:  0 0 calc(64 / 960 * 100%);
+  margin: 0 0 calc(64 / 960 * 100%);
+}
+
+@media (width < 768px) {
+  .TextContainerHover__Title {
+    margin: 0 0 calc(8 / 314 * 100%);
+  }
 }
 
 .TextContainerHover__Description {
   font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
 }
 
-
+@media (width < 768px) {
+  .TextContainerHover__Description {
+    font-family: "HigureGothic-Regular";
+  }
+}
 
 .Works .TextContainer {
   width: calc(1000 / 1280 * 100%);
   max-width: 1000px;
   margin: 0 auto;
+}
+
+@media (width < 768px) {
+  .Works .TextContainer {
+    /* 334 = 314px(幅) + 10px + 10px（padding） */
+    width: calc(334 / 390 * 100%);
+  }
 }
 
 
@@ -138,18 +220,35 @@
   margin: 0 auto calc(40 / 1000 * 100%);
 }
 
+@media (width < 768px) {
+  .Works .Introduce {
+    /* 334 = 314px(幅) + 10px + 10px（padding） */
+    margin: 0 auto calc(24 / 334 * 100%);
+  }
+}
 
 .Works .Introduce__Description {
   text-align: center;
   font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
 }
 
-.Works .SectionTitle--Home {
-    width: calc((400 / 1000) * 100%);
-    margin: 0 auto calc(40 / 1000 * 100%);
-    min-width: 180px;
-    max-width: 400px;
+.Works .Introduce__Description--Br {
+  display: inline-block;
 }
+
+.Works .SectionTitle--Home {
+  width: calc((400 / 1000) * 100%);
+  margin: 0 auto calc(40 / 1000 * 100%);
+  min-width: 180px;
+  max-width: 400px;
+}
+
+@media (width < 768px) {
+  .Works .SectionTitle--Home {
+    margin: 0 auto calc(24 / 334 * 100%);
+  }
+}
+
 
 
 .Works .SectionTitleImage {
@@ -157,11 +256,16 @@
 }
 
 .Works .ScrollDot {
-  padding: clamp(0.5rem, 0.062rem + 1.8vw, 1.5rem) 0;
+  /* 16px - 32px */
+  padding: clamp(1rem, 0.562rem + 1.8vw, 2rem) 0;
+  position: relative;
+  line-height: .5;
 }
 
-.Works .ScrollDot {
-  position: relative;
+@media (width < 768px) {
+  .Works .ScrollDot {
+    padding: clamp(1rem, 0.562rem + 1.8vw, 2rem) 0  calc(24 / 390 * 100%) 0;
+  }
 }
 
 
@@ -175,6 +279,14 @@
   background-color: #989550;
   width: 16px;
   height: 16px;
+
+}
+
+@media (width < 768px) {
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 /* Practice */
@@ -182,6 +294,12 @@
   background-color: #F6F5DE;
   /* padding: 64 - 160px; (相対値で余白取ったほうが見栄えが良いから)*/
   padding: clamp(4rem, 0.494rem + 14.38vw, 12rem) 0;
+}
+
+@media (width < 768px) {
+  .Practice .Practice__ScrollList {
+    padding: 0 0 calc(94 / 390 * 100%) 0;
+  }
 }
 
 
@@ -194,15 +312,48 @@
   position: absolute;
 }
 
+@media (width < 768px) {
+  .Practice .TextContainer--Vartical {
+    position: relative;
+    width: calc(342 / 390 * 100%);
+    margin: 0 auto calc(24 / 390 * 100%);
+  }
+}
+
+@media (width < 768px) {
+  .TextContainer--Vartical .Introduce__Description {
+    writing-mode: horizontal-tb;
+
+  }
+}
+
 .TextWrapper {
   width: calc(980 / 1280 * 100%);
   max-width: 980px;
   margin:  0 auto;
 }
 
+@media (width < 768px) {
+  .TextWrapper {
+    /* width: calc(324 / 3 * 100%); */
+    width: 100%;
+    width: calc(324 / 342 * 100%);
+
+  }
+}
+
 .TextWrapper__Inner {
   margin: calc(-24px / 2);
 }
+
+@media (width < 768px) {
+  .TextWrapper__Inner {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+
 
 
 .Practice .Introduce {
@@ -213,6 +364,14 @@
   margin: calc(24px / 2);
   /* 300pxの箱の縦横比を保持 */
   aspect-ratio: 1;
+}
+
+@media (width < 768px) {
+  .Practice .Introduce {
+    width: 100%;
+    margin: 0;
+    aspect-ratio: auto;
+  }
 }
 
 .Introduce__Inner {
@@ -226,21 +385,54 @@
   font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
 }
 
+@media (width < 768px) {
+  .Introduce__Inner {
+    position: relative;
+    /* display: flex; */
+    width: 100%;
+    /* .SectionTitle と.Introduce__Description の下が空くのを抑えるため*/
+    max-height: 200px;
+    justify-content: flex-start;
+  }
+}
+
+
 .Practice .SectionTitle {
   width: calc((88 / ((980 - 24 - 24) / 3)) * 100%);
   min-width: 32px;
   order: 2;
+
+}
+
+@media (width < 768px) {
+  .Practice .SectionTitle {
+    /* グリッド幅 342px */
+    width: calc(32 / 342 * 100%);
+    order: 0;
+    margin: 0 calc(16 / 342 * 100%) 0 0;
+    transform: translateY(-50%);
+  }
 }
 
 
 .Practice .SectionTitleImage {
   width: 100%;
+  display: block;
 }
 
 .Practice .Introduce__Description {
   line-height: 2;
-
   margin: calc((240 / ( (980 - 24 - 24) / 3)) * 100%) calc((40 / ( (980 - 24 - 24) / 3)) * 100%) 0 0;
+}
+
+@media (width < 768px) {
+  .Practice .Introduce__Description {
+    margin: 0;
+    position: absolute;
+    width: calc(276 / 342 * 100%);
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .ScrollListWrapper {
@@ -251,12 +443,24 @@
   overflow: hidden;
 }
 
+@media (width < 768px) {
+  .ScrollListWrapper {
+    width: calc(342 / 390 * 100%);
+  }
+}
+
 /* ul */
 .Practice .ScrollList {
   display: flex;
   flex-wrap: wrap;
   margin: calc(-24px / 2) ;
   overflow: hidden;
+}
+
+@media (width < 768px) {
+  .Practice .ScrollList {
+    margin: calc(-8px / 2);
+  }
 }
 
 .Practice .ScrollList::before {
@@ -268,11 +472,42 @@
   margin: calc(24px / 2);
 }
 
+@media (width < 768px) {
+  .Practice .ScrollList::before {
+    width: calc(100% / 3 - 8px);
+    margin: calc(8px / 2);
+  }
+}
+
+.ScrollList__Item:last-child {
+  display: none;
+}
+
+@media (width < 768px) {
+  .ScrollList__Item:last-child {
+    display: block;
+  }
+}
+
+@media (width < 768px) {
+  .Practice .ScrollList::before {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 /* li */
 .Practice .ScrollList__Item {
   width: calc(100% / 3 - 24px);
   margin: calc(24px / 2);
   border-radius: calc((50 / ( (980 - 24 - 24) / 3)) * 100%);
+}
+
+@media (width < 768px) {
+  .Practice .ScrollList__Item {
+    width: calc(100% / 3 - 8px);
+    margin: calc(8px / 2);
+  }
 }
 
 /* li > a */
@@ -283,6 +518,12 @@
   width: 100%;
   position: relative;
 }
+/*
+@media (width < 768px) {
+  .Practice .ScrollList__ItemLink {
+    height: 100%;
+  }
+} */
 
 /* hover したときに、説明文がふわっと浮き上がるアニメーション */
 .Practice .ScrollList__ItemLink:hover .ScrollList__ItemLinkInner {
@@ -311,6 +552,12 @@
   transform: translateY(100%);
 }
 
+@media (width < 768px) {
+  .Practice .ScrollList__ItemLinkInner {
+    height: 100%;
+    width: 100%;
+  }
+}
 
 
 /* li > a > img */
@@ -320,6 +567,7 @@
   width: 100%;
 }
 
+/* hover アクション */
 .Practice .ScrollHover {
   text-align: center;
     /* font-size: 14-16px; */
@@ -327,8 +575,21 @@
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   min-height: calc(150 / 300 * 100%);
-
   padding: calc(36 / ((980 - 24 - 24) / 3) * 100%);
+}
+
+@media (width < 768px) {
+  .Practice .ScrollHover {
+    margin: 0 auto;
+    /* 12px - 16px */
+    font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
+    width: 100%;
+    height: 100%;
+    padding: calc(10 / ((342 - 8 - 8) / 3) * 100%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .ScrollHover__Name {
@@ -336,6 +597,20 @@
   padding: 0 0 8px;
   font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
 }
+
+@media (width < 768px) {
+  .ScrollHover__Name {
+    border-bottom: none;
+    font-family: "HigureGothic-Medium";
+      /* …に省略するところ */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+}
+
+
 
 .ScrollHover__Description {
   padding: 16px 0 0;
@@ -348,8 +623,17 @@
   overflow: hidden;
 }
 
+@media (width < 768px) {
+  .ScrollHover__Description {
+    display: none;
+
+    padding: 0;
+  }
+}
+
+
 .Practice .TextButton {
-  margin: 64px 0 0;
+  margin: calc(24 / 390 * 100%) 0 0;
 }
 
 /* Practice ここまで */
@@ -384,6 +668,19 @@
   max-width: 995px;
 }
 
+@media (width < 768px) {
+  .About__Inner {
+    flex-direction: column;
+    width: calc(342 / 390 * 100%);
+/* calc((72 - (32 / 2)) / 390 * 100%) の 32 / 2は、
+ transform: translateY(-50%);かけたときの「わたしについて」の文字の高さ(390px時：32px) /2 の意味。
+ （.SectionTitle--Home--about の親の高さが残っているので、
+ この位置でpadding取るなら、指定した値の padding + 16px になる。
+ もう16pxを引き算して、画像の上の余白（見え方は、画像の上に72px）を調整するため）*/
+    padding: calc((72 - (32 / 2)) / 390 * 100%) 0 calc(72 / 390 * 100%) 0;
+  }
+}
+
 .About__InnerText {
   display: flex;
   flex-direction: column;
@@ -392,12 +689,37 @@
   line-height: 2;
 }
 
+@media (width < 768px) {
+  .About__InnerText {
+    width: 100%;
+    padding: 0;
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
+  }
+}
+
 .About__InnerTextName {
   /* font-size: 24px; */
   font-size: clamp(1rem, 0.781rem + 0.9vw, 1.5rem);
   margin: 0 0 calc(40 / (995 - 200 - 72) * 100%) 0;
   font-family: "HigureGothic-Medium";
 }
+
+@media (width < 768px) {
+  .About__InnerTextName {
+    text-align: center;
+    margin: 0 0 calc(24 / 342 * 100%) 0;
+
+  }
+}
+
+@media (width < 768px) {
+  .About__InnerTextDescription {
+    margin: 0 auto;
+    width: calc(324 / 342 * 100%);
+  }
+}
+
 
 
 /* わたしについて　アイコン画像 */
@@ -410,6 +732,13 @@
   overflow: hidden;
   min-width: 100px;
   max-width: 200px;
+}
+
+@media (width < 768px) {
+  .About__InnerIcon {
+    width: calc(150 / 342 * 100%);
+    margin: 0 auto calc(24 / 342 * 100%);
+  }
 }
 
 .About__InnerIconImage {
