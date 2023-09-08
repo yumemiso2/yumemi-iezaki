@@ -161,26 +161,6 @@
 /* ここにボタンが入る（TextButton） */
 
 
-
-
-
-/* .WorksItem--LB {
-  background-color: #fffef2;
-}
-
-.WorksItem--PY {
-  background-color: #f6f5de;
-}
-
-.WorksItem--LB .WorksItem__Inner {
-  background-color: #f6f5de;
-}
-
-.WorksItem--PY .WorksItem__Inner {
-  background-color: #fffef2;
-} */
-
-
 /* 奇数 odd*/
 .WorksItem:nth-child(odd) {
   background-color: #fffef2;
