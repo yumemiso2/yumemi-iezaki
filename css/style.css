@@ -209,6 +209,8 @@
 
 @media (width < 768px) {
   .Works .TextContainer {
+    /* .TextContainer はスライドが入っている親要素の中にはないから、
+    （（画像サイズ + padding 両側） / SP の幅 * 100%）で考える */
     /* 334 = 314px(幅) + 10px + 10px（padding） */
     width: calc(334 / 390 * 100%);
   }

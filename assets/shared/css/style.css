@@ -204,7 +204,7 @@
 /* Button */
 
 .Button {
-  font-size: 1em;
+  font-size: 16px;
   border: 1px solid #000;
   border-radius: 50px;
   background-color: #FFF;
@@ -215,8 +215,16 @@
     background-color 0.5s;
   color: #000;
   text-decoration: none;
-  line-height: normal;
+  line-height: calc(32 / 16);
 }
+
+@media (width < 768px) {
+  .Button {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+}
+
 
 .Button:hover {
   background-color: #000;
@@ -244,11 +252,6 @@
   }
 }
 
-/*
-.Section__FooterInner {
-  overflow: hidden;
-} */
-
 
 .Section__FooterButtonInner {
   display: flex;
@@ -259,6 +262,7 @@
 .TopButton--Works {
   /* 90 * 2 は両サイドの padding の値 */
   width: calc(68 / (1280 - (90 * 2)) * 100%);
+  /* width: calc(68 / 1150 * 100%); */
   max-width: 68px;
   min-width: 24px;
   position: absolute;
@@ -271,3 +275,18 @@
 .TopButton__Arrow {
   width: 100%;
 }
+
+
+
+
+/*
+@media (width < 768px) {
+  .TopButton--Works {
+    width: calc(24 / 352 * 100%);
+
+  }
+}
+
+.TopButton--Works {
+  width: calc(68 / 1100 * 100%);
+} */
