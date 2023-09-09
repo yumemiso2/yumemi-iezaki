@@ -259,6 +259,7 @@
 .TopButton--Works {
   /* 90 * 2 は両サイドの padding の値 */
   width: calc(68 / (1280 - (90 * 2)) * 100%);
+  /* width: calc(68 / 1150 * 100%); */
   max-width: 68px;
   min-width: 24px;
   position: absolute;
@@ -271,3 +272,15 @@
 .TopButton__Arrow {
   width: 100%;
 }
+
+/*
+@media (width < 768px) {
+  .TopButton--Works {
+    width: calc(24 / 352 * 100%);
+
+  }
+}
+
+.TopButton--Works {
+  width: calc(68 / 1100 * 100%);
+} */

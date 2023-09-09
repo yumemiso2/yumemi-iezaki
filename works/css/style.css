@@ -235,20 +235,49 @@
  }
 
 
-
-
 .Works .Section__Footer .WorksItem__Inner {
   padding: 72px 90px;
 }
 
 @media (width < 768px) {
   .Works .Section__Footer .WorksItem__Inner {
-    padding: calc(40 / 390 * 100%) 90px;
+    padding: calc(40 / 390 * 100%) calc(24 / 390 * 100%);
   }
 }
 
 
 
+
+
+
+/* @media (width < 768px) {
+  .Works .Section__Footer .WorksItem__Inner {
+    padding: calc(40 / 390 * 100%) 0;
+  }
+} */
+
+/* @media (width < 768px) {
+  .Section__FooterButton{
+    width: calc(352 / 390 * 100%);
+    margin: 0 auto;
+  }
+} */
+
+/* .Section__FooterButton {
+  width: calc(1100 / 1280 *100%);
+  margin: 0 auto;
+}
+
+.Works .Section__Footer .WorksItem__Inner {
+  width: calc(1100 / 1280 *100%);
+  margin: 0 auto;
+} */
+
+
+/* .Works .Section__Footer--Works .Section__FooterButton {
+  margin: 0 auto;
+  width: calc(1150 / 1280 * 100%);
+} */
 
 
 
