@@ -204,7 +204,7 @@
 /* Button */
 
 .Button {
-  font-size: 1em;
+  font-size: 16px;
   border: 1px solid #000;
   border-radius: 50px;
   background-color: #FFF;
@@ -215,7 +215,7 @@
     background-color 0.5s;
   color: #000;
   text-decoration: none;
-  line-height: normal;
+  line-height: calc(32 / 16);
 }
 
 @media (width < 768px) {
@@ -251,11 +251,6 @@
     padding: 8px 72px;
   }
 }
-
-/*
-.Section__FooterInner {
-  overflow: hidden;
-} */
 
 
 .Section__FooterButtonInner {
