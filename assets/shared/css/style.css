@@ -218,6 +218,14 @@
   line-height: normal;
 }
 
+@media (width < 768px) {
+  .Button {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+}
+
+
 .Button:hover {
   background-color: #000;
   color: #fff;
@@ -272,6 +280,9 @@
 .TopButton__Arrow {
   width: 100%;
 }
+
+
+
 
 /*
 @media (width < 768px) {
