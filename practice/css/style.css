@@ -183,3 +183,18 @@
 .Practice__Container {
   padding: 72px 150px 0;
 }
+
+
+
+.Practice .SectionTitle {
+  width: calc((400 / 1280) * 100%);
+  margin: calc(72 / 1280 * 100%) auto calc(180 / 1280 *100%);
+  min-width: 180px;
+  max-width: 400px;
+}
+
+@media (width < 768px) {
+  .Practice .SectionTitle {
+    margin: calc(24 / 390 * 100%) auto calc(40 / 390 * 100%);
+  }
+}
