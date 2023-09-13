@@ -1,6 +1,6 @@
 //ELは必須の設定
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('#swiper1', {
   loop: false,//スライドを繰り返しする
   keyboard: {
     enabled: true,
@@ -22,9 +22,12 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
+
+
+
 // ModalSwiper の初期化
-const MicroModalSwiper = new Swiper('.swiper2',{
-  spaceBetween: 20,
+const MicroModalSwiper = new Swiper('#swiper2',{
+  // spaceBetween: 20,
   effect: "fade",
   autoHeight: true,
   navigation: {
@@ -36,6 +39,8 @@ const MicroModalSwiper = new Swiper('.swiper2',{
     clickable: true,
   },
 });
+
+
 
 // MicroModalの初期化
 MicroModal.init();

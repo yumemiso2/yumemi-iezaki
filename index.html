@@ -113,7 +113,7 @@
 
       <div class="WorksItem WorksItem--Home">
         <div class="WorksItem__Inner">
-          <div class="WorksItem__Img swiper mySwiper">
+          <div class="WorksItem__Img swiper mySwiper" id="swiper1">
             <div class="ImgList swiper-wrapper">
               <div class="swiper-slide ImgList__Inner">
                 <a href="/works/detail/" class="ImgList__Link"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage" alt="ここに作品それぞれの説明をいれとく">
@@ -430,19 +430,70 @@
   </main>
 
 
-  <div class="PracticeModal modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="_is-debug PracticeModal modal micromodal-slide" id="modal-1" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
 
         <!-- Slider main container -->
-        <div class="ModalSwiper swiper2">
+        <div class="ModalSwiper swiper" id="swiper2">
           <!-- Additional required wrapper -->
           <div class="ModalSwiperWrapper swiper-wrapper">
 
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide1
+
+              <div class="PopupItem">
+                <!-- ここにそれぞれの内容が入る -->
+                <p class="PopupItem__Image"><img src="/assets/images/test-1.png" alt="ここに作品名を入れる" class="PopupItem__ImageInner"></p>
+                <div class="PopupItem__Desctiption">
+                  <h2 class="PopupItem__DesctiptionTitle">作品名を入れる</h2>
+                  <time datetime class="PopupItem__DesctiptionDate">2023&nbsp;年&nbsp;5&nbsp;月&nbsp;</time>
+                </div>
+                <p class="PopupItem__DescriptionText">）この作品についての説明文を入力する。（60文字以内くらい）</p>
+                <div class="PopupCloseButton">
+                  <div class="PopupCloseButton__Inner">
+                    <label class="Button Button--Small" for="PopupButton"><span class="Button__Inner">もどる</span></label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-slide">Slide2
+
+              <div class="PopupItem">
+                <!-- ここにそれぞれの内容が入る -->
+                <p class="PopupItem__Image"><img src="/assets/images/test-1.png" alt="ここに作品名を入れる" class="PopupItem__ImageInner"></p>
+                <div class="PopupItem__Desctiption">
+                  <h2 class="PopupItem__DesctiptionTitle">作品名を入れる</h2>
+                  <time datetime class="PopupItem__DesctiptionDate">2023&nbsp;年&nbsp;5&nbsp;月&nbsp;</time>
+                </div>
+                <p class="PopupItem__DescriptionText">この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）</p>
+                <div class="PopupCloseButton">
+                  <div class="PopupCloseButton__Inner">
+                    <label class="Button Button--Small" for="PopupButton"><span class="Button__Inner">もどる</span></label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-slide">Slide 3
+
+              <div class="PopupItem">
+                <!-- ここにそれぞれの内容が入る -->
+                <p class="PopupItem__Image"><img src="/assets/images/test-1.png" alt="ここに作品名を入れる" class="PopupItem__ImageInner"></p>
+                <div class="PopupItem__Desctiption">
+                  <h2 class="PopupItem__DesctiptionTitle">作品名を入れる</h2>
+                  <time datetime class="PopupItem__DesctiptionDate">2023&nbsp;年&nbsp;5&nbsp;月&nbsp;</time>
+                </div>
+                <p class="PopupItem__DescriptionText">この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）この作品についての説明文を入力する。（60文字以内くらい）</p>
+                <div class="PopupCloseButton">
+                  <div class="PopupCloseButton__Inner">
+                    <label class="Button Button--Small" for="PopupButton"><span class="Button__Inner">もどる</span></label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
             ...
           </div>
           <!-- If we need pagination -->
@@ -467,5 +518,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <script src="/js/index.js"></script>
+
 </body>
 </html>
