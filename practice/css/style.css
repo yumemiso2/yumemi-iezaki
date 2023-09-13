@@ -10,7 +10,6 @@
 
 .Overlay {
   display: none;
-  /* position: fixed; */
   position: relative;
 }
 
@@ -183,3 +182,202 @@
 .Practice__Container {
   padding: 72px 150px 0;
 }
+
+
+
+/* ここから、Homeのコピペ（スタイル合わせるために、htmlもHomeのコピペ使いたい） */
+
+.Practice .SectionTitle {
+  width: calc((400 / 1280) * 100%);
+  margin: calc(72 / 1280 * 100%) auto calc(180 / 1280 *100%);
+  min-width: 180px;
+  max-width: 400px;
+}
+
+@media (width < 768px) {
+  .Practice .SectionTitle {
+    margin: calc(24 / 390 * 100%) auto calc(40 / 390 * 100%);
+  }
+}
+
+.Practice .ScrollList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(-24px / 2) ;
+  overflow: hidden;
+}
+
+@media (width < 768px) {
+  .Practice .ScrollList {
+    margin: calc(-8px / 2);
+  }
+}
+
+/* .Practice .ScrollList::before { */
+  /* content: ""; */
+  /* display: block; */
+  /* width・marginは、liで決めたサイズと同じにする （構造を全く同じにする）*/
+    /* width: calc(326.666666667 / 980 * 100% - 24px);と同じ */
+  /* width: calc(100% / 3 - 24px); */
+  /* margin: calc(24px / 2); */
+/* } */
+
+/* @media (width < 768px) {
+  .Practice .ScrollList::before {
+    width: calc(100% / 3 - 8px);
+    margin: calc(8px / 2);
+  }
+} */
+
+/* .ScrollList__Item:last-child {
+  display: none;
+} */
+
+@media (width < 768px) {
+  .ScrollList__Item:last-child {
+    display: block;
+  }
+}
+
+@media (width < 768px) {
+  .Practice .ScrollList::before {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* li */
+.Practice .ScrollList__Item {
+  width: calc(100% / 3 - 24px);
+  margin: calc(24px / 2);
+  border-radius: calc((50 / ( (980 - 24 - 24) / 3)) * 100%);
+}
+
+@media (width < 768px) {
+  .Practice .ScrollList__Item {
+    width: calc(100% / 3 - 8px);
+    margin: calc(8px / 2);
+  }
+}
+
+/* li > a */
+.Practice .ScrollList__ItemLink {
+  border-radius: calc((50 / ( (980 - 24 - 24) / 3)) * 100%);
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* hover したときに、説明文がふわっと浮き上がるアニメーション */
+.Practice .ScrollList__ItemLink:hover .ScrollList__ItemLinkInner {
+  animation-name: SlideUpAnime;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+  @keyframes SlideUpAnime {
+    from {
+      transform: translateY(100%);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+
+.Practice .ScrollList__ItemLinkInner {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  /* アニメーションしていないときも、紹介文を隠しておくため */
+  /* transform: translateY(calc((172 / 171) * 100%)); と同じ*/
+  transform: translateY(100%);
+}
+
+@media (width < 768px) {
+  .Practice .ScrollList__ItemLinkInner {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+/* li > a > img */
+.Practice .ScrollList__ItemLinkImage {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+/* hover アクション */
+.Practice .ScrollHover {
+  text-align: center;
+    /* font-size: 14-16px; */
+  font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  min-height: calc(150 / 300 * 100%);
+  padding: calc(36 / ((980 - 24 - 24) / 3) * 100%);
+}
+
+@media (width < 768px) {
+  .Practice .ScrollHover {
+    margin: 0 auto;
+    /* 12px - 16px */
+    font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
+    width: 100%;
+    height: 100%;
+    padding: calc(10 / ((342 - 8 - 8) / 3) * 100%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.ScrollHover__Name {
+  border-bottom: 2px dotted;
+  padding: 0 0 8px;
+  font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
+}
+
+@media (width < 768px) {
+  .ScrollHover__Name {
+    border-bottom: none;
+    font-family: "HigureGothic-Medium";
+      /* …に省略するところ */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+}
+
+
+
+.ScrollHover__Description {
+  padding: 16px 0 0;
+  font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
+
+  /* …に省略するところ */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+@media (width < 768px) {
+  .ScrollHover__Description {
+    display: none;
+
+    padding: 0;
+  }
+}
+
+
+.Practice .TextButton {
+  margin: calc(24 / 390 * 100%) 0 0;
+}
+
+/* Practice ここまで */

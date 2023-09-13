@@ -21,3 +21,6 @@ const swiper = new Swiper('.swiper', {
     clickable: true,
   }
 });
+
+// MicroModalの初期化
+MicroModal.init();
