@@ -22,5 +22,20 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
+// ModalSwiper の初期化
+const MicroModalSwiper = new Swiper('.swiper2',{
+  spaceBetween: 20,
+  effect: "fade",
+  autoHeight: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 // MicroModalの初期化
 MicroModal.init();

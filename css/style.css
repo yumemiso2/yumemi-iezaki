@@ -746,3 +746,24 @@
 .About__InnerIconImage {
   width: 100%;
 }
+
+
+
+/* fade用 */
+
+.PracticeModal .swiper2 {
+  width: 100%;
+  height: 100%;
+}
+
+.PracticeModal .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+/* .PracticeMoodal .swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+
+/* auto-height用 */
