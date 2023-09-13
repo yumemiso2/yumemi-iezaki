@@ -199,7 +199,7 @@
             <ul class="ScrollList">
               <!-- ScrollList__item ：SP：18個、PC：17個-->
               <li class="ScrollList__Item">
-                <a href="#" class="ScrollList__ItemLink">
+                <a class="ScrollList__ItemLink" data-micromodal-trigger="modal-1">
                   <div class="ScrollList__ItemLinkInner">
                     <div class="ScrollHover">
                       <p class="ScrollHover__Name">Moogle</p>
@@ -428,6 +428,58 @@
       </div>
     </section>
   </main>
+
+  <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+    <!-- 背景のオーバーレイ -->
+    <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+      <div
+        class="modal-container"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-1-title">
+        <header class="modal-header">
+          <h2 class="modal-title" id="modal-1-title">Micromodal</h2>
+           <!-- 閉じるボタン -->
+          <button
+            class="modal-close"
+            aria-label="Close modal"
+            data-micromodal-close
+          ></button>
+        </header>
+        <!-- モーダルのコンテンツ -->
+        <div class="modal-content" id="modal-1-content">
+          <p class="modal-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+          </p>
+          <!-- /.modal-text -->
+        </div>
+      </div>
+    </div>
+  </div>
+
   <foter class="Footer">
     <div class="Footer__Inner">
       <small class="Footer__InnerCopyright">&copy;2023&nbsp;Yumemi&nbsp;Iezaki</small>
