@@ -15,9 +15,6 @@
 /* Swiperスタイル */
 .swiper-slide {
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   width: calc(1000 / 1150 * 100%);
   max-width: 1000px;
@@ -744,5 +741,30 @@
 }
 
 .About__InnerIconImage {
+  width: 100%;
+}
+
+
+
+/* swiper fade用 */
+.PracticeModal {
+  /* position: static;だと、z-indexが効かないから */
+  position: relative;
+  /* height: 100%; */
+  z-index: 999;
+}
+
+.PracticeModal .swiper {
+  width: 100%;
+  height: auto;
+}
+
+.PracticeModal .swiper-slide {
+  /* text-align: center; */
+  background: #fff;
+}
+
+.PracticeMoodal .swiper-slide img {
+  display: block;
   width: 100%;
 }
