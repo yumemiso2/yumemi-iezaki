@@ -15,9 +15,6 @@
 /* Swiperスタイル */
 .swiper-slide {
   text-align: center;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
 
   width: calc(1000 / 1150 * 100%);
   max-width: 1000px;
@@ -763,26 +760,11 @@
 }
 
 .PracticeModal .swiper-slide {
-  text-align: center;
-  font-size: 18px;
+  /* text-align: center; */
   background: #fff;
-  background-position: center;
-  background-size: cover;
 }
 
 .PracticeMoodal .swiper-slide img {
   display: block;
   width: 100%;
-}
-
-/* auto-height用 */
-
-/* .PracticeMoodal .swiper .swiper-slide {
-  height: 300px;
-  line-height: 300px;
-} */
-
-.PracticeMoodal .swiper .swiper-slide:nth-child(2n) {
-  height: 500px;
-  line-height: 500px;
 }
