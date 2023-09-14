@@ -1,8 +1,14 @@
-:root {
+:root .Works {
   /* 16px - 88px */
   --swiper-navigation-size: clamp(1rem, -0.972rem + 8.09vw, 5.5rem);
   --swiper-pagination-bottom: 0;
 }
+/* :root .PracticeModal {
+
+  --swiper-navigation-size: 44px;
+  --swiper-pagination-bottom: 0;
+} */
+
 
 @media (width < 768px) {
   :root {
@@ -13,7 +19,7 @@
 
 
 /* Swiperスタイル */
-.swiper-slide {
+.Works .swiper-slide {
   text-align: center;
 
   width: calc(1000 / 1150 * 100%);
@@ -22,6 +28,12 @@
   padding: 0 clamp(0.625rem, 0.351rem + 1.12vw, 1.25rem);
 }
 
+@media (width < 768px) {
+  .Works .swiper-slide {
+    /* 334 = 314px(幅) + 10px + 10px（padding） */
+    width: calc(334 / 352 * 100%);
+  }
+}
 
 .Body {
   line-height: calc(24 / 14);
@@ -33,12 +45,7 @@
   }
 }
 
-@media (width < 768px) {
-  .swiper-slide {
-    /* 334 = 314px(幅) + 10px + 10px（padding） */
-    width: calc(334 / 352 * 100%);
-  }
-}
+
 
 .swiper-slide .ImgList__LinkImage {
   display: block;
@@ -48,13 +55,13 @@
 
 
 
-.SwiperButton {
+.Works .SwiperButton {
   width: 100%;
   position: absolute;
   top: 50%;
 }
 
-.SwiperButton_Inner {
+.Works .SwiperButton_Inner {
   width: calc(1000 / 1280 * 100%);
   margin: 0 auto;
   position: relative;
@@ -62,7 +69,7 @@
 }
 
 @media (width < 768px) {
-  .SwiperButton_Inner {
+  .Works .SwiperButton_Inner {
     width: calc(334 / 390 * 100%);
   }
 }
@@ -80,6 +87,99 @@
 .SwiperButtonArrow {
   color: #989550;
 }
+
+
+
+
+/* Practice swiper用 */
+
+.PracticeModal .swiper-slide {
+  text-align: center;
+
+  /* width: calc(1000 / 1150 * 100%);
+  max-width: 1000px; */
+  /* padding: 10-20px */
+  /* padding: 0 clamp(0.625rem, 0.351rem + 1.12vw, 1.25rem); */
+}
+
+@media (width < 768px) {
+  .PracticeModal .swiper-slide {
+    /* 334 = 314px(幅) + 10px + 10px（padding） */
+    /* width: calc(334 / 352 * 100%); */
+  }
+}
+
+.PracticeModal .SwiperButton {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+
+.PracticeModal .SwiperButton_Inner {
+  /* margin: 0 auto;
+  position: relative;
+  max-width: 1000px; */
+}
+
+@media (width < 768px) {
+  .PracticeModal .SwiperButton_Inner {
+    /* width: calc(334 / 390 * 100%); */
+  }
+}
+
+/* .PracticeModal .ScrollDot {
+  display: none;
+} */
+
+.PracticeModal .SwiperButton--L {
+  /* left: auto; */
+  /* right: 100%; */
+}
+
+.PracticeModal .SwiperButton--R {
+  /* left: 100%; */
+}
+
+
+
+
+/* swiper fade用 */
+.PracticeModal {
+  /* position: static;だと、z-indexが効かないから */
+  position: relative;
+  /* height: 100%; */
+  z-index: 999;
+}
+
+.PracticeModal .swiper {
+  width: 100%;
+  height: auto;
+}
+
+.PracticeModal .swiper-slide {
+  background: #fff;
+}
+
+/* .PracticeModal .swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+
+.ModalSwiper {
+  width: calc(1150 / 1280 * 100%);
+  max-width: 1150px;
+  /* min(a,b) = 2つのうち小さい方が適用される。
+  この場合、calc()か、clamp（25px - 50px）のどちらか一方*/
+  border-radius: min(calc(50 / 1280 * 100vw), clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem));
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -741,30 +841,5 @@
 }
 
 .About__InnerIconImage {
-  width: 100%;
-}
-
-
-
-/* swiper fade用 */
-.PracticeModal {
-  /* position: static;だと、z-indexが効かないから */
-  position: relative;
-  /* height: 100%; */
-  z-index: 999;
-}
-
-.PracticeModal .swiper {
-  width: 100%;
-  height: auto;
-}
-
-.PracticeModal .swiper-slide {
-  /* text-align: center; */
-  background: #fff;
-}
-
-.PracticeMoodal .swiper-slide img {
-  display: block;
   width: 100%;
 }
