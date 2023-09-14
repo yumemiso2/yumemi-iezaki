@@ -113,7 +113,7 @@
 
       <div class="WorksItem WorksItem--Home">
         <div class="WorksItem__Inner">
-          <div class="WorksItem__Img swiper mySwiper" id="swiper1">
+          <div class="WorksItem__Img swiper mySwiper" id="HomeWorks__swiper">
             <div class="ImgList swiper-wrapper">
               <div class="swiper-slide ImgList__Inner">
                 <a href="/works/detail/" class="ImgList__Link"><img src="/assets/images/moogle-ex.jpg" class="ImgList__LinkImage" alt="ここに作品それぞれの説明をいれとく">
@@ -153,14 +153,14 @@
             <!-- If we need navigation buttons -->
             <div class="SwiperButton">
               <div class="SwiperButton_Inner">
-                <div class="swiper-button-prev SwiperButton--L SwiperButtonArrow"></div>
-                <div class="swiper-button-next SwiperButton--R SwiperButtonArrow"></div>
+                <div class="swiper-button-prev SwiperButton--L SwiperButtonArrow" id="HomeWorks__swiper-button-prev"></div>
+                <div class="swiper-button-next SwiperButton--R SwiperButtonArrow" id="HomeWorks__swiper-button-next"></div>
               </div>
             </div>
 
           </div>
           <!-- If we need pagination -->
-          <div class="ScrollDot swiper-pagination"></div>
+          <div class="ScrollDot swiper-pagination" id="HomeWorks__swiper-pagination"></div>
 
           <div class="TextContainer TextContainer--home">
             <div class="Introduce">
@@ -435,7 +435,7 @@
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
 
         <!-- Slider main container -->
-        <div class="ModalSwiper swiper" id="swiper2">
+        <div class="ModalSwiper swiper" id="HomePractice__swiper">
           <!-- Additional required wrapper -->
           <div class="ModalSwiperWrapper swiper-wrapper">
 
@@ -496,11 +496,11 @@
             </div>
           </div>
           <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination" id="HomePractice__swiper-pagination"></div>
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev" id="HomePractice__swiper-button-prev"></div>
+          <div class="swiper-button-next" id="HomePractice__swiper-button-next"></div>
 
           <!-- If we need scrollbar -->
           <div class="swiper-scrollbar"></div>

@@ -1,14 +1,14 @@
 //ELは必須の設定
 
-const swiper = new Swiper('#swiper1', {
+const swiper = new Swiper('#HomeWorks__swiper', {
   loop: false,//スライドを繰り返しする
   keyboard: {
     enabled: true,
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',//次へボタン
-    prevEl: '.swiper-button-prev',//前へボタン
+    nextEl: '#HomeWorks__swiper-button-next',//次へボタン
+    prevEl: '#HomeWorks__swiper-button-prev',//前へボタン
   },
 
 
@@ -17,7 +17,7 @@ const swiper = new Swiper('#swiper1', {
   centeredSlides: true,//アクティブなスライドを中央に表示
   // spaceBetween: 40,//スライド間の距離
   pagination: {
-    el: ".swiper-pagination",//スライドの枚数と現在アクティブなスライドがわかる
+    el: "#HomeWorks__swiper-pagination",//スライドの枚数と現在アクティブなスライドがわかる
     clickable: true,
   }
 });
@@ -26,16 +26,15 @@ const swiper = new Swiper('#swiper1', {
 
 
 // ModalSwiper の初期化
-const MicroModalSwiper = new Swiper('#swiper2',{
-  // spaceBetween: 20,
+const MicroModalSwiper = new Swiper('#HomePractice__swiper',{
   effect: "fade",
   autoHeight: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: "#HomePractice__swiper-button-next",
+    prevEl: "#HomePractice__swiper-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: "#HomePractice__swiper-pagination",
     clickable: true,
   },
 });
