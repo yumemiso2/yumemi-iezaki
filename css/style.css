@@ -106,8 +106,7 @@
 }
 
 .PracticeModal .modal__container {
-  position: relative;
-  max-height: 80vh;
+  max-height: 90vh;
  /* min(a,b) = 2つのうち小さい方が適用される。
   この場合、calc()か、clamp（25px - 50px）のどちらか一方*/
   /* border-radius: min(calc(50 / 1280 * 100vw), clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem)); */
@@ -115,6 +114,11 @@
     /* border-radius: 25 - 50px; */
     border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
 }
+
+.PracticeModal .modal__container::-webkit-scrollbar{
+  display: none;
+}
+
 
 .PracticeModal .swiper {
   width: calc(1150 / 1280 * 100%);
@@ -172,14 +176,35 @@
   /* 14px - 16px*/
   font-size: 16px;
   line-height: calc(32 / 16);
+  padding: 0 0 16px;
 }
 
 .PracticeModal .PopupItem__DescriptionText {
   /* 14px - 16px*/
   font-size: 16px;
   line-height: calc(32 / 16);
+  overflow-y: auto;
+  max-height: 10vh;
+  margin: 16px 0 32px;
+  padding: 24px 0 0;
   /* SP: メディアクエリ */
-  margin: 24px 0 32px;
+
+  position: relative;
+}
+
+.PracticeModal .PopupItem__DescriptionText::before {
+  content: "";
+  height: 1px;
+  background-size: 10px 1px;
+  background-image: linear-gradient(to right, #000, 5px, transparent 5px, transparent 10px);
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.PopupItem__DescriptionText::-webkit-scrollbar{
+  display: none;
 }
 
 .PracticeModal .PopupCloseButton {
