@@ -95,9 +95,6 @@
 
 
 /* Practice swiper用 */
-
-
-
 .PracticeModal {
   /* position: static;だと、z-indexが効かないから */
   position: relative;
@@ -164,6 +161,10 @@
 
 }
 
+.PracticeModal .PopupItem__DesctiptionInner {
+
+}
+
 .PracticeModal .PopupItem__DesctiptionTitle {
   /* font-size: 16px - 24px; */
   font-size: 24px;
@@ -175,9 +176,27 @@
 .PracticeModal .PopupItem__DesctiptionDate {
   /* 14px - 16px*/
   font-size: 16px;
+  display: block;
   line-height: calc(32 / 16);
+  /* padding: 破線用 */
   padding: 0 0 16px;
+  /* margin: 破線からテキストまでの距離 */
+  margin: 0 0 16px;
+  position: relative;
 }
+
+.PracticeModal .PopupItem__DesctiptionDate::before {
+  content: "";
+  height: 1px;
+  background-size: 10px 1px;
+  background-image: linear-gradient(to right, #000, 5px, transparent 5px, transparent 10px);
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 
 .PracticeModal .PopupItem__DescriptionText {
   /* 14px - 16px*/
@@ -185,22 +204,22 @@
   line-height: calc(32 / 16);
   overflow-y: auto;
   max-height: 10vh;
-  margin: 16px 0 32px;
-  padding: 24px 0 0;
-  /* SP: メディアクエリ */
+  /* SP: margin: メディアクエリ 0 0 40px*/
+  margin: 0 0 32px;
+  /* padding: 16px 0 0; */
 
-  position: relative;
+
 }
 
 .PracticeModal .PopupItem__DescriptionText::before {
-  content: "";
+  /* content: "";
   height: 1px;
   background-size: 10px 1px;
   background-image: linear-gradient(to right, #000, 5px, transparent 5px, transparent 10px);
   background-repeat: repeat-x;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 100%; */
 }
 
 .PopupItem__DescriptionText::-webkit-scrollbar{
