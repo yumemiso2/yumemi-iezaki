@@ -3,11 +3,12 @@
   --swiper-navigation-size: clamp(1rem, -0.972rem + 8.09vw, 5.5rem);
   --swiper-pagination-bottom: 0;
 }
-/* :root .PracticeModal {
 
-  --swiper-navigation-size: 44px;
+:root .PracticeModal {
+
+  --swiper-navigation-size: 64px;
   --swiper-pagination-bottom: 0;
-} */
+}
 
 
 @media (width < 768px) {
@@ -110,7 +111,9 @@
 
     /* border-radius: 25 - 50px; */
     border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
-}
+    width: calc(1150 / 1280 * 100%);
+    max-width: 1150px;
+  }
 
 .PracticeModal .modal__container::-webkit-scrollbar{
   display: none;
@@ -118,50 +121,61 @@
 
 
 .PracticeModal .swiper {
-  width: calc(1150 / 1280 * 100%);
-  max-width: 1150px;
   width: 100%;
   height: auto;
 }
 
 .PracticeModal .swiper-wrapper {
-
+  width: 100%;
 }
 
 .PracticeModal .swiper-slide {
   background: #fff;
   text-align: center;
+  width: 100%;
+
 }
 
 
 .PracticeModal .PopupItem {
   /* SP: 32px PC: 72px (sp の padding-top は 24px)*/
-  padding: clamp(2rem, 0.904rem + 4.49vw, 4.5rem) 0;
-  width: calc(400 / 1150 * 100%);
-  max-width: 400px;
-  min-width: 295px;
+  padding: 72px 0;
+  width: calc(940 / 1150 * 100%);
+  max-width: 940px;
+
+  text-align: left;
   margin: 0 auto;
+  display: flex;
+
 }
 
 .PracticeModal .PopupItem__Image {
-  width: calc(400 / 400 * 100%);
-  /* 24px - 32px */
-  margin: 0 auto clamp(1.5rem, 1.281rem + 0.9vw, 2rem);
+  width: calc(500 / 940 * 100%);
+  height: 100%;
+  max-height: 500px;
   /* border-radius: 25 - 50px; */
   border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
   overflow: hidden;
+  margin: 0 calc(40 / 940 * 100%) 0 0;
 }
 
 .PracticeModal .PopupItem__ImageInner {
   width: 100%;
 }
 
-
 .PracticeModal .PopupItem__Desctiption {
-
+  display: flex;
+  flex-direction: column;
+  width: calc(400 / 940 * 100%);
+  position: relative;
+  max-height: 500px;
 }
 
 .PracticeModal .PopupItem__DesctiptionInner {
+
+}
+
+.PracticeModal .PopupItem__DesctiptionHeader {
 
 }
 
@@ -174,14 +188,13 @@
 }
 
 .PracticeModal .PopupItem__DesctiptionDate {
-  /* 14px - 16px*/
-  font-size: 16px;
+  font-size: 14px;
   display: block;
-  line-height: calc(32 / 16);
+  line-height: calc(24 / 14);
   /* padding: 破線用 */
-  padding: 0 0 16px;
-  /* margin: 破線からテキストまでの距離 */
-  margin: 0 0 16px;
+  padding: 0 0 8px;
+  /* margin: 16px - 24px(破線からテキストまでの距離) */
+  margin: 0 0 clamp(1rem, 0.781rem + 0.9vw, 1.5rem);
   position: relative;
 }
 
@@ -199,16 +212,10 @@
 
 
 .PracticeModal .PopupItem__DescriptionText {
-  /* 14px - 16px*/
   font-size: 16px;
   line-height: calc(32 / 16);
+  height: calc(322 / 500 * 100%);
   overflow-y: auto;
-  max-height: 10vh;
-  /* SP: margin: メディアクエリ 0 0 40px*/
-  margin: 0 0 32px;
-  /* padding: 16px 0 0; */
-
-
 }
 
 .PracticeModal .PopupItem__DescriptionText::before {
@@ -227,7 +234,11 @@
 }
 
 .PracticeModal .PopupCloseButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 
+  /* height: calc(50 / 500 * 100%); */
 }
 
 .PracticeModal .PopupCloseButton__Inner {
@@ -247,6 +258,10 @@
 }
 
 .PracticeModal .SwiperButton__Inner {
+  width: calc(940 / 1150 * 100%);
+  margin: 0 auto;
+  position: relative;
+  max-width: 940px;
 
 }
 
@@ -256,12 +271,13 @@
 
 
 .PracticeModal .SwiperButton--L {
-  /* left: auto; */
-  /* right: 100%; */
+  left: auto;
+  right: 100%;
+
 }
 
 .PracticeModal .SwiperButton--R {
-  /* left: 100%; */
+  left: 100%;
 }
 
 
