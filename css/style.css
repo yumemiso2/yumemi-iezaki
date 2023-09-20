@@ -111,8 +111,9 @@
 
     /* border-radius: 25 - 50px; */
     border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
-    width: calc(1150 / 1280 * 100%);
-    max-width: 1150px;
+    width: calc(1230 / 1280 * 100%);
+    max-width: 1230px;
+
   }
 
 .PracticeModal .modal__container::-webkit-scrollbar{
@@ -123,6 +124,7 @@
 .PracticeModal .swiper {
   width: 100%;
   height: auto;
+
 }
 
 .PracticeModal .swiper-wrapper {
@@ -139,9 +141,9 @@
 
 .PracticeModal .PopupItem {
   /* SP: 32px PC: 72px (sp の padding-top は 24px)*/
-  padding: 72px 0;
-  width: calc(940 / 1150 * 100%);
-  max-width: 940px;
+  padding: calc(72 / 1230 * 100%) calc(40 / 1230 *100%);
+  width: calc(1020 / 1150 * 100%);
+  max-width: 1020px;
 
   text-align: left;
   margin: 0 auto;
@@ -258,7 +260,7 @@
 }
 
 .PracticeModal .SwiperButton__Inner {
-  width: calc(940 / 1150 * 100%);
+  width: calc(1020 / 1230 * 100%);
   margin: 0 auto;
   position: relative;
   max-width: 940px;
@@ -272,12 +274,15 @@
 
 .PracticeModal .SwiperButton--L {
   left: auto;
+  /* transform: translate(-50%); */
   right: 100%;
-
+  margin-right: calc(40 / 1020 * 100%);
 }
 
 .PracticeModal .SwiperButton--R {
   left: 100%;
+  margin-left: calc(40 / 1020 * 100%);
+  /* transform: translate(-50%); */
 }
 
 
