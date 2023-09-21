@@ -213,35 +213,45 @@
 }
 
 
+/* テキストを囲む親要素 */
+.PopupItem__DescriptionTextContainer {
+  position: relative;
+  /* ここのheightは100%じゃないと、スクロールしたときにbackgroundの境目がチラチラ動いちゃう（なんで？？） */
+  height: 100%;
+  width: 100%;
+}
+
+.PracticeModal .PopupItem__DescriptionTextContainer::before {
+  content: "";
+  width: 100%;
+  /* heightでbackgroundの乗り具合を調整している */
+  height: 60%;
+  display: block;
+  background: linear-gradient(rgba(255,255,255,0) 0, #fff 40%); /* 徐々に透明にする */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+/* テキストのスタイル・テキスト表示枠の高さを決めている */
 .PracticeModal .PopupItem__DescriptionText {
   font-size: 16px;
   line-height: calc(32 / 16);
+  /* height: 100%; */
   height: calc(322 / 500 * 100%);
   overflow-y: auto;
 }
 
-.PracticeModal .PopupItem__DescriptionText::before {
-  content: "";         /* 疑似要素に必須 */
-  width: 100%;         /* 幅いっぱい */
-  height: 100%;        /* 高さいっぱい */
-  display: block;
-  background: linear-gradient(rgba(255,255,255,0) 0, #fff 80%); /* 徐々に透明にする */
-  position: absolute;  /*  */
-  top: 0;
-  left: 0;
-  /* content: "";
-  height: 1px;
-  background-size: 10px 1px;
-  background-image: linear-gradient(to right, #000, 5px, transparent 5px, transparent 10px);
-  background-repeat: repeat-x;
-  position: absolute;
-  top: 0;
-  width: 100%; */
-}
+
 
 .PopupItem__DescriptionText::-webkit-scrollbar{
   display: none;
 }
+
+
+
+
+
 
 .PracticeModal .PopupCloseButton {
   position: absolute;
