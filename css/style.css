@@ -170,7 +170,6 @@
   flex-direction: column;
   width: calc(400 / 940 * 100%);
   position: relative;
-  max-height: 500px;
 }
 
 .PracticeModal .PopupItem__DesctiptionInner {
@@ -216,18 +215,23 @@
 /* テキストを囲む親要素 */
 .PopupItem__DescriptionTextContainer {
   position: relative;
-  /* ここのheightは100%じゃないと、スクロールしたときにbackgroundの境目がチラチラ動いちゃう（なんで？？） */
+  font-size: 16px;
+  line-height: calc(32 / 16);
+  height: calc(32 / 16 * 11em); /* 11行分に設定する */
+}
+
+.temp {
+  overflow-y: auto;
   height: 100%;
-  width: 100%;
 }
 
 .PracticeModal .PopupItem__DescriptionTextContainer::before {
   content: "";
   width: 100%;
   /* heightでbackgroundの乗り具合を調整している */
-  height: 60%;
+  height: calc(32 / 16 * 3em); /* 3行分に設定する */
   display: block;
-  background: linear-gradient(rgba(255,255,255,0) 0, #fff 40%); /* 徐々に透明にする */
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 60%, rgba(255,255,255,0) 100%); /* 徐々に透明にする */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -235,12 +239,6 @@
 }
 /* テキストのスタイル・テキスト表示枠の高さを決めている */
 .PracticeModal .PopupItem__DescriptionText {
-  font-size: 16px;
-  line-height: calc(32 / 16);
-  /* height: 100%; */
-  height: calc(322 / 500 * 100%);
-  overflow-y: auto;
-
 }
 
 
