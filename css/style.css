@@ -212,42 +212,41 @@
   width: 100%;
 }
 
-.PopupItemTest {
-
-  overflow: hidden;
-  position: relative;
-}
 
 .PracticeModal .PopupItem__DescriptionText {
   font-size: 16px;
   line-height: calc(32 / 16);
   height: calc(322 / 500 * 100%);
-
   overflow-y: auto;
+}
+
+.PracticeModal .PopupItem__DescriptionText::before {
+  content: "";         /* 疑似要素に必須 */
+  width: 100%;         /* 幅いっぱい */
+  height: 100%;        /* 高さいっぱい */
+  display: block;
+  background: linear-gradient(rgba(255,255,255,0) 0, #fff 80%); /* 徐々に透明にする */
+  position: absolute;  /*  */
+  top: 0;
+  left: 0;
+  /* content: "";
+  height: 1px;
+  background-size: 10px 1px;
+  background-image: linear-gradient(to right, #000, 5px, transparent 5px, transparent 10px);
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  width: 100%; */
 }
 
 .PopupItem__DescriptionText::-webkit-scrollbar{
   display: none;
 }
 
-.PracticeModal .PopupItem__DescriptionText::before {
-  content: "";         /* 疑似要素に必須 */
-  width: 100%;         /* 幅いっぱい */
-  height: calc(322 / 500 * 100%);        /* 高さいっぱい */
-  display: block;
-  background: linear-gradient(rgba(255,255,255,0) 0, #fff 150%); /* 徐々に透明にする */
-  position: absolute;  /* relativeは、.PracticeModal .PopupItem__Desctiption */
-  top: 0;
-  left: 0;
-
-}
-
-
 .PracticeModal .PopupCloseButton {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 999;
 
   /* height: calc(50 / 500 * 100%); */
 }
