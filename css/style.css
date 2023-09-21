@@ -240,8 +240,8 @@
   /* height: 100%; */
   height: calc(322 / 500 * 100%);
   overflow-y: auto;
-}
 
+}
 
 
 .PopupItem__DescriptionText::-webkit-scrollbar{

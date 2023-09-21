@@ -42,4 +42,4 @@ const MicroModalSwiper = new Swiper('#HomePractice__swiper',{
 
 
 // MicroModalの初期化
-MicroModal.init();
+MicroModal.init({disableScroll: true});
