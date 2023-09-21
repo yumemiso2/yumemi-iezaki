@@ -225,6 +225,10 @@
   height: 100%;
 }
 
+.temp-inner {
+  padding: 0 0 calc(32 / 16 * 3em); /* 3行分に設定する */
+}
+
 .PracticeModal .PopupItem__DescriptionTextContainer::before {
   content: "";
   width: 100%;
