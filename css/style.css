@@ -170,7 +170,6 @@
   flex-direction: column;
   width: calc(400 / 940 * 100%);
   position: relative;
-  max-height: 500px;
 }
 
 .PracticeModal .PopupItem__DesctiptionInner {
@@ -213,39 +212,48 @@
 }
 
 
-/* テキストを囲む親要素 */
+
+
+
 .PopupItem__DescriptionTextContainer {
   position: relative;
-  /* ここのheightは100%じゃないと、スクロールしたときにbackgroundの境目がチラチラ動いちゃう（なんで？？） */
-  height: 100%;
-  width: 100%;
+  font-size: 16px;
+  line-height: calc(32 / 16);
+  /* 11行分に設定する （もともとスクロールのために、322pxにしてたとこ）*/
+  height: calc(32 / 16 * 11em);
 }
 
 .PracticeModal .PopupItem__DescriptionTextContainer::before {
   content: "";
   width: 100%;
-  /* heightでbackgroundの乗り具合を調整している */
-  height: 60%;
+  /* 3行分に設定する （背景色がかかるようにする行数分？）*/
+  height: calc(32 / 16 * 3em);
   display: block;
-  background: linear-gradient(rgba(255,255,255,0) 0, #fff 40%); /* 徐々に透明にする */
+  /* 0deg(to top)は180degの逆、上が濃い→下へ薄くなる */
+  background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 60%, rgba(255,255,255,0) 100%);
   position: absolute;
   bottom: 0;
   left: 0;
 
 }
-/* テキストのスタイル・テキスト表示枠の高さを決めている */
-.PracticeModal .PopupItem__DescriptionText {
-  font-size: 16px;
-  line-height: calc(32 / 16);
-  /* height: 100%; */
-  height: calc(322 / 500 * 100%);
-  overflow-y: auto;
 
+.PracticeModal .PopupItem__DescriptionTextContainerInner {
+  overflow-y: auto;
+  height: 100%;
 }
 
 
-.PopupItem__DescriptionText::-webkit-scrollbar{
+.PopupItem__DescriptionTextContainerInner::-webkit-scrollbar{
   display: none;
+}
+
+.PracticeModal .PopupItem__DescriptionText {
+  /* 3行分に設定する （最後の行にグラデがかからないため）*/
+  padding: 0 0 calc(32 / 16 * 3em);
+}
+
+.PracticeModal .PopupItem__DescriptionTextInner {
+
 }
 
 
