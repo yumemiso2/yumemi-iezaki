@@ -1,35 +1,35 @@
-:root .Works {
+.Works {
   /* 16px - 88px */
   --swiper-navigation-size: clamp(1rem, -0.972rem + 8.09vw, 5.5rem);
   --swiper-pagination-bottom: 0;
 }
 
-:root .PracticeModal {
-
-  --swiper-navigation-size: 64px;
-  --swiper-pagination-bottom: 0;
-}
-
-
 @media (width < 768px) {
-  :root {
+  .Works {
     /* 遷移ボタン、固定値にした */
     --swiper-navigation-size: 32px;
   }
 }
 
+.PracticeModal {
+  /* 24px - 64px */
+  --swiper-navigation-size: clamp(1.5rem, 0.404rem + 4.49vw, 4rem);
+  --swiper-pagination-bottom: 0;
+}
+
+
+
+
 .Body {
   /* なんのスタイルもついていないところには、この対応をする、という意図 */
-    /* line-height: calc(24 / 14); */
-    line-height: calc(32 / 16);
-  }
+  line-height: calc(32 / 16);
+}
 
-  @media (width < 768px) {
-    .Body {
-      /* line-height: calc(32 / 16); */
-      line-height: calc(24 / 14);
-    }
+@media (width < 768px) {
+  .Body {
+    line-height: calc(24 / 14);
   }
+}
 
 /* Swiperスタイル */
 .Works .swiper-slide {
@@ -105,16 +105,14 @@
 
 .PracticeModal .modal__container {
   max-height: 90vh;
- /* min(a,b) = 2つのうち小さい方が適用される。
-  この場合、calc()か、clamp（25px - 50px）のどちらか一方*/
+  /* min(a,b) = 2つのうち小さい方が適用される。この場合、calc()か、clamp（25px - 50px）のどちらか一方*/
   /* border-radius: min(calc(50 / 1280 * 100vw), clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem)); */
 
-    /* border-radius: 25 - 50px; */
-    border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
-    width: calc(1230 / 1280 * 100%);
-    max-width: 1230px;
-
-  }
+  /* border-radius: 25 - 50px; */
+  border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
+  width: calc(1230 / 1280 * 100%);
+  max-width: 1230px;
+}
 
 .PracticeModal .modal__container::-webkit-scrollbar{
   display: none;
@@ -122,8 +120,6 @@
 
 
 .PracticeModal .swiper {
-  width: 100%;
-  height: auto;
 
 }
 
@@ -133,15 +129,13 @@
 
 .PracticeModal .swiper-slide {
   background: #fff;
-  text-align: center;
-  width: 100%;
 
 }
 
 
 .PracticeModal .PopupItem {
   /* SP: 32px PC: 72px (sp の padding-top は 24px)*/
-  padding: calc(72 / 1230 * 100%) calc(40 / 1230 *100%);
+  padding: calc(72 / 1230 * 100%) calc(40 / 1230 * 100%);
   width: calc(1020 / 1150 * 100%);
   max-width: 1020px;
 
@@ -154,7 +148,8 @@
 .PracticeModal .PopupItem__Image {
   width: calc(500 / 940 * 100%);
   height: 100%;
-  max-height: 500px;
+  /* max-height: 500px; */
+
   /* border-radius: 25 - 50px; */
   border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
   overflow: hidden;
