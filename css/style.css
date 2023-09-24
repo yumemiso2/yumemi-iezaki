@@ -122,8 +122,9 @@
 @media (width < 768px) {
   .PracticeModal .modal__container {
     width: calc(342 / 390 * 100%);
-    min-width: 342px;
-    max-width: 672px;
+
+    /* min-width: 342px; */
+    /* max-width: 672px; */
   }
 }
 
@@ -160,13 +161,14 @@
 @media (width < 768px) {
   .PracticeModal .PopupItem {
     display: block;
-    width: calc(294 / 342 * 100%);
-    min-width: 294px;
-    max-width: 528px;
+    width: 100%;
+    /* width: calc(294 / 342 * 100%); */
+    /* min-width: 294px; */
+    /* max-width: 528px; */
 
     /* 24px - 40px , 16px - 24px */
     /* padding: 0  */
-    padding: 40px 24px;
+    padding: 40px calc(24 / 342 * 100%);
   }
 }
 
@@ -184,12 +186,8 @@
 
 @media (width < 768px) {
   .PracticeModal .PopupItem__Image {
-    /* + 24 + 24 は、PopupItemのpaddingで縮んでしまう画像幅の分
-    （294 - 24 - 24の状態）を、左右に追加する（親要素いっぱいのサイズにみせるため）*/
-    width: calc((294 + 24 + 24) / 342 * 100%);
-    /* min-width: 294px; */
-    max-width: 500px;
-    height: 100%;
+    width: 100%;
+    height: auto;
     margin: 0 auto 24px;
   }
 }
