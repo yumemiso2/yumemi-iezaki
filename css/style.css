@@ -159,7 +159,7 @@
   .PracticeModal .PopupItem {
     display: block;
     /* 24px - 40px , 16px - 24px */
-    padding: 40px calc(24 / 342 * 100%);
+    padding: 40px calc(32 / 342 * 100%);
     width: 100%;
   }
 }
@@ -389,31 +389,27 @@
 
 @media (width < 768px) {
   .PracticeModal .SwiperButton__Inner {
-    width: calc(294 / 342 * 100%);
-
+    width: 100%;
   }
 }
 
 
-/* .PracticeModal .ScrollDot {
-  display: none;
-} */
-
-
 .PracticeModal .SwiperButton--L {
   left: auto;
-  /* transform: translate(-50%); */
   right: 100%;
   margin-right: calc(40 / 1020 * 100%);
-
 }
 
 @media (width < 768px) {
   .PracticeModal .SwiperButton--L {
     /* margin-right: clamp(1rem, 0.781rem + 0.9vw, 1.5rem); */
-    margin: 0;
+    /* margin: 0; */
     /* 矢印の位置調整用、数値は適当 */
-    margin-right: calc(6 / 342 * 100%);
+    /* margin-right: calc(6 / 342 * 100%); */
+    margin: 0;
+    right: auto;
+    left: 0;
+    width: calc(32 / 342 * 100%);
   }
 }
 
@@ -428,7 +424,11 @@
     /* margin-right: clamp(1rem, 0.781rem + 0.9vw, 1.5rem); */
     margin: 0;
     /* 矢印の位置調整用、数値は適当 */
-    margin-left: calc(6 / 342 * 100%);
+    /* margin-left: calc(6 / 342 * 100%); */
+    margin: 0;
+    right: 0;
+    left: auto;
+    width: calc(32 / 342 * 100%);
   }
 }
 
