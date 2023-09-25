@@ -403,7 +403,6 @@
 @media (width < 768px) {
   .PracticeModal .SwiperButton--L {
     /* margin-right: clamp(1rem, 0.781rem + 0.9vw, 1.5rem); */
-    /* margin: 0; */
     /* 矢印の位置調整用、数値は適当 */
     /* margin-right: calc(6 / 342 * 100%); */
     margin: 0;
@@ -422,7 +421,6 @@
 @media (width < 768px) {
   .PracticeModal .SwiperButton--R {
     /* margin-right: clamp(1rem, 0.781rem + 0.9vw, 1.5rem); */
-    margin: 0;
     /* 矢印の位置調整用、数値は適当 */
     /* margin-left: calc(6 / 342 * 100%); */
     margin: 0;
