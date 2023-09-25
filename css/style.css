@@ -17,7 +17,12 @@
   --swiper-pagination-bottom: 0;
 }
 
-
+@media (width < 768px) {
+  .PracticeModal {
+    /* min: 390px max: 768px, 24px - 40px */
+    --swiper-navigation-size: clamp(1.5rem, 0.468rem + 4.23vw, 2.5rem);
+  }
+}
 
 
 .Body {
@@ -114,6 +119,12 @@
   max-width: 1230px;
 }
 
+@media (width < 768px) {
+  .PracticeModal .modal__container {
+    width: calc(342 / 390 * 100%);
+  }
+}
+
 .PracticeModal .modal__container::-webkit-scrollbar{
   display: none;
 }
@@ -142,19 +153,35 @@
   text-align: left;
   margin: 0 auto;
   display: flex;
-
 }
+
+@media (width < 768px) {
+  .PracticeModal .PopupItem {
+    display: block;
+    /* 24px - 40px , 16px - 24px */
+    padding: 40px calc(32 / 342 * 100%);
+    width: 100%;
+  }
+}
+
 
 .PracticeModal .PopupItem__Image {
   width: calc(500 / 940 * 100%);
   height: 100%;
-  /* max-height: 500px; */
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
 
   /* border-radius: 25 - 50px; */
   border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
   overflow: hidden;
   margin: 0 calc(40 / 940 * 100%) 0 0;
+}
+
+@media (width < 768px) {
+  .PracticeModal .PopupItem__Image {
+    margin: 0 auto 24px;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .PracticeModal .PopupItem__ImageInner {
@@ -168,12 +195,26 @@
   position: relative;
 }
 
+@media (width < 768px) {
+  .PracticeModal .PopupItem__Desctiption {
+    display: block;
+    width: 100%;
+  }
+}
+
 .PracticeModal .PopupItem__DesctiptionInner {
 
 }
 
 .PracticeModal .PopupItem__DesctiptionHeader {
+}
 
+@media (width < 768px) {
+  .PracticeModal .PopupItem__DesctiptionHeader {
+    text-align: center;
+    /*  0 0 24px - 32px */
+    margin: 0 0 clamp(1.5rem, 0.984rem + 2.12vw, 2rem);
+  }
 }
 
 .PracticeModal .PopupItem__DesctiptionTitle {
@@ -184,6 +225,23 @@
   margin: 0 0 8px;
 }
 
+@media (width < 768px) {
+  .PracticeModal .PopupItem__DesctiptionTitle {
+    /*min: 390px max: 768px,  16px - 24px */
+    font-size: clamp(1rem, 0.484rem + 2.12vw, 1.5rem);
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+/* @media (width < 390px) {
+  .PracticeModal .PopupItem__DesctiptionTitle {
+    font-size: 16px;
+    line-height: calc(32 / 16);
+    margin: 0;
+  }
+} */
+
 .PracticeModal .PopupItem__DesctiptionDate {
   font-size: 14px;
   display: block;
@@ -193,6 +251,14 @@
   /* margin: 16px - 24px(破線からテキストまでの距離) */
   margin: 0 0 clamp(1rem, 0.781rem + 0.9vw, 1.5rem);
   position: relative;
+}
+
+@media (width < 768px) {
+  .PracticeModal .PopupItem__DesctiptionDate {
+    margin: 0;
+    font-size: 12px;
+    line-height: calc(24 / 12);
+  }
 }
 
 .PracticeModal .PopupItem__DesctiptionDate::before {
@@ -219,6 +285,13 @@
   height: calc(32 / 16 * 11em);
 }
 
+@media (width < 768px) {
+  .PopupItem__DescriptionTextContainer {
+    line-height: calc(24 / 14);
+    font-size: 14px;
+  }
+}
+
 .PracticeModal .PopupItem__DescriptionTextContainer::before {
   content: "";
   width: 100%;
@@ -233,6 +306,18 @@
 
 }
 
+@media (width < 768px) {
+  .PracticeModal .PopupItem__DescriptionTextContainer {
+    height: calc(24 / 14 * 5em);
+  }
+}
+
+@media (width < 768px) {
+  .PracticeModal .PopupItem__DescriptionTextContainer::before {
+    height: calc(24 / 14 * 1em);
+  }
+}
+
 .PracticeModal .PopupItem__DescriptionTextContainerInner {
   overflow-y: auto;
   height: 100%;
@@ -244,8 +329,15 @@
 }
 
 .PracticeModal .PopupItem__DescriptionText {
-  /* 3行分に設定する （最後の行にグラデがかからないため）*/
+  /* 3行分に設定する （最後の行にグラデがかからないため、3行分のpaddingを空けるため。空白の高さを保つ）*/
   padding: 0 0 calc(32 / 16 * 3em);
+}
+
+@media (width < 768px) {
+  .PracticeModal .PopupItem__DescriptionText {
+    /* グラデからテキストをずらすため、２行分 */
+    padding: 0 0 calc(24 / 14 * 2em);
+  }
 }
 
 .PracticeModal .PopupItem__DescriptionTextInner {
@@ -261,8 +353,14 @@
   position: absolute;
   bottom: 0;
   right: 0;
-
   /* height: calc(50 / 500 * 100%); */
+}
+
+@media (width < 768px) {
+  .PracticeModal .PopupCloseButton {
+    position: relative;
+    text-align: center;
+  }
 }
 
 .PracticeModal .PopupCloseButton__Inner {
@@ -289,22 +387,47 @@
 
 }
 
-/* .PracticeModal .ScrollDot {
-  display: none;
-} */
+@media (width < 768px) {
+  .PracticeModal .SwiperButton__Inner {
+    width: 100%;
+  }
+}
 
 
 .PracticeModal .SwiperButton--L {
   left: auto;
-  /* transform: translate(-50%); */
   right: 100%;
   margin-right: calc(40 / 1020 * 100%);
+}
+
+@media (width < 768px) {
+  .PracticeModal .SwiperButton--L {
+    /* margin-right: clamp(1rem, 0.781rem + 0.9vw, 1.5rem); */
+    /* 矢印の位置調整用、数値は適当 */
+    /* margin-right: calc(6 / 342 * 100%); */
+    margin: 0;
+    right: auto;
+    left: 0;
+    width: calc(32 / 342 * 100%);
+  }
 }
 
 .PracticeModal .SwiperButton--R {
   left: 100%;
   margin-left: calc(40 / 1020 * 100%);
   /* transform: translate(-50%); */
+}
+
+@media (width < 768px) {
+  .PracticeModal .SwiperButton--R {
+    /* margin-right: clamp(1rem, 0.781rem + 0.9vw, 1.5rem); */
+    /* 矢印の位置調整用、数値は適当 */
+    /* margin-left: calc(6 / 342 * 100%); */
+    margin: 0;
+    right: 0;
+    left: auto;
+    width: calc(32 / 342 * 100%);
+  }
 }
 
 
