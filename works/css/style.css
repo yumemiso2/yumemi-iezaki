@@ -181,13 +181,14 @@
 
 
 .Works .SectionTitleSub {
-  margin: calc(24 / 854 * 100%) auto;
+  /* margin: calc(24 / 854 * 100%) auto; */
   text-align: center;
   font-size: 24px;
   font-family: "HigureGothic-Medium";
   margin: 0 auto calc(8 / 854 * 100%);
   /* 32 / 24 = 1.33333333333 */
-  line-height: calc(32 / 24);
+  /* line-height: calc(32 / 24); */
+
 }
 
 @media (width < 768px) {
@@ -208,7 +209,8 @@
   .Works .Introduce__Description {
     margin: 0 auto calc(24 / 316 * 100%);
     /* 24 / 14 = 1.71428571429 */
-    line-height: calc(24 / 14);
+    /* line-height: calc(24 / 14); */
+    line-height: 2;
   }
 }
 

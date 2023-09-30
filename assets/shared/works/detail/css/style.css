@@ -27,7 +27,7 @@
 @media (width < 768px) {
   .WorkIntroduce__Inner {
     /* 本文の文字サイズ 1.71428571429*/
-    line-height: calc(24 / 14) ;
+    /* line-height: calc(24 / 14) ; */
   }
 }
 
@@ -75,7 +75,8 @@
   /* 8px - 24px */
   margin: 0 0 clamp(0.5rem, 0.062rem + 1.8vw, 1.5rem);
   /*SP: calc(32 / 32) ,PC: calc(48 / 48)*/
-  line-height: 1;
+  /* 間を取って、1.5 */
+  line-height: 1.5;
 }
 
 .WorkIntroduce__TopDate {
@@ -271,7 +272,8 @@
   /* 24px - 32px */
   font-size: clamp(1.5rem, 1.281rem + 0.9vw, 2rem);
   /*SP: calc(24 / 24),  PC: calc(32 / 32) */
-  line-height: 1;
+  /* 間を取って、1.5 */
+  line-height: 1.5;
 }
 
 
