@@ -114,8 +114,8 @@
 
 .Nav__Inner {
   display: flex;
-  justify-content: space-between;
-
+  /* れんしゅう ページが公開されたら、ここをspace-betweenにする */
+  justify-content: flex-end;
 }
 
 .Header__LinkTextInner {
