@@ -456,20 +456,24 @@
 
 .WorksItem--Home .ImgList {
   width: calc(1150 / 1280 * 100%);
+
 }
 
 @media (width < 768px) {
   .WorksItem--Home .ImgList {
     width: calc(352 / 390 * 100%);
+
   }
 }
 
 .WorksItem--Home .ImgList__Link {
   /* border-radius: 25 - 50px; */
   border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
+
   overflow: hidden;
   display: block;
   position: relative;
+
 }
 
 /* .WorksItem--Home .ImgList__Link:hover{
@@ -485,6 +489,7 @@
 
 .WorksItem--Home .ImgList__Link:hover .ImgList__LinkImage {
   width: 100%;
+
 }
 
 .ImgLink__TextContainerHover {
@@ -501,6 +506,7 @@
   justify-content: center;
   background-color: rgba(96, 96, 96, .4);
   transition: opacity .3s;
+
 }
 
 @media (width < 768px) {

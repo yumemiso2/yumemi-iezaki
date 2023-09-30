@@ -243,7 +243,6 @@
 .WorkIntroduce__ComponentItem {
   /* 40px - 64px */
   margin: clamp(2.5rem, 1.843rem + 2.7vw, 4rem) auto;
-
 }
 
 .WorkIntroduce__ComponentItem:first-child {
@@ -258,7 +257,9 @@
 
 .WorkIntroduce__ComponentItem--Other.WorkIntroduce__ComponentTitle {
   /* 16px - 24px */
-  padding-bottom: clamp(1rem, 0.781rem + 0.9vw, 1.5rem) ;
+  /* padding-bottom: clamp(1rem, 0.781rem + 0.9vw, 1.5rem) ; */
+  /* 40px - 64px */
+  margin-bottom: clamp(2.5rem, 1.843rem + 2.7vw, 4rem);
 }
 
 .WorkIntroduce__ComponentTitle {
@@ -307,6 +308,13 @@
   height: 100%;
 }
 
+.WorkIntroduce__ComponentLink .WorkIntroduce__LinkButton {
+  width: 100%;
+  /* 16px - 24px */
+  /* padding-bottom: clamp(1rem, 0.781rem + 0.9vw, 1.5rem) ; */
+  /* 40px - 64px */
+  margin-top: clamp(2.5rem, 1.843rem + 2.7vw, 4rem);
+}
 
 .WorkIntroduce .Section__FooterInner {
   margin: 0 auto;
@@ -338,3 +346,7 @@
     display: none;
   }
 } */
+
+
+.WorkIntroduce .WorkIntroduce__LinkButton {
+}
