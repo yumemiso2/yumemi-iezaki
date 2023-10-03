@@ -1,15 +1,15 @@
 //ELは必須の設定
 // swiper というクラス名がついているものを集める
 const matches = document.querySelectorAll(".swiper");
-console.log(matches);
+
 
 // forEach = 数分を繰り返す
 matches.forEach(matche => {
-  console.log()
+
   // matche = .swiper という名前がついたものを、1つずつとみる
-  console.log(matche)
+
   // matcheの中の、.swiper-button-nextという名前がついたものを1つずつみる（Allみたいに、配列にならない）
-  console.log(matche.querySelector('.swiper-button-next'));
+
 
   const swiper = new Swiper(matche , {
     loop: false,//スライドを繰り返しする
