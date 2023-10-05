@@ -290,3 +290,7 @@
 .TopButton--Works {
   width: calc(68 / 1100 * 100%);
 } */
+
+.Introduce__Description--Br {
+  display: inline-block;
+}
