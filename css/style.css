@@ -469,7 +469,7 @@
 .WorksItem--Home .ImgList__Link {
   /* border-radius: 25 - 50px; */
   border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
-
+  border: solid 1px #D8D6B4;
   overflow: hidden;
   display: block;
   position: relative;
@@ -1079,7 +1079,7 @@
 
 .About__InnerIcon {
   order: -1;
-  outline: solid 1px #C2C19B;
+  outline: solid 1px #D8D6B4;
   width: calc(200 / 995 * 100%);
   border-radius: calc(50 / 200 * 100%);
   overflow: hidden;

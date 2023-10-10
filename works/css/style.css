@@ -87,6 +87,8 @@
  /* swiper-slide の中の a タグ */
   /* border-radius: 25 - 50px; */
   border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
+  border: solid 1px #D8D6B4;
+  /* border: solid 1px #989550; */
   overflow: hidden;
   display: block;
   position: relative;
