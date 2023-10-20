@@ -832,6 +832,8 @@
   }
 }
 
+/* SP版では全部3カラムなので、PC版の1列目2カラムの都合に合わせるため。
+ */
 /* .ScrollList__Item:last-child {
   display: none;
 } */
