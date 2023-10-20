@@ -43,3 +43,31 @@ const MicroModalSwiper = new Swiper('#HomePractice__swiper',{
 
 // MicroModalの初期化
 MicroModal.init({disableScroll: true});
+
+// const scrollListItemLink = document.querySelectorAll(".js-modal");
+const scrollListItemLinkFirst = document.querySelector(".js-modal0");
+const scrollListItemLinkSecond = document.querySelector(".js-modal1");
+const scrollListItemLinkThird = document.querySelector(".js-modal2");
+console.log(scrollListItemLinkFirst);
+
+scrollListItemLinkFirst.addEventListener(
+  "click",
+  function(){
+    MicroModalSwiper.slideTo(0);
+    console.log("れんしゅうコンテンツ1")
+  },
+ );
+scrollListItemLinkSecond.addEventListener(
+  "click",
+  function(){
+    MicroModalSwiper.slideTo(1);
+    console.log("れんしゅうコンテンツ2")
+  },
+ );
+scrollListItemLinkThird.addEventListener(
+  "click",
+  function(){
+    MicroModalSwiper.slideTo(2);
+    console.log("れんしゅうコンテンツ3")
+  },
+ );
