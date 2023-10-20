@@ -44,30 +44,80 @@ const MicroModalSwiper = new Swiper('#HomePractice__swiper',{
 // MicroModalの初期化
 MicroModal.init({disableScroll: true});
 
-// const scrollListItemLink = document.querySelectorAll(".js-modal");
-const scrollListItemLinkFirst = document.querySelector(".js-modal0");
-const scrollListItemLinkSecond = document.querySelector(".js-modal1");
-const scrollListItemLinkThird = document.querySelector(".js-modal2");
-console.log(scrollListItemLinkFirst);
+// feat: サムネイルとモーダルのスライドの表示が対応するようになった！！（これから、最適な書き方に改良予定）
+// const scrollListItemLinkFirst = document.querySelector(".js-modal0");
+// const scrollListItemLinkSecond = document.querySelector(".js-modal1");
+// const scrollListItemLinkThird = document.querySelector(".js-modal2");
+// console.log(scrollListItemLinkFirst);
 
-scrollListItemLinkFirst.addEventListener(
-  "click",
-  function(){
-    MicroModalSwiper.slideTo(0);
-    console.log("れんしゅうコンテンツ1")
-  },
- );
-scrollListItemLinkSecond.addEventListener(
-  "click",
-  function(){
-    MicroModalSwiper.slideTo(1);
-    console.log("れんしゅうコンテンツ2")
-  },
- );
-scrollListItemLinkThird.addEventListener(
-  "click",
-  function(){
-    MicroModalSwiper.slideTo(2);
-    console.log("れんしゅうコンテンツ3")
-  },
- );
+// scrollListItemLinkFirst.addEventListener(
+//   "click",
+//   function(){
+//     MicroModalSwiper.slideTo(0);
+//     console.log("れんしゅうコンテンツ1")
+//   },
+//  );
+// scrollListItemLinkSecond.addEventListener(
+//   "click",
+//   function(){
+//     MicroModalSwiper.slideTo(1);
+//     console.log("れんしゅうコンテンツ2")
+//   },
+//  );
+// scrollListItemLinkThird.addEventListener(
+//   "click",
+//   function(){
+//     MicroModalSwiper.slideTo(2);
+//     console.log("れんしゅうコンテンツ3")
+//   },
+//  );
+
+// 最適な書き方に改良する
+const scrollListItemLinkFirst = document.querySelector(".js-modal0");
+
+const scrollListItemLink = document.querySelectorAll(".js-modal");
+// console.log(scrollListItemLinkFirst);
+console.log(scrollListItemLink);
+
+// console.log(scrollListItemLink);
+
+// forEach は scrollListItemLink の中身を一個づつ取り出す処理
+scrollListItemLink.forEach(function(link, i){
+  // console.log(a, i);
+  console.log(i + ' 回目の処理', link, scrollListItemLink[i]);
+  // 1回目のループ scrollListItemLink[0].addEventListener
+  // 2回目のループ scrollListItemLink[1].addEventListener
+  // 3回目のループ scrollListItemLink[2].addEventListener
+  // 以降 1 づつ増える
+  // console.log(scrollListItemLink[i]);
+
+  link.addEventListener(
+    "click",
+    function(){
+      console.log(i + " をクリックした!!");
+      MicroModalSwiper.slideTo(i, 0);
+    }
+  );
+});
+
+
+// scrollListItemLink[0].addEventListener(
+//   "click",
+//   function(){
+//     console.log("1 をクリックした!!");
+//   }
+// );
+
+// scrollListItemLink[1].addEventListener(
+//   "click",
+//   function(){
+//     console.log("1 をクリックした!!");
+//   }
+// );
+
+// scrollListItemLink[2].addEventListener(
+//   "click",
+//   function(){
+//     console.log("1 をクリックした!!");
+//   }
+// );
