@@ -1119,20 +1119,24 @@
 }
 
 @media (width < 768px) {
-  .WorkIntroduce__LinkButton {
+  .PopupItem__DesctiptionLinkButton {
     width: 100%;
     margin: 0;
   }
 }
 
-.WorkIntroduce__LinkButtonInner {
+/* .WorkIntroduce__LinkButtonInner {
+  display: flex;
+  position: relative;
+} */
+
+.PopupItem__DesctiptionLinkButtonInner {
   display: flex;
   position: relative;
 }
 
 
-
-.WorkIntroduce__LinkButtonInner::after {
+.PopupItem__DesctiptionLinkButtonInner::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1145,16 +1149,16 @@
   transition: transform .4s;
 }
 
-.WorkIntroduce__LinkButtonInner:hover::after {
+.PopupItem__DesctiptionLinkButtonInner:hover::after {
   transform: scale(1);
 }
 
-.WorkIntroduce__ButtonInnerText {
+.PopupItem__DesctiptionLinkButtonInnerText {
   /* 矢印のmarginは、SPも16px */
   margin: 0 16px 0 0;
 }
 
-.WorkIntroduce__ButtonArrow {
+.PopupItem__ButtonArrow {
   display: block;
   width: 16px;
 }

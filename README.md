@@ -29,3 +29,73 @@
 ### ディレクトリ名ルール
 - すべて小文字
 - 原則ページ名でつける（ex：works）
+
+### れんしゅう、モーダルの更新方法
+サムネイル画像は、``/Users/yumemi/Documents/GitHub/yumemi-iezaki/index.html``の、以下をコピペで追加する
+
+```html
+<li class="ScrollList__Item">
+  <a class="ScrollList__ItemLink js-modal js-modal3" data-micromodal-trigger="modal-1">
+    <div class="ScrollList__ItemLinkInner">
+      <div class="ScrollHover">
+        <p class="ScrollHover__Name">クリックカウンター</p>
+        <p class="ScrollHover__Description">JavaScript を使用して制作したクリックカウンターです</p>
+      </div>
+    </div>
+    <img class="ScrollList__ItemLinkImage" src="/assets/images/practice-counter.png" alt="クリックカウンター">
+  </a>
+</li>
+```
+- 画像・タイトル・テキストを変更する
+- alt ="" を記述する（.ScrollHover__Name と同じテキストにする）
+
+モーダルは、以下をコピペで追加する！！
+
+```html
+<div class="swiper-slide">
+
+  <div class="PopupItem">
+    <p class="PopupItem__Image"><img src="/assets/images/practice-counter.png" alt="クリックカウンター" class="PopupItem__ImageInner"></p>
+    <div class="PopupItem__Desctiption">
+      <div class="PopupItem__DesctiptionHeader">
+        <h2 class="PopupItem__DesctiptionTitle">クリックカウンター</h2>
+        <time datetime class="PopupItem__DesctiptionDate">2023&nbsp;年&nbsp;11&nbsp;月&nbsp;</time>
+      </div>
+      <div class="PopupItem__DescriptionTextContainer">
+        <div class="PopupItem__DescriptionTextContainerInner temp">
+          <div class="PopupItem__DescriptionText">
+            <p class="PopupItem__DescriptionTextInner">JavaScript の練習として、クリックすると値が増減するカウンターをつくりました！</p>
+
+            <div class="PopupItem__DesctiptionLinkButton">
+              <a class="PopupItem__DesctiptionLinkButtonInner" target="_blank" rel="noopener noreferrer" href="https://codepen.io/yumemiso07/pen/wvNeYLY">
+                <p class="PopupItem__DesctiptionLinkButtonInnerText">CodePen&nbsp;でみる</p>
+                <img class="PopupItem__ButtonArrow" src="/assets/images/link-arrow.svg" alt="ジャンプリンク用アイコン">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="PopupCloseButton">
+        <div class="PopupCloseButton__Inner">
+          <a class="Button Button--Small" aria-label="Close modal" data-micromodal-close><span class="Button__Inner">とじる</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.swiper-slide -->
+```
+
+-
+
+- 画像・タイトル・日付・テキストを変更する
+
+
+
+-  url  がある場合は必ず変更後リンク先を確認する。新規タブで開くので、
+  ``target="_blank" rel="noopener noreferrer" ``をつける！！（`<a class="WorkIntroduce__LinkButtonInner" target="_blank" rel="noopener noreferrer" href="https://codepen.io/yumemiso07/pen/wvNeYLY">`）
+
+
+###その他メモ
+- ``data-micromodal-trigger="modal-1 id= "modal-1"``は、Micromodal.js を発火させるため関係性の紐づけに使用している
