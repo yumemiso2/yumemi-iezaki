@@ -11,6 +11,8 @@
   }
 }
 
+
+/* PracticeModal */
 .PracticeModal {
   /* 24px - 64px */
   --swiper-navigation-size: clamp(1.5rem, 0.404rem + 4.49vw, 4rem);
@@ -18,6 +20,13 @@
 }
 
 @media (width < 768px) {
+  .PracticeModal {
+    /* min: 390px max: 768px, 24px - 40px */
+    --swiper-navigation-size: clamp(1.5rem, 0.468rem + 4.23vw, 2.5rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .PracticeModal {
     /* min: 390px max: 768px, 24px - 40px */
     --swiper-navigation-size: clamp(1.5rem, 0.468rem + 4.23vw, 2.5rem);
@@ -161,6 +170,16 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .PracticeModal .PopupItem {
+    display: block;
+    /* 24px - 40px , 16px - 24px */
+    padding: 40px calc(32 / 342 * 100%);
+    width: 100%;
+  }
+}
+
 
 
 .PracticeModal .PopupItem__Image {
@@ -666,6 +685,18 @@
   writing-mode: vertical-rl;
 }
 
+@media (width < 768px) {
+  .TextContainer--Vartical .Introduce__Description {
+    writing-mode: horizontal-tb;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .TextContainer--Vartical .Introduce__Description {
+    writing-mode: horizontal-tb;
+  }
+}
+
 .Practice .TextContainer--Vartical {
   width: 100%;
   position: absolute;
@@ -679,12 +710,15 @@
   }
 }
 
-@media (width < 768px) {
-  .TextContainer--Vartical .Introduce__Description {
-    writing-mode: horizontal-tb;
-
+@media screen and (max-width: 768px) {
+  .Practice .TextContainer--Vartical {
+    position: relative;
+    width: calc(342 / 390 * 100%);
+    margin: 0 auto calc(24 / 390 * 100%);
   }
 }
+
+
 
 .TextWrapper {
   width: calc(980 / 1280 * 100%);
@@ -698,6 +732,14 @@
     width: 100%;
     width: calc(324 / 342 * 100%);
 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .TextWrapper {
+    /* width: calc(324 / 3 * 100%); */
+    width: 100%;
+    width: calc(324 / 342 * 100%);
   }
 }
 
@@ -733,6 +775,14 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Practice .Introduce {
+    width: 100%;
+    margin: 0;
+    aspect-ratio: auto;
+  }
+}
+
 .Introduce__Inner {
   display: flex;
   justify-content: flex-end;
@@ -755,6 +805,17 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Introduce__Inner {
+    position: relative;
+    /* display: flex; */
+    width: 100%;
+    /* .SectionTitle と.Introduce__Description の下が空くのを抑えるため*/
+    max-height: 200px;
+    justify-content: flex-start;
+  }
+}
+
 
 .Practice .SectionTitle {
   width: calc((88 / ((980 - 24 - 24) / 3)) * 100%);
@@ -764,6 +825,16 @@
 }
 
 @media (width < 768px) {
+  .Practice .SectionTitle {
+    /* グリッド幅 342px */
+    width: calc(32 / 342 * 100%);
+    order: 0;
+    margin: 0 calc(16 / 342 * 100%) 0 0;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Practice .SectionTitle {
     /* グリッド幅 342px */
     width: calc(32 / 342 * 100%);
@@ -794,6 +865,16 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Practice .Introduce__Description {
+    margin: 0;
+    position: absolute;
+    width: calc(276 / 342 * 100%);
+    bottom: 0;
+    right: 0;
+  }
+}
+
 .ScrollListWrapper {
   /* 作品コンポーネントを並べるための箱 */
   width: calc(980 / 1280 * 100%);
@@ -803,6 +884,11 @@
 }
 
 @media (width < 768px) {
+  .ScrollListWrapper {
+    width: calc(342 / 390 * 100%);
+  }
+}
+@media screen and (max-width: 768px) {
   .ScrollListWrapper {
     width: calc(342 / 390 * 100%);
   }
@@ -817,6 +903,12 @@
 }
 
 @media (width < 768px) {
+  .Practice .ScrollList {
+    margin: calc(-8px / 2);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Practice .ScrollList {
     margin: calc(-8px / 2);
   }
@@ -838,6 +930,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .ScrollListWrapper {
+    width: calc(342 / 390 * 100%);
+  }
+}
+
 /* SP版では全部3カラムなので、PC版の1列目2カラムの都合に合わせるため。
  */
 /* .ScrollList__Item:last-child {
@@ -851,6 +949,13 @@
 }
 
 @media (width < 768px) {
+  .Practice .ScrollList::before {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Practice .ScrollList::before {
     width: 100%;
     margin: 0;
@@ -1041,7 +1146,7 @@
   .About__Inner {
     /* -webkit-flex-direction: column; */
     flex-direction: column;
-    width: calc(342 / 390 * 100%);
+    /* width: calc(342 / 390 * 100%); */
     /* width: calc(342 / 390 * 100%); */
 /* calc((72 - (32 / 2)) / 390 * 100%) の 32 / 2は、
  transform: translateY(-50%);かけたときの「わたしについて」の文字の高さ(390px時：32px) /2 の意味。
@@ -1055,9 +1160,16 @@
 .About__InnerText {
   /* display: flex; */
   /* flex-direction: column; */
-  padding :0 0 0 calc(72 / 995 * 100%);
+  padding : 0 0 0 calc(72 / 995 * 100%);
   width: calc((995 - 200) / 995 * 100%);
   line-height: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .About__InnerText {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 @media (width < 768px) {
@@ -1105,13 +1217,13 @@
   border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
   /* overflow: hidden; */
   /* min-width: 100px; */
-  /* max-width: 200px; */
+  max-width: 200px;
 }
 
 @media (width < 768px) {
   .About__InnerIcon {
     /* width: calc(150 / 342 * 100%);*/
-    width: 100%;
+    width: calc(150 / 342 * 100%);
     /* margin: 0 auto calc(24 / 342 * 100%); */
   }
 }
