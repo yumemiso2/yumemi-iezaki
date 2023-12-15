@@ -189,7 +189,7 @@
 
 .Footer__Inner {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   background-color: #FFF;
   padding: clamp(1.5rem, 0.843rem + 2.7vw, 3rem) clamp(2rem, 1.124rem + 3.6vw, 4rem);
   font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
@@ -197,7 +197,13 @@
 
 @media (width > 768px) {
   .Footer__Inner {
-    justify-content: end;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer__Inner {
+    justify-content: center;
   }
 }
 
@@ -219,6 +225,13 @@
 }
 
 @media (width < 768px) {
+  .Button {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Button {
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -252,6 +265,11 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Button--Large{
+    padding: 8px 72px;
+  }
+}
 
 .Section__FooterButtonInner {
   display: flex;
@@ -262,34 +280,18 @@
 .TopButton--Works {
   /* 90 * 2 は両サイドの padding の値 */
   width: calc(68 / (1280 - (90 * 2)) * 100%);
-  /* width: calc(68 / 1150 * 100%); */
   max-width: 68px;
   min-width: 24px;
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  /* transform: translate(-100%, -50%); */
 }
 
 .TopButton__Arrow {
   width: 100%;
 }
 
-
-
-
-/*
-@media (width < 768px) {
-  .TopButton--Works {
-    width: calc(24 / 352 * 100%);
-
-  }
-}
-
-.TopButton--Works {
-  width: calc(68 / 1100 * 100%);
-} */
 
 .Introduce__Description--Br {
   display: inline-block;
