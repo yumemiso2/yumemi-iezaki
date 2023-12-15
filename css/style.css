@@ -11,6 +11,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Works {
+    /* 遷移ボタン、固定値にした */
+    --swiper-navigation-size: 32px;
+  }
+}
+
 
 /* PracticeModal */
 .PracticeModal {
@@ -45,6 +52,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Body {
+    line-height: calc(24 / 14);
+  }
+}
+
 /* Swiperスタイル */
 .Works .swiper-slide {
   text-align: center;
@@ -62,6 +75,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Works .swiper-slide {
+    /* 334 = 314px(幅) + 10px + 10px（padding） */
+    width: calc(334 / 352 * 100%);
+  }
+}
 
 .swiper-slide .ImgList__LinkImage {
   display: block;
@@ -85,6 +104,12 @@
 }
 
 @media (width < 768px) {
+  .Works .SwiperButton__Inner {
+    width: calc(334 / 390 * 100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Works .SwiperButton__Inner {
     width: calc(334 / 390 * 100%);
   }
@@ -131,6 +156,13 @@
     width: calc(342 / 390 * 100%);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .PracticeModal .modal__container {
+    width: calc(342 / 390 * 100%);
+  }
+}
+
 
 .PracticeModal .modal__container::-webkit-scrollbar{
   display: none;
@@ -201,6 +233,14 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .PracticeModal .PopupItem__Image {
+    margin: 0 auto 24px;
+    width: 100%;
+    height: auto;
+  }
+}
+
 .PracticeModal .PopupItem__ImageInner {
   width: 100%;
 }
@@ -219,14 +259,29 @@
   }
 }
 
-.PracticeModal .PopupItem__DesctiptionInner {
-
+@media screen and (max-width: 768px) {
+  .PracticeModal .PopupItem__Desctiption {
+    display: block;
+    width: 100%;
+  }
 }
 
-.PracticeModal .PopupItem__DesctiptionHeader {
-}
+/* .PracticeModal .PopupItem__DesctiptionInner {
+
+} */
+
+/* .PracticeModal .PopupItem__DesctiptionHeader {
+} */
 
 @media (width < 768px) {
+  .PracticeModal .PopupItem__DesctiptionHeader {
+    text-align: center;
+    /*  0 0 24px - 32px */
+    margin: 0 0 clamp(1.5rem, 0.984rem + 2.12vw, 2rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .PracticeModal .PopupItem__DesctiptionHeader {
     text-align: center;
     /*  0 0 24px - 32px */
@@ -251,13 +306,14 @@
   }
 }
 
-/* @media (width < 390px) {
+@media screen and (max-width: 768px) {
   .PracticeModal .PopupItem__DesctiptionTitle {
-    font-size: 16px;
-    line-height: calc(32 / 16);
+    /*min: 390px max: 768px,  16px - 24px */
+    font-size: clamp(1rem, 0.484rem + 2.12vw, 1.5rem);
+    line-height: 1.5;
     margin: 0;
   }
-} */
+}
 
 .PracticeModal .PopupItem__DesctiptionDate {
   font-size: 14px;
@@ -271,6 +327,14 @@
 }
 
 @media (width < 768px) {
+  .PracticeModal .PopupItem__DesctiptionDate {
+    margin: 0;
+    font-size: 12px;
+    line-height: calc(24 / 12);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .PracticeModal .PopupItem__DesctiptionDate {
     margin: 0;
     font-size: 12px;
@@ -309,6 +373,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .PopupItem__DescriptionTextContainer {
+    line-height: calc(24 / 14);
+    font-size: 14px;
+  }
+}
+
 .PracticeModal .PopupItem__DescriptionTextContainer::before {
   content: "";
   width: 100%;
@@ -329,7 +400,19 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .PracticeModal .PopupItem__DescriptionTextContainer {
+    height: calc(24 / 14 * 5em);
+  }
+}
+
 @media (width < 768px) {
+  .PracticeModal .PopupItem__DescriptionTextContainer::before {
+    height: calc(24 / 14 * 1em);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .PracticeModal .PopupItem__DescriptionTextContainer::before {
     height: calc(24 / 14 * 1em);
   }
@@ -357,12 +440,26 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .PracticeModal .PopupItem__DescriptionText {
+    /* グラデからテキストをずらすため、２行分 */
+    padding: 0 0 calc(24 / 14 * 2em);
+  }
+}
+
 .PracticeModal .PopupItem__DescriptionTextInner {
   /* .PopupItem__DescriptionTextContainer の line-height を使用。一行分の高さの margin */
   margin: 0 0 calc((32 / 16) * 1em) 0;
 }
 
 @media (width < 768px) {
+  .PracticeModal .PopupItem__DescriptionTextInner {
+    /* .PopupItem__DescriptionTextContainer の line-height を使用。一行分の高さの margin */
+    margin:0 0 calc((24 / 14) * 1em) 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .PracticeModal .PopupItem__DescriptionTextInner {
     /* .PopupItem__DescriptionTextContainer の line-height を使用。一行分の高さの margin */
     margin:0 0 calc((24 / 14) * 1em) 0;
@@ -386,9 +483,16 @@
   }
 }
 
-.PracticeModal .PopupCloseButton__Inner {
-
+@media screen and (max-width: 768px) {
+  .PracticeModal .PopupCloseButton {
+    position: relative;
+    text-align: center;
+  }
 }
+
+/* .PracticeModal .PopupCloseButton__Inner {
+
+} */
 
 
 .PracticeModal .SwiperButton {
@@ -398,16 +502,15 @@
 }
 
 
-.PracticeModal .Button .Button--Small {
+/* .PracticeModal .Button .Button--Small {
 
-}
+} */
 
 .PracticeModal .SwiperButton__Inner {
   width: calc(1020 / 1230 * 100%);
   margin: 0 auto;
   position: relative;
   max-width: 940px;
-
 }
 
 @media (width < 768px) {
@@ -416,6 +519,11 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .PracticeModal .SwiperButton__Inner {
+    width: 100%;
+  }
+}
 
 .PracticeModal .SwiperButton--L {
   left: auto;
@@ -424,6 +532,18 @@
 }
 
 @media (width < 768px) {
+  .PracticeModal .SwiperButton--L {
+    /* margin-right: clamp(1rem, 0.781rem + 0.9vw, 1.5rem); */
+    /* 矢印の位置調整用、数値は適当 */
+    /* margin-right: calc(6 / 342 * 100%); */
+    margin: 0;
+    right: auto;
+    left: 0;
+    width: calc(32 / 342 * 100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .PracticeModal .SwiperButton--L {
     /* margin-right: clamp(1rem, 0.781rem + 0.9vw, 1.5rem); */
     /* 矢印の位置調整用、数値は適当 */
@@ -453,6 +573,17 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .PracticeModal .SwiperButton--R {
+    /* margin-right: clamp(1rem, 0.781rem + 0.9vw, 1.5rem); */
+    /* 矢印の位置調整用、数値は適当 */
+    /* margin-left: calc(6 / 342 * 100%); */
+    margin: 0;
+    right: 0;
+    left: auto;
+    width: calc(32 / 342 * 100%);
+  }
+}
 
 /* Home--Works */
 .Works {
@@ -461,6 +592,12 @@
 }
 
 @media (width < 768px) {
+  .Works {
+    padding: calc(24 / 390 * 100%) 0 calc(113 / 390 *100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Works {
     padding: calc(24 / 390 * 100%) 0 calc(113 / 390 *100%);
   }
@@ -487,7 +624,12 @@
 @media (width < 768px) {
   .WorksItem--Home .ImgList {
     width: calc(352 / 390 * 100%);
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .WorksItem--Home .ImgList {
+    width: calc(352 / 390 * 100%);
   }
 }
 
@@ -501,20 +643,8 @@
 
 }
 
-/* .WorksItem--Home .ImgList__Link:hover{
-  background-color: #606060;
-} */
-
-/*
-@media  (width < 768px){
-  .WorksItem--Home .ImgList__Link:hover {
-    transition: unset;
-  }
-} */
-
 .WorksItem--Home .ImgList__Link:hover .ImgList__LinkImage {
   width: 100%;
-
 }
 
 .ImgLink__TextContainerHover {
@@ -547,6 +677,19 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .ImgLink__TextContainerHover {
+    position: relative;
+    text-align: left;
+    background-color: #F6F5DE;
+    color: #000;
+    opacity: 1;
+    transition: unset;
+    align-items: baseline;
+    padding: 16px 16px 24px;
+  }
+}
+
 .WorksItem--Home .ImgList__Link:hover .ImgLink__TextContainerHover {
   opacity: 1;
 }
@@ -564,6 +707,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .TextContainerHover__Title {
+    margin: 0 0 calc(8 / 314 * 100%);
+  }
+}
+
 .TextContainerHover__Description {
   font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
   /* line-height: 24 / 12 */
@@ -571,6 +720,12 @@
 }
 
 @media (width < 768px) {
+  .TextContainerHover__Description {
+    font-family: "HigureGothic-Regular";
+  }
+}
+
+@media screen and (max-width: 768px) {
   .TextContainerHover__Description {
     font-family: "HigureGothic-Regular";
   }
@@ -591,6 +746,15 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Works .TextContainer {
+    /* .TextContainer はスライドが入っている親要素の中にはないから、
+    （（画像サイズ + padding 両側） / SP の幅 * 100%）で考える */
+    /* 334 = 314px(幅) + 10px + 10px（padding） */
+    width: calc(334 / 390 * 100%);
+  }
+}
+
 
 .Works .Introduce {
   width: 100%;
@@ -598,6 +762,13 @@
 }
 
 @media (width < 768px) {
+  .Works .Introduce {
+    /* 334 = 314px(幅) + 10px + 10px（padding） */
+    margin: 0 auto calc(24 / 334 * 100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Works .Introduce {
     /* 334 = 314px(幅) + 10px + 10px（padding） */
     margin: 0 auto calc(24 / 334 * 100%);
@@ -627,6 +798,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Works .SectionTitle--Home {
+    margin: 0 auto calc(24 / 334 * 100%);
+  }
+}
+
 
 
 .Works .SectionTitleImage {
@@ -646,6 +823,11 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Works .ScrollDot {
+    padding: clamp(1rem, 0.562rem + 1.8vw, 2rem) 0  calc(24 / 390 * 100%) 0;
+  }
+}
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -667,6 +849,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+}
+
 /* Practice */
 .Practice .Practice__ScrollList {
   background-color: #F6F5DE;
@@ -675,6 +864,12 @@
 }
 
 @media (width < 768px) {
+  .Practice .Practice__ScrollList {
+    padding: 0 0 calc(94 / 390 * 100%) 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Practice .Practice__ScrollList {
     padding: 0 0 calc(94 / 390 * 100%) 0;
   }
@@ -718,8 +913,6 @@
   }
 }
 
-
-
 .TextWrapper {
   width: calc(980 / 1280 * 100%);
   max-width: 980px;
@@ -754,6 +947,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .TextWrapper__Inner {
+    margin: 0;
+    width: 100%;
+  }
+}
 
 
 
@@ -821,7 +1020,6 @@
   width: calc((88 / ((980 - 24 - 24) / 3)) * 100%);
   min-width: 32px;
   order: 2;
-
 }
 
 @media (width < 768px) {
@@ -931,8 +1129,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  .ScrollListWrapper {
-    width: calc(342 / 390 * 100%);
+  .Practice .ScrollList::before {
+    width: calc(100% / 3 - 8px);
+    margin: calc(8px / 2);
   }
 }
 
@@ -943,6 +1142,12 @@
 } */
 
 @media (width < 768px) {
+  .ScrollList__Item:last-child {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .ScrollList__Item:last-child {
     display: block;
   }
@@ -976,6 +1181,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Practice .ScrollList__Item {
+    width: calc(100% / 3 - 8px);
+    margin: calc(8px / 2);
+  }
+}
+
 /* li > a */
 .Practice .ScrollList__ItemLink {
   border-radius: calc((50 / ( (980 - 24 - 24) / 3)) * 100%);
@@ -984,12 +1196,6 @@
   width: 100%;
   position: relative;
 }
-/*
-@media (width < 768px) {
-  .Practice .ScrollList__ItemLink {
-    height: 100%;
-  }
-} */
 
 /* hover したときに、説明文がふわっと浮き上がるアニメーション */
 .Practice .ScrollList__ItemLink:hover .ScrollList__ItemLinkInner {
@@ -1020,6 +1226,13 @@
 }
 
 @media (width < 768px) {
+  .Practice .ScrollList__ItemLinkInner {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Practice .ScrollList__ItemLinkInner {
     height: 100%;
     width: 100%;
@@ -1060,6 +1273,19 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Practice .ScrollHover {
+    margin: 0 auto;
+    font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
+    width: 100%;
+    height: 100%;
+    padding: calc(10 / ((342 - 8 - 8) / 3) * 100%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .ScrollHover__Name {
   border-bottom: 2px dotted;
   padding: 0 0 8px;
@@ -1077,7 +1303,16 @@
   }
 }
 
-
+@media screen and (max-width: 768px) {
+  .ScrollHover__Name {
+    border-bottom: none;
+    font-family: "HigureGothic-Medium";
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+}
 
 .ScrollHover__Description {
   padding: 16px 0 0;
@@ -1093,11 +1328,16 @@
 @media (width < 768px) {
   .ScrollHover__Description {
     display: none;
-
     padding: 0;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .ScrollHover__Description {
+    display: none;
+    padding: 0;
+  }
+}
 
 .Practice .TextButton {
   margin: calc(24 / 390 * 100%) 0 0;
