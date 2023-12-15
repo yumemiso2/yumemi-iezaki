@@ -26,10 +26,9 @@
 }
 
 
-.Works .WorksItem {
-  /* コンポーネントすべてを包括、ここにclassつけて色変えてる */
-  /* width: 100%; */
-}
+/* .Works .WorksItem {
+
+} */
 
 .Works .WorksItem__Inner {
   /* .WorksItemと包んでるものは同じ、 BackgroundRounded つけてる */
@@ -56,6 +55,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Works .ImgList {
+    width: calc(352 / 390 * 100%);
+  }
+}
+
 .Works .ImgList__Inner {
   /* リンクと img タグを包括、swiper-slide のこと */
   /* width: 100%; */
@@ -75,6 +80,14 @@
 }
 
 @media (width < 768px) {
+  .Works .swiper-slide {
+    padding: 0 calc(8 / 352 * 100%);
+    /* 316 = 300px（幅） + 8px + 8px(padding) */
+    width: calc(316 / 352 * 100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Works .swiper-slide {
     padding: 0 calc(8 / 352 * 100%);
     /* 316 = 300px（幅） + 8px + 8px(padding) */
@@ -166,6 +179,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Works .TextContainer {
+    /* 316 = 300px（幅） + 8px + 8px(padding) */
+    width: calc(316 / 390 * 100%);
+  }
+}
+
 
 .Works .Introduce {
   /* タイトル・紹介文を包括 */
@@ -175,6 +195,13 @@
 }
 
 @media (width < 768px) {
+  .Works .Introduce {
+    /* 24 / 14 = 1.71428571429 */
+    line-height: calc(24 / 14);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Works .Introduce {
     /* 24 / 14 = 1.71428571429 */
     line-height: calc(24 / 14);
@@ -199,6 +226,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Works .SectionTitleSub {
+    margin: 0 auto calc(8 / 316 * 100%);
+  }
+}
+
 .Works .Introduce__Description {
   text-align: center;
   margin: 0 auto calc(32 / 854 * 100%);
@@ -208,6 +241,15 @@
 }
 
 @media (width < 768px) {
+  .Works .Introduce__Description {
+    margin: 0 auto calc(24 / 316 * 100%);
+    /* 24 / 14 = 1.71428571429 */
+    /* line-height: calc(24 / 14); */
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Works .Introduce__Description {
     margin: 0 auto calc(24 / 316 * 100%);
     /* 24 / 14 = 1.71428571429 */
@@ -244,6 +286,12 @@
 }
 
 @media (width < 768px) {
+  .Works .Section__Footer .WorksItem__Inner {
+    padding: calc(40 / 390 * 100%) calc(24 / 390 * 100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Works .Section__Footer .WorksItem__Inner {
     padding: calc(40 / 390 * 100%) calc(24 / 390 * 100%);
   }
