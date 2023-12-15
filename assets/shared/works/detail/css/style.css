@@ -353,17 +353,19 @@
 
 .WorkIntroduce__ComponentVideo {
   aspect-ratio: 16 / 9;
-  border-radius: 25px;
-  overflow: hidden;
+  /* border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px; */
+  /* overflow: hidden; */
 }
 
 .WorkIntroduce__ComponentVideoInner {
   display: block;
   width: 100%;
   height: 100%;
-  /* border-radius: 25px;
+  border-radius: 25px;
   -webkit-border-radius: 25px;
-  -moz-border-radius: 25px; */
+  -moz-border-radius: 25px;
 }
 
 .WorkIntroduce__ComponentLink .WorkIntroduce__LinkButton {
