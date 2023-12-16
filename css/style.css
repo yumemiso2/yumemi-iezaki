@@ -1515,9 +1515,6 @@
 /*モーダル内 リンク用のスタイル */
 
 .PopupItem__DesctiptionLinkButton {
-  display: inline-block;
-  width: calc(378 / 994 * 100%);
-
   display: flex;
   justify-content: end;
 }
