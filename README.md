@@ -38,7 +38,7 @@
   <a class="ScrollList__ItemLink js-modal js-modal3" data-micromodal-trigger="modal-1">
     <div class="ScrollList__ItemLinkInner">
       <div class="ScrollHover">
-        <p class="ScrollHover__Name">クリックカウンター</p>
+        <h2 class="ScrollHover__Name">クリックカウンター</h2>
         <p class="ScrollHover__Description">JavaScript を使用して制作したクリックカウンターです</p>
       </div>
     </div>
@@ -62,7 +62,7 @@
         <time datetime class="PopupItem__DesctiptionDate">2023&nbsp;年&nbsp;11&nbsp;月&nbsp;</time>
       </div>
       <div class="PopupItem__DescriptionTextContainer">
-        <div class="PopupItem__DescriptionTextContainerInner temp">
+        <div class="PopupItem__DescriptionTextContainerInner">
           <div class="PopupItem__DescriptionText">
             <p class="PopupItem__DescriptionTextInner">JavaScript の練習として、クリックすると値が増減するカウンターをつくりました！</p>
 
