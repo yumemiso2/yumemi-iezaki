@@ -4,13 +4,6 @@
   --swiper-pagination-bottom: 0;
 }
 
-@media (width < 768px) {
-  .Works {
-    /* 遷移ボタン、固定値にした */
-    --swiper-navigation-size: 32px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .Works {
     /* 遷移ボタン、固定値にした */
@@ -26,13 +19,6 @@
   --swiper-pagination-bottom: 0;
 }
 
-@media (width < 768px) {
-  .PracticeModal {
-    /* min: 390px max: 768px, 24px - 40px */
-    --swiper-navigation-size: clamp(1.5rem, 0.468rem + 4.23vw, 2.5rem);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .PracticeModal {
     /* min: 390px max: 768px, 24px - 40px */
@@ -44,12 +30,6 @@
 .Body {
   /* なんのスタイルもついていないところには、この対応をする、という意図 */
   line-height: calc(32 / 16);
-}
-
-@media (width < 768px) {
-  .Body {
-    line-height: calc(24 / 14);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -66,13 +46,6 @@
   max-width: 1000px;
   /* padding: 10-20px */
   padding: 0 clamp(0.625rem, 0.351rem + 1.12vw, 1.25rem);
-}
-
-@media (width < 768px) {
-  .Works .swiper-slide {
-    /* 334 = 314px(幅) + 10px + 10px（padding） */
-    width: calc(334 / 352 * 100%);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -101,12 +74,6 @@
   margin: 0 auto;
   position: relative;
   max-width: 1000px;
-}
-
-@media (width < 768px) {
-  .Works .SwiperButton__Inner {
-    width: calc(334 / 390 * 100%);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -151,12 +118,6 @@
   max-width: 1230px;
 }
 
-@media (width < 768px) {
-  .PracticeModal .modal__container {
-    width: calc(342 / 390 * 100%);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .PracticeModal .modal__container {
     width: calc(342 / 390 * 100%);
@@ -194,15 +155,6 @@
   display: flex;
 }
 
-@media (width < 768px) {
-  .PracticeModal .PopupItem {
-    display: block;
-    /* 24px - 40px , 16px - 24px */
-    padding: 40px calc(32 / 342 * 100%);
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .PracticeModal .PopupItem {
     display: block;
@@ -225,14 +177,6 @@
   margin: 0 calc(40 / 940 * 100%) 0 0;
 }
 
-@media (width < 768px) {
-  .PracticeModal .PopupItem__Image {
-    margin: 0 auto 24px;
-    width: 100%;
-    height: auto;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .PracticeModal .PopupItem__Image {
     margin: 0 auto 24px;
@@ -252,13 +196,6 @@
   position: relative;
 }
 
-@media (width < 768px) {
-  .PracticeModal .PopupItem__Desctiption {
-    display: block;
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .PracticeModal .PopupItem__Desctiption {
     display: block;
@@ -272,14 +209,6 @@
 
 /* .PracticeModal .PopupItem__DesctiptionHeader {
 } */
-
-@media (width < 768px) {
-  .PracticeModal .PopupItem__DesctiptionHeader {
-    text-align: center;
-    /*  0 0 24px - 32px */
-    margin: 0 0 clamp(1.5rem, 0.984rem + 2.12vw, 2rem);
-  }
-}
 
 @media screen and (max-width: 768px) {
   .PracticeModal .PopupItem__DesctiptionHeader {
@@ -295,15 +224,6 @@
   line-height: calc(32 / 24);
   font-family: "HigureGothic-Medium";
   margin: 0 0 8px;
-}
-
-@media (width < 768px) {
-  .PracticeModal .PopupItem__DesctiptionTitle {
-    /*min: 390px max: 768px,  16px - 24px */
-    font-size: clamp(1rem, 0.484rem + 2.12vw, 1.5rem);
-    line-height: 1.5;
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -324,14 +244,6 @@
   /* margin: 16px - 24px(破線からテキストまでの距離) */
   margin: 0 0 clamp(1rem, 0.781rem + 0.9vw, 1.5rem);
   position: relative;
-}
-
-@media (width < 768px) {
-  .PracticeModal .PopupItem__DesctiptionDate {
-    margin: 0;
-    font-size: 12px;
-    line-height: calc(24 / 12);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -366,13 +278,6 @@
   height: calc(32 / 16 * 11em);
 }
 
-@media (width < 768px) {
-  .PopupItem__DescriptionTextContainer {
-    line-height: calc(24 / 14);
-    font-size: 14px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .PopupItem__DescriptionTextContainer {
     line-height: calc(24 / 14);
@@ -394,21 +299,9 @@
 
 }
 
-@media (width < 768px) {
-  .PracticeModal .PopupItem__DescriptionTextContainer {
-    height: calc(24 / 14 * 5em);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .PracticeModal .PopupItem__DescriptionTextContainer {
     height: calc(24 / 14 * 5em);
-  }
-}
-
-@media (width < 768px) {
-  .PracticeModal .PopupItem__DescriptionTextContainer::before {
-    height: calc(24 / 14 * 1em);
   }
 }
 
@@ -433,13 +326,6 @@
   padding: 0 0 calc(32 / 16 * 3em);
 }
 
-@media (width < 768px) {
-  .PracticeModal .PopupItem__DescriptionText {
-    /* グラデからテキストをずらすため、２行分 */
-    padding: 0 0 calc(24 / 14 * 2em);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .PracticeModal .PopupItem__DescriptionText {
     /* グラデからテキストをずらすため、２行分 */
@@ -450,13 +336,6 @@
 .PracticeModal .PopupItem__DescriptionTextInner {
   /* .PopupItem__DescriptionTextContainer の line-height を使用。一行分の高さの margin */
   margin: 0 0 calc((32 / 16) * 1em) 0;
-}
-
-@media (width < 768px) {
-  .PracticeModal .PopupItem__DescriptionTextInner {
-    /* .PopupItem__DescriptionTextContainer の line-height を使用。一行分の高さの margin */
-    margin:0 0 calc((24 / 14) * 1em) 0;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -474,13 +353,6 @@
   bottom: 0;
   right: 0;
   /* height: calc(50 / 500 * 100%); */
-}
-
-@media (width < 768px) {
-  .PracticeModal .PopupCloseButton {
-    position: relative;
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -513,12 +385,6 @@
   max-width: 940px;
 }
 
-@media (width < 768px) {
-  .PracticeModal .SwiperButton__Inner {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .PracticeModal .SwiperButton__Inner {
     width: 100%;
@@ -529,18 +395,6 @@
   left: auto;
   right: 100%;
   margin-right: calc(40 / 1020 * 100%);
-}
-
-@media (width < 768px) {
-  .PracticeModal .SwiperButton--L {
-    /* margin-right: clamp(1rem, 0.781rem + 0.9vw, 1.5rem); */
-    /* 矢印の位置調整用、数値は適当 */
-    /* margin-right: calc(6 / 342 * 100%); */
-    margin: 0;
-    right: auto;
-    left: 0;
-    width: calc(32 / 342 * 100%);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -561,18 +415,6 @@
   /* transform: translate(-50%); */
 }
 
-@media (width < 768px) {
-  .PracticeModal .SwiperButton--R {
-    /* margin-right: clamp(1rem, 0.781rem + 0.9vw, 1.5rem); */
-    /* 矢印の位置調整用、数値は適当 */
-    /* margin-left: calc(6 / 342 * 100%); */
-    margin: 0;
-    right: 0;
-    left: auto;
-    width: calc(32 / 342 * 100%);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .PracticeModal .SwiperButton--R {
     /* margin-right: clamp(1rem, 0.781rem + 0.9vw, 1.5rem); */
@@ -589,12 +431,6 @@
 .Works {
   /* 相対値にすると、れんしゅうの縦幅がつくったものに侵食するので固定値 */
   padding: clamp(1.5rem, 0.185rem + 5.39vw, 4.5rem) 0 308px;
-}
-
-@media (width < 768px) {
-  .Works {
-    padding: calc(24 / 390 * 100%) 0 calc(113 / 390 *100%);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -618,13 +454,6 @@
 
 .WorksItem--Home .ImgList {
   width: calc(1150 / 1280 * 100%);
-
-}
-
-@media (width < 768px) {
-  .WorksItem--Home .ImgList {
-    width: calc(352 / 390 * 100%);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -661,20 +490,6 @@
   justify-content: center;
   background-color: rgba(96, 96, 96, .4);
   transition: opacity .3s;
-
-}
-
-@media (width < 768px) {
-  .ImgLink__TextContainerHover {
-    position: relative;
-    text-align: left;
-    background-color: #F6F5DE;
-    color: #000;
-    opacity: 1;
-    transition: unset;
-    align-items: baseline;
-    padding: 16px 16px 24px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -701,12 +516,6 @@
   margin: 0 0 calc(64 / 960 * 100%);
 }
 
-@media (width < 768px) {
-  .TextContainerHover__Title {
-    margin: 0 0 calc(8 / 314 * 100%);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .TextContainerHover__Title {
     margin: 0 0 calc(8 / 314 * 100%);
@@ -719,12 +528,6 @@
   line-height: 2;
 }
 
-@media (width < 768px) {
-  .TextContainerHover__Description {
-    font-family: "HigureGothic-Regular";
-  }
-}
-
 @media screen and (max-width: 768px) {
   .TextContainerHover__Description {
     font-family: "HigureGothic-Regular";
@@ -735,15 +538,6 @@
   width: calc(1000 / 1280 * 100%);
   max-width: 1000px;
   margin: 0 auto;
-}
-
-@media (width < 768px) {
-  .Works .TextContainer {
-    /* .TextContainer はスライドが入っている親要素の中にはないから、
-    （（画像サイズ + padding 両側） / SP の幅 * 100%）で考える */
-    /* 334 = 314px(幅) + 10px + 10px（padding） */
-    width: calc(334 / 390 * 100%);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -759,13 +553,6 @@
 .Works .Introduce {
   width: 100%;
   margin: 0 auto calc(40 / 1000 * 100%);
-}
-
-@media (width < 768px) {
-  .Works .Introduce {
-    /* 334 = 314px(幅) + 10px + 10px（padding） */
-    margin: 0 auto calc(24 / 334 * 100%);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -792,12 +579,6 @@
   max-width: 400px;
 }
 
-@media (width < 768px) {
-  .Works .SectionTitle--Home {
-    margin: 0 auto calc(24 / 334 * 100%);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .Works .SectionTitle--Home {
     margin: 0 auto calc(24 / 334 * 100%);
@@ -817,12 +598,6 @@
   line-height: .5;
 }
 
-@media (width < 768px) {
-  .Works .ScrollDot {
-    padding: clamp(1rem, 0.562rem + 1.8vw, 2rem) 0  calc(24 / 390 * 100%) 0;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .Works .ScrollDot {
     padding: clamp(1rem, 0.562rem + 1.8vw, 2rem) 0  calc(24 / 390 * 100%) 0;
@@ -839,14 +614,6 @@
   background-color: #989550;
   width: 16px;
   height: 16px;
-
-}
-
-@media (width < 768px) {
-  .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -863,12 +630,6 @@
   padding: clamp(4rem, 0.494rem + 14.38vw, 12rem) 0;
 }
 
-@media (width < 768px) {
-  .Practice .Practice__ScrollList {
-    padding: 0 0 calc(94 / 390 * 100%) 0;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .Practice .Practice__ScrollList {
     padding: 0 0 calc(94 / 390 * 100%) 0;
@@ -878,12 +639,6 @@
 
 .TextContainer--Vartical .Introduce__Description {
   writing-mode: vertical-rl;
-}
-
-@media (width < 768px) {
-  .TextContainer--Vartical .Introduce__Description {
-    writing-mode: horizontal-tb;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -897,14 +652,6 @@
   position: absolute;
 }
 
-@media (width < 768px) {
-  .Practice .TextContainer--Vartical {
-    position: relative;
-    width: calc(342 / 390 * 100%);
-    margin: 0 auto calc(24 / 390 * 100%);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .Practice .TextContainer--Vartical {
     position: relative;
@@ -916,16 +663,7 @@
 .TextWrapper {
   width: calc(980 / 1280 * 100%);
   max-width: 980px;
-  margin:  0 auto;
-}
-
-@media (width < 768px) {
-  .TextWrapper {
-    /* width: calc(324 / 3 * 100%); */
-    width: 100%;
-    width: calc(324 / 342 * 100%);
-
-  }
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -938,13 +676,6 @@
 
 .TextWrapper__Inner {
   margin: calc(-24px / 2);
-}
-
-@media (width < 768px) {
-  .TextWrapper__Inner {
-    margin: 0;
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -966,14 +697,6 @@
   aspect-ratio: 1;
 }
 
-@media (width < 768px) {
-  .Practice .Introduce {
-    width: 100%;
-    margin: 0;
-    aspect-ratio: auto;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .Practice .Introduce {
     width: 100%;
@@ -993,17 +716,6 @@
   font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
 }
 
-@media (width < 768px) {
-  .Introduce__Inner {
-    position: relative;
-    /* display: flex; */
-    width: 100%;
-    /* .SectionTitle と.Introduce__Description の下が空くのを抑えるため*/
-    max-height: 200px;
-    justify-content: flex-start;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .Introduce__Inner {
     position: relative;
@@ -1020,16 +732,6 @@
   width: calc((88 / ((980 - 24 - 24) / 3)) * 100%);
   min-width: 32px;
   order: 2;
-}
-
-@media (width < 768px) {
-  .Practice .SectionTitle {
-    /* グリッド幅 342px */
-    width: calc(32 / 342 * 100%);
-    order: 0;
-    margin: 0 calc(16 / 342 * 100%) 0 0;
-    transform: translateY(-50%);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1053,16 +755,6 @@
   margin: calc((240 / ( (980 - 24 - 24) / 3)) * 100%) calc((40 / ( (980 - 24 - 24) / 3)) * 100%) 0 0;
 }
 
-@media (width < 768px) {
-  .Practice .Introduce__Description {
-    margin: 0;
-    position: absolute;
-    width: calc(276 / 342 * 100%);
-    bottom: 0;
-    right: 0;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .Practice .Introduce__Description {
     margin: 0;
@@ -1081,11 +773,6 @@
   overflow: hidden;
 }
 
-@media (width < 768px) {
-  .ScrollListWrapper {
-    width: calc(342 / 390 * 100%);
-  }
-}
 @media screen and (max-width: 768px) {
   .ScrollListWrapper {
     width: calc(342 / 390 * 100%);
@@ -1098,12 +785,6 @@
   flex-wrap: wrap;
   margin: calc(-24px / 2) ;
   overflow: hidden;
-}
-
-@media (width < 768px) {
-  .Practice .ScrollList {
-    margin: calc(-8px / 2);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1121,13 +802,6 @@
   margin: calc(24px / 2);
 }
 
-@media (width < 768px) {
-  .Practice .ScrollList::before {
-    width: calc(100% / 3 - 8px);
-    margin: calc(8px / 2);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .Practice .ScrollList::before {
     width: calc(100% / 3 - 8px);
@@ -1141,22 +815,9 @@
   display: none;
 } */
 
-@media (width < 768px) {
-  .ScrollList__Item:last-child {
-    display: block;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .ScrollList__Item:last-child {
     display: block;
-  }
-}
-
-@media (width < 768px) {
-  .Practice .ScrollList::before {
-    width: 100%;
-    margin: 0;
   }
 }
 
@@ -1172,13 +833,6 @@
   width: calc(100% / 3 - 24px);
   margin: calc(24px / 2);
   border-radius: calc((50 / ( (980 - 24 - 24) / 3)) * 100%);
-}
-
-@media (width < 768px) {
-  .Practice .ScrollList__Item {
-    width: calc(100% / 3 - 8px);
-    margin: calc(8px / 2);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1225,13 +879,6 @@
   transform: translateY(100%);
 }
 
-@media (width < 768px) {
-  .Practice .ScrollList__ItemLinkInner {
-    height: 100%;
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .Practice .ScrollList__ItemLinkInner {
     height: 100%;
@@ -1260,19 +907,6 @@
 }
 
 /* .Practice .ScrollHover: 12px - 16px */
-@media (width < 768px) {
-  .Practice .ScrollHover {
-    margin: 0 auto;
-    font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
-    width: 100%;
-    height: 100%;
-    padding: calc(10 / ((342 - 8 - 8) / 3) * 100%);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .Practice .ScrollHover {
     margin: 0 auto;
@@ -1290,17 +924,6 @@
   border-bottom: 2px dotted;
   padding: 0 0 8px;
   font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
-}
-
-@media (width < 768px) {
-  .ScrollHover__Name {
-    border-bottom: none;
-    font-family: "HigureGothic-Medium";
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1323,13 +946,6 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
-}
-
-@media (width < 768px) {
-  .ScrollHover__Description {
-    display: none;
-    padding: 0;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1377,29 +993,9 @@
   max-width: 995px;
 }
 
-@media (width < 768px) {
-  .About__Inner {
-    flex-direction: column;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .About__Inner {
     flex-direction: column;
-  }
-}
-
-@media (width < 768px) {
-  .About__Inner {
-    /* -webkit-flex-direction: column; */
-    flex-direction: column;
-    width: calc(342 / 390 * 100%);
-  /* calc((72 - (32 / 2)) / 390 * 100%) の 32 / 2は、
-  transform: translateY(-50%);かけたときの「わたしについて」の文字の高さ(390px時：32px) /2 の意味。
-  （.SectionTitle--Home--about の親の高さが残っているので、
-  この位置でpadding取るなら、指定した値の padding + 16px になる。
-  もう16pxを引き算して、画像の上の余白（見え方は、画像の上に72px）を調整するため）*/
-    padding: calc((72 - (32 / 2)) / 390 * 100%) 0 calc(72 / 390 * 100%) 0;
   }
 }
 
@@ -1425,15 +1021,6 @@
   line-height: 2;
 }
 
-@media (width < 768px) {
-  .About__InnerText {
-    width: 100%;
-    padding: 0;
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 0.82rem + 0.22vw, 1rem);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .About__InnerText {
     width: 100%;
@@ -1448,24 +1035,10 @@
   margin: 0 0 calc(40 / (995 - 200 - 72) * 100%) 0;
 }
 
-@media (width < 768px) {
-  .About__InnerTextName {
-    text-align: center;
-    margin: 0 0 calc(24 / 342 * 100%) 0;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .About__InnerTextName {
     text-align: center;
     margin: 0 0 calc(24 / 342 * 100%) 0;
-  }
-}
-
-@media (width < 768px) {
-  .About__InnerTextDescription {
-    margin: 0 auto;
-    width: calc(324 / 342 * 100%);
   }
 }
 
@@ -1492,14 +1065,6 @@
   max-width: 200px;
 }
 
-@media (width < 768px) {
-  .About__InnerIcon {
-    width: calc(150 / 342 * 100%);
-    /* width: calc(150 / 342 * 100%); */
-    margin: 0 auto calc(24 / 342 * 100%);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .About__InnerIcon {
     width: calc(150 / 342 * 100%);
@@ -1517,13 +1082,6 @@
 .PopupItem__DesctiptionLinkButton {
   display: flex;
   justify-content: end;
-}
-
-@media (width < 768px) {
-  .PopupItem__DesctiptionLinkButton {
-    width: 100%;
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 768px) {
