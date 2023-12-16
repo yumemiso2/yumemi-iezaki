@@ -209,8 +209,10 @@
     /* 24 / 14 = 1.71428571429 */
     /* line-height: calc(24 / 14); */
     line-height: 2;
+    text-align: left;
   }
 }
+
 
 /* ここにボタンが入る（TextButton） */
 
