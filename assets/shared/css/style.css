@@ -33,15 +33,9 @@
 }
 
 .fadein {
-  /* transform: translate3d(0, 0, 0); */
   transition: 1s;
   opacity: 0;
 }
-
-/* .fadein.animated {
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
-} */
 
 /* 背景の角丸と、背景色を制御するclass */
 .BackgroundRounded {
