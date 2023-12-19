@@ -35,7 +35,7 @@ const fadeInEffect = (entries, obs) => {
           filter: ["blur(.2rem)", "blur(0)"],
           translate:["0 2rem", 0],
         },
-        {
+        { delay: 500,
           duration: 1500,
           easing: "ease",
           fill: "forwards",
