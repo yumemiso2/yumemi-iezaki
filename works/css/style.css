@@ -37,6 +37,9 @@
   padding: clamp(2.5rem, -0.787rem + 13.48vw, 10rem) 0;
 }
 
+/* .Works .WorksItem__Slide {
+} */
+
 .Works .WorksItem__Img {
   /*コンポーネントのコンテンツ〜矢印ボタンまで、 swiper mySwiperのとこ */
   width: 100%;
