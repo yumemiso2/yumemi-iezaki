@@ -66,8 +66,8 @@
 
 .WorkIntroduce__TopSectionTitle {
   font-family: "HigureGothic-Black";
-  /* 32px - 48px */
-  font-size: clamp(2rem, 1.562rem + 1.8vw, 3rem);
+  /* 24px - 32px */
+  font-size: clamp(1.5rem, 1.281rem + 0.9vw, 2rem);
   /* 8px - 24px */
   margin: 0 0 clamp(0.5rem, 0.062rem + 1.8vw, 1.5rem);
   /*SP: calc(32 / 32) ,PC: calc(48 / 48)*/
