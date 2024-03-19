@@ -1076,6 +1076,55 @@
   width: 100%;
 }
 
+/* わたしについて、 リンク用のスタイル*/
+
+
+.About__InnerTextDescriptionLinkButton {
+  display: flex;
+  justify-content: end;
+}
+
+@media screen and (max-width: 768px) {
+  .About__InnerTextDescriptionLinkButton {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.About__InnerTextDescriptionLinkButtonInner {
+  display: flex;
+  position: relative;
+}
+
+
+.About__InnerTextDescriptionLinkButtonInner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  bottom: -1px;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform .4s;
+}
+
+.About__InnerTextDescriptionLinkButtonInner:hover::after {
+  transform: scale(1);
+}
+
+.About__InnerTextDescriptionLinkButtonInnerText {
+  /* 矢印のmarginは、SPも16px */
+  margin: 0 16px 0 0;
+}
+
+.About__ButtonArrow {
+  display: block;
+  width: 16px;
+}
+
+
 
 /*モーダル内 リンク用のスタイル */
 
