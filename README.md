@@ -31,7 +31,7 @@
 - 原則ページ名でつける（ex：works）
 
 ### れんしゅう、モーダルの更新方法
-サムネイル画像は、``/Users/yumemi/Documents/GitHub/yumemi-iezaki/index.html``の、以下をコピペで追加する
+サムネイル画像は、``/Users/yumemi/Documents/GitHub/yumemi-iezaki/index.html``の、以下をコピペで追加する（先頭に追加）
 
 ```html
 <li class="ScrollList__Item">
@@ -49,7 +49,7 @@
 - 画像・タイトル・テキストを変更する
 - alt ="" を記述する（.ScrollHover__Name と同じテキストにする）
 
-モーダルは、以下をコピペで追加する！！
+モーダルは、以下をコピペで追加する！！（先頭に追加）
 
 ```html
 <div class="swiper-slide">
