@@ -87,7 +87,6 @@
 </div><!-- /.swiper-slide -->
 ```
 
--
 
 - 画像・タイトル・日付・テキストを変更する
 
@@ -97,5 +96,28 @@
   ``target="_blank" rel="noopener noreferrer" ``をつける！！（`<a class="WorkIntroduce__LinkButtonInner" target="_blank" rel="noopener noreferrer" href="https://codepen.io/yumemiso07/pen/wvNeYLY">`）
 
 
-###その他メモ
+### つくったもの 新規ページ追加について
+- works > 作品名フォルダを作成 > index.html
+- htmlのheader 内、以下を適切に書き直す！！
+
+
+```html
+  <meta property="og:title" content="いえざきゆめみのポートフォリオ">
+  <meta property="og:description" content="いえざきゆめみのポートフォリオです。たくさんいろんなものを作って、このポートフォリオを豊かにしていきます。">
+  <meta property="og:url" content="https://iezakiyumemi.com/works/">
+  <meta property="og:image" content="https://iezakiyumemi.com/assets/images/ogp.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="いえざきゆめみのポートフォリオ">
+  <title>つくったもの&nbsp;|&nbsp;いえざきゆめみのポートフォリオ</title>
+  <meta name="description" content="いえざきゆめみのポートフォリオです。たくさんいろんなものを作って、このポートフォリオを豊かにしていきます。"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <script src="/assets/shared/js/script.js" defer></script>
+  <link rel="stylesheet" href="/assets/shared/css/reset.css">
+  <link rel="stylesheet" href="/assets/shared/css/style.css">
+  <link rel="stylesheet" href="/works/css/style.css">
+```
+
+
+
+### その他メモ
 - ``data-micromodal-trigger="modal-1 id= "modal-1"``は、Micromodal.js を発火させるため関係性の紐づけに使用している
