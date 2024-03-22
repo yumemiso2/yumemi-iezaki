@@ -126,7 +126,7 @@
 
             <div class="WorkIntroduce__TopWorkIntroduceContainer">
               <div class="WorkIntroduce__TopWorkIntroduce">
-                <p class="WorkIntroduce__TopWorkIntroduceDescription">ゼミの後輩による制作「Past and Future.」のネットワーク制御を担当させていただきました。Past and Futute. は、心拍数を時計の秒針に反映しています。60 個の時計が、記録した一人ひとりの心拍の速さで動きつづけています。</p>
+                <p class="WorkIntroduce__TopWorkIntroduceDescription">ゼミの後輩による作品「Past and Future.」のネットワーク制御を担当させていただきました。Past and Futute. は、心拍数を時計の秒針に反映しています。60 個の時計が、記録した一人ひとりの心拍の速さで動きつづけています。</p>
                 <div class="WorkIntroduce__TopWorkIntroduceMv">
                   <img class="WorkIntroduce__TopWorkIntroduceMvImage" src="/assets/images/past-and-future-mv.jpg" alt="Past and Future.">
                 </div>
@@ -160,53 +160,26 @@
             </div>
 
 
+            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentItem--Other WorkIntroduce__ComponentTitle">
+              <h3 class=" WorkIntroduce__ComponentTitleInner">Past and Furure. &nbsp; 動作について</h3>
+            </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentImg">
-              <p class="WorkIntroduce__ComponentImgInner"><img src="/assets/images/moogle-ss.png" alt="Moogle" class="WorkIntroduce__ComponentImgInnerImage"></p>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentLink">
-              <div class="WorkIntroduce__LinkButton">
-                <a class="WorkIntroduce__LinkButtonInner" target="_blank" rel="noopener noreferrer" href="https://chrome.google.com/webstore/detail/moogle/ekemiigbpffcbcemjamdpfddlealcgff?hl=ja">
-                  <p class="WorkIntroduce__ButtonInnerText">Moogle&nbsp;拡張機能販売ページへ</p>
-                  <img class="WorkIntroduce__ButtonArrow" src="/assets/images/link-arrow.svg" alt="ジャンプリンク用アイコン">
-                </a>
-              </div>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentItem--Other WorkIntroduce__ComponentTitle">
-              <h3 class=" WorkIntroduce__ComponentTitleInner">Moogle&nbsp;Google 拡張機能制作に至るまで</h3>
+              <p class="WorkIntroduce__ComponentImgInner"><img src="/assets/images/past-and-future-sensor.jpg" alt="Moogle" class="WorkIntroduce__ComponentImgInnerImage"></p>
             </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
               <p class="WorkIntroduce__ComponentTextInner">
-
-                Moogle がユーザーに伝えたいイメージに近いのは、「店舗へ買い物に行くことと、 インターネットで物を購入する体験の違い」です。
-                前者は購入者がその場所まで出向き、目的の商品を探してレジで購入手続きをします。対して、後者は購入者が商品名を検索し、買い物カゴに入れて購入手続きをするだけ。いつでもどこでも数分で、簡単に目的の商品をを手に入れることができます。目的を達成するという意味だけであれば、後者で十分なのかもしれません。
-                この 2 つの大きな違いは、オフラインには手間がかかり、オンラインは最短で目的を達成できるということにあります。そしてそのオフラインの手間は、オンラインで解消する仕組みが発達しているのが今の世の中です。しかし手軽にできるからこそ、その過程で見落としてしまう価値もあるのではないかと考えました。
-
+                パルスセンサーに人差し指を置く → 6 秒かけて秒針を鳴らしながら心拍の平均を測定 → 測定した心拍に合わせ、すべての時計が同じように秒針を刻み、その間電球も秒針と同じように明滅する → 秒針が鳴り終えると、電球が強く発光する→ 電球が光終えると、測定前と同じようにすべての時計がバラバラに秒針を刻む動き方に戻る
               </p>
             </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
               <p class="WorkIntroduce__ComponentTextInner">
-                例えば本を購入するときに、本屋さんにいくのか、Amazon で購入するのか。
-                Amazon で購入する場合、ほしい本を選んで買ったらすぐにブラウザを閉じることができます。だけれど本屋さんまで足を運んだら、買ってすぐにお店を出る（目的が済んだらそこから離れる）ことのほうが少ないと思うのです。
-                ほしい本を探すのはもちろん、その過程でたまたま興味の持てる本を見つけたり、せっかく来たのだから、ゆっくりいろいろ見ようという気持ちで自然と長居してしまったり。ほしい本を手に取った後の、レジに向かう前に目的なくただ本を眺め歩く時間が楽しい人もいるのではないでしょか。
-                そういった、自発的になにかを探すだとか、今まで知りえなかったものが偶然目に入る、新しいものに出会う機会こそが、体験の価値なのではないかと思っています。
+                 通常時は、すべての時計がバラバラな速さで秒針を刻んでいます。Past and Futute. には 60 個の時計が配置しており、パルスセンサーで 1 回分心拍を測定するごとに、時計と連動した JavaScript の配列の中に心拍数の数値が 1 つ記録されていきます。時計一つひとつが過去の体験者たちの心拍数であり、時計の数と同じ最新 60 人分までが作品に反映されます。
               </p>
             </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
-              <p class="WorkIntroduce__ComponentTextInner">
-                しかしインターネットは簡単で便利なので、できるだけこちらを利用したいと思う人も多くいます。ですがそれは、オフライン的な体験を得る機会が減るということでもあるのです。
-                たしかにインターネット上にも、自然と目に入る情報はたくさんあります。
-                あなたへのおすすめ機能やリスティング広告などコンテンツは豊富です。ですがオンライン上の情報はユーザーに対して最適化されすぎており、オフライン体験に比べると知ることができる情報の幅が少ないのではないでしょうか。
-                <!-- コロナを経てインターネットの便利さを知った人たちは、外に出ずに済ませられる用事はそうしたいと思う人が増えたのではないでしょうか。 -->
-                <!-- 人のライフスタイルやプラットホームが時代によって変化するならば、生活の中にほしい仕組みを取り入れられるように変化していけばよい。 -->
-                <!-- ただ眺めるだけでも楽しめて、Moogle で知ったキーワードをつかって更に検索に活かすことができます。 -->
+            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentVideo">
+              <iframe class="WorkIntroduce__ComponentVideoInner" width="914" height="514" src="https://www.youtube.com/embed/T0ZMA0UCbQw" title="Past and Future. 基本動作" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
 
-                ならばその便利なインターネットの中に、オフライン体験のようなランダム性のある出会いの仕組みを作れば良いのだと気づきました。
-                そうすれば、インターネットを利用している間に自然と新しい発見があり、そして知ったことをつかって更に検索に活かすなど、オフラインと似た体験を作ることができるはずです。便利で簡単以外の価値を、店舗へ買い物にいくようなオフライン体験の価値を、身近で欠かせないオンラインサービスの中で、意識的に認識する機会を作りたいと考え制作しました。
-              </p>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentItem--Other WorkIntroduce__ComponentTitle">
-              <h3 class=" WorkIntroduce__ComponentTitleInner">Moogle&nbsp;ホームページ版</h3>
-            </div>
 
 
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentImg">
