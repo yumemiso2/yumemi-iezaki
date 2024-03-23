@@ -126,7 +126,7 @@
 
             <div class="WorkIntroduce__TopWorkIntroduceContainer">
               <div class="WorkIntroduce__TopWorkIntroduce">
-                <p class="WorkIntroduce__TopWorkIntroduceDescription">ゼミの後輩による作品「Past and Future.」のネットワーク制御を担当させていただきました。Past and Futute. は、心拍数を時計の秒針に反映しています。60 個の時計が、記録した一人ひとりの心拍の速さで動きつづけています。</p>
+                <p class="WorkIntroduce__TopWorkIntroduceDescription">ゼミの後輩による作品「Past and Future.」のネットワーク制御を担当させていただきました。Past and Futute. は、体験者の心拍数を時計の秒針の動きに反映しています。60 個の時計が、過去の体験者一人ひとりの心拍の速さで動きつづけています。</p>
                 <div class="WorkIntroduce__TopWorkIntroduceMv">
                   <img class="WorkIntroduce__TopWorkIntroduceMvImage" src="/assets/images/past-and-future-mv.jpg" alt="Past and Future.">
                 </div>
@@ -148,112 +148,37 @@
             </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
               <p class="WorkIntroduce__ComponentTextInner">
-                Past and Future. は、複数の時計が同じ場所で別々に動いている状態を用いて、人間は一人では生きていけないことや、人同士のつながりを表現しています。
-                この 60 個の時計は、JavaScript の非同期処理で動作させています。
+                Past and Future. は、ゼミの後輩が企画・ディレクションを行った展示作品です。複数の時計が同じ場所で別々に動いている状態を用いて、人間は一人では生きていけないことや、人同士のつながりを表現しています。
+                家崎はネットワーク制御（JavaScript での時計の動作制御）を担当しています。
               </p>
             </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentItem--Other WorkIntroduce__ComponentTitle">
-              <h3 class=" WorkIntroduce__ComponentTitleInner">Past and Future. 体験映像</h3>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentVideo">
-              <iframe class="WorkIntroduce__ComponentVideoInner" width="917" height="516" src="https://www.youtube.com/embed/VCfr4lsN4PE" title="Past and Future." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-
 
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentItem--Other WorkIntroduce__ComponentTitle">
               <h3 class=" WorkIntroduce__ComponentTitleInner">Past and Furure. &nbsp; 動作について</h3>
+            </div>
+            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentVideo">
+              <iframe class="WorkIntroduce__ComponentVideoInner" width="914" height="514" src="https://www.youtube.com/embed/T0ZMA0UCbQw" title="Past and Future. 基本動作" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentVideo">
+              <iframe class="WorkIntroduce__ComponentVideoInner" width="917" height="516" src="https://www.youtube.com/embed/VCfr4lsN4PE" title="Past and Future." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentImg">
               <p class="WorkIntroduce__ComponentImgInner"><img src="/assets/images/past-and-future-sensor.jpg" alt="Moogle" class="WorkIntroduce__ComponentImgInnerImage"></p>
             </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
               <p class="WorkIntroduce__ComponentTextInner">
-                パルスセンサーに人差し指を置く → 6 秒かけて秒針を鳴らしながら心拍の平均を測定 → 測定した心拍に合わせ、すべての時計が同じように秒針を刻み、その間電球も秒針と同じように明滅する → 秒針が鳴り終えると、電球が強く発光する→ 電球が光り終えると、測定前と同じようにすべての時計がバラバラに秒針を刻む動き方に戻る
+                パルスセンサーに人差し指を置く → 心拍の感知に合わせすべての時計が秒針を刻みながら、6 秒かけて心拍の平均を測定 → 測定した平均心拍数に合わせ、すべての時計が同じ速さで秒針を刻み、その間頭上に吊り下がっている電球も秒針の動きに合わせて明滅する → 秒針を刻み終えると、電球が強く発光→ 電球が光り終えると、測定前と同じようにすべての時計がバラバラの速さで秒針を刻みはじめる
               </p>
             </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
               <p class="WorkIntroduce__ComponentTextInner">
-                 通常時は、すべての時計がバラバラな速さで秒針を刻んでいます。Past and Futute. には 60 個の時計が配置しており、パルスセンサーで 1 回分心拍を測定するごとに、時計と連動した JavaScript の配列の中に心拍数の数値が 1 つ記録されていきます。時計一つひとつが過去の体験者たちの心拍数であり、時計の数と同じ最新 60 人分までが作品に反映されます。
+                Past and Futute. は体験者がいない場合、すべての時計がバラバラの速さで秒針を刻んでいます。このときの各時計の秒針の速さは、過去の体験者の心拍数で決まっています。円状の木枠には 60 個の時計を配置しており、パルスセンサーで 6 秒間の測定が行われる度、時計と連動した JavaScript の配列の中へ心拍数がひとつ記録されていくしくみです。記録した心拍数と個々の時計を紐づけるようにしており、秒針の動き（開始・停止・準転・反転・動かす時計の数など）の指定には JavaScript の非同期処理を使用しています。
+                <!-- 時計一つひとつの動きが過去の体験者たちの心拍数であり、時計の数と同じ最新 60 人分までの心拍数が作品に反映されています。 -->
               </p>
             </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentVideo">
-              <iframe class="WorkIntroduce__ComponentVideoInner" width="914" height="514" src="https://www.youtube.com/embed/T0ZMA0UCbQw" title="Past and Future. 基本動作" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe class="WorkIntroduce__ComponentVideoInner" width="910" height="512" src="https://www.youtube.com/embed/-ayafgwpDAs" title="Past and Future. 時計 秒針準転時の動作" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-
-
-
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentImg">
-              <p class="WorkIntroduce__ComponentImgInner"><img src="/assets/images/moogle-hp.png" alt="Moogle" class="WorkIntroduce__ComponentImgInnerImage"></p>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
-              <p class="WorkIntroduce__ComponentTextInner">
-                そこでまずはじめに制作したのが、Moogle ホームページ版です。Moogle Google 拡張機能が完成する以前にこちらを制作していました。このホームページをつくったことで、拡張機能版を作り、検索機能を追加するというアイデアが生まれました。Google 検索結果の最適化順から、真逆の検索結果を表示する機能がお使いいただけます。
-              </p>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentLink">
-              <div class="WorkIntroduce__LinkButton">
-                <a class="WorkIntroduce__LinkButtonInner" target="_blank" rel="noopener noreferrer" href="https://moogle.iezakiyumemi.com/">
-                  <p class="WorkIntroduce__ButtonInnerText">Moogle&nbsp;ホームページ版へ</p>
-                  <img class="WorkIntroduce__ButtonArrow" src="/assets/images/link-arrow.svg" alt="ジャンプリンク用アイコン">
-                </a>
-              </div>
-            </div>
-
-
-
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
-              <p class="WorkIntroduce__ComponentTextInner">
-                Moogle Google 拡張機能の使い方動画です。動画編集、ナレーションなどを担当しています。
-                音声は大学設備のレコーディングスタジオを使用して録音しました。動画内では Moogle 拡張機能のインストール方法から、検索機能の使用方法までをお伝えしています。
-                説明のための音声を撮る機会はあまりなかったので、話す早さや抑揚の意識などが難しかったです。
-                きれいに録音するために試行錯誤するのも楽しかったので、またなにか声を使った制作ができたらと思っています。
-              </p>
-            </div>
-
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentItem--Other WorkIntroduce__ComponentTitle">
-              <h3 class=" WorkIntroduce__ComponentTitleInner">展示に使用したパネルデータ</h3>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentImg">
-              <p class="WorkIntroduce__ComponentImgInner"><img src="/assets/images/moogle-intro.jpg" alt="Moogle" class="WorkIntroduce__ComponentImgInnerImage"></p>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentImg">
-              <p class="WorkIntroduce__ComponentImgInner"><img src="/assets/images/moogle-description.jpg" alt="Moogle" class="WorkIntroduce__ComponentImgInnerImage"></p>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentImg">
-              <p class="WorkIntroduce__ComponentImgInner"><img src="/assets/images/moogle-total.jpg" alt="Moogle" class="WorkIntroduce__ComponentImgInnerImage"></p>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentImg">
-              <p class="WorkIntroduce__ComponentImgInner"><img src="/assets/images/moogle-total2.jpg" alt="Moogle" class="WorkIntroduce__ComponentImgInnerImage"></p>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
-              <p class="WorkIntroduce__ComponentTextInner">
-              最後の 2 枚の画像は、拡張機能のどの項目がどれだけ操作されたかを計測した結果です。検索機能用に使用していた api の都合上 Google アナリティクスを使用することが難しかったため、
-              計測が必要な箇所に透明な画像を設置し、その画像の読み込み回数などを用いて計測を行いました。
-              </p>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentItem--Other WorkIntroduce__ComponentTitle">
-              <h3 class=" WorkIntroduce__ComponentTitleInner">Moogle の目的は、「新しい情報との出会いの機会をつくること」</h3>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentImg">
-              <p class="WorkIntroduce__ComponentImgInner"><img src="/assets/images/moogle-ex.jpg" alt="Moogle" class="WorkIntroduce__ComponentImgInnerImage"></p>
-            </div>
-
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
-              <p class="WorkIntroduce__ComponentTextInner">
-                知らなかったものを知るということは、選択肢や可能性を得るのと同じです。なにをするか決めるには、まず情報を知っていなくては始まりません。今している趣味や仕事、進学先などの存在も、誰かに教えてもらったり、調べ物をしてたまたま見かけたりと、知るきっかけが必ずどこかにあったはずです。人は知ったものの中から、自分はなにをするかを選んでいます。
-                そう考えると、情報を得る機会は多ければ多いほど楽しいのではないかとわたしは思います。大げさかもしれませんが、知っていることがひとつひとつ増えるたびに、少しずつ毎日が面白くなっていくのではないでしょうか。
-
-              </p>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
-              <p class="WorkIntroduce__ComponentTextInner">
-                Moogle を利用していただくにあたり大切だと考えているのは、毎回意識して Moogle 検索結果を見ていただくことではなく、ユーザーの環境に Moogle があるのがが当たり前であることです。
-                Moogle のように「あなたのためにカスタマイズされていない情報が、自然と目に入る状態で常にあり続けること」が大切なのだと考えています。いつもはその存在を忘れていても、時々気になったものがあればなんとなくリンク先に飛んで見る、くらいの気楽さで使っていただけるのが理想です。
-                また、気分やタイミングといった、ユーザー自身がもつ気まぐれに変化し得る要素も情報と出会う縁です。Moogle はその選択肢として「いつでも無意識に目に入る存在」でありたいと思っています。
-
-              </p>
-            </div>
-
 
           </section>
           <div class="Section__Footer">
