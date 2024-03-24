@@ -327,3 +327,7 @@
     /* 90 * 2 は両サイドの padding の値 */
   width: calc(68 / (1150 - (90 * 2)) * 100%);
 }
+
+.WorkIntroduce__ComponentTextInnerNumber {
+  list-style-type: decimal;
+}
