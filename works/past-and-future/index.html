@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png"><!-- 180×180 -->
   <link rel="manifest" href="/assets/shared/manifest.webmanifest">
   <meta property="og:title" content="Past and Future. ast and Future.（ネットワーク制御）&nbsp;|&nbsp;いえざきゆめみのポートフォリオ">
-  <meta property="og:description" content="ゼミの後輩による制作「Past and Future.」のネットワーク制御を担当させていただきました。Past and Futute. では、心拍数を秒針の動きに反映しています。60個の時計が、記録した一人ひとりの心拍の速さで動きつづけています。">
+  <meta property="og:description" content="ゼミの後輩による作品「Past and Future.」のネットワーク制御を担当しました。Past and Futute. は、体験者の心拍数を時計の秒針の動きに反映しています。60 個の時計が、過去の体験者一人ひとりの心拍の速さで動きつづけています。">
   <meta property="og:url" content="https://iezakiyumemi.com/works/past-and-future">
   <meta property="og:image" content="https://iezakiyumemi.com/assets/images/past-and-future-mv">
   <meta property="og:type" content="website">
@@ -176,8 +176,7 @@
             </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
               <p class="WorkIntroduce__ComponentTextInner">
-                Past and Futute. は体験者がいない場合、すべての時計がバラバラの速さで秒針を刻んでいます。このときの各時計の秒針の速さは、過去の体験者の心拍数で決まっています。円状の木枠には 60 個の時計を配置しており、パルスセンサーで 6 秒間の測定が行われる度、時計と連動した JavaScript の配列の中へ心拍数がひとつ記録されていくしくみです。記録した心拍数と個々の時計を紐づけるようにしており、秒針の動き（開始・停止・準転・反転・動かす時計の数など）の指定には JavaScript の非同期処理を使用しています。
-                <!-- 時計一つひとつの動きが過去の体験者たちの心拍数であり、時計の数と同じ最新 60 人分までの心拍数が作品に反映されています。 -->
+                Past and Futute. は体験者がいない場合、すべての時計がバラバラの速さで秒針を刻んでいます。このときの各時計の秒針の速さは、過去の体験者の心拍数で決まっています。円状の木枠には 60 個の時計を配置しており、パルスセンサーで 6 秒間の測定が行われる度、時計と連動した JavaScript の配列の中へ心拍数がひとつ記録されていくしくみです。記録した心拍数と個々の時計を紐づけるようにしており、秒針の動き（開始・停止・準転・反転・動かす時計の数など）の API の制御には JavaScript の async / await と Promise 、fetch を使用し、非同期処理について学ぶことができました。
               </p>
             </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentVideo">
@@ -204,6 +203,3 @@
   </main>
 </body>
 </html>
-
-
-<!-- header 画像の差し替え・テキスト・リンクの差し替えをする！！！ -->
