@@ -48,14 +48,18 @@ MicroModal.init({disableScroll: true});
 // クリックしたれんしゅう作品のサムネイルと、モーダルのスライドページが対応するようにした
 const scrollListItemLink = document.querySelectorAll(".js-modal");
 
+
+// モーダルのインデックスを切り替える
 // forEach は scrollListItemLink の中身を一個づつ取り出す処理
 scrollListItemLink.forEach(function(link, i){
-  console.log(i + ' 回目の処理', link, scrollListItemLink[i]);
+  // console.log(i + ' 回目の処理', link, scrollListItemLink[i]);
   link.addEventListener(
     "click",
     function(){
-      console.log(i + " をクリックした!!");
+      // console.log(i + " をクリックした!!");
       MicroModalSwiper.slideTo(i, 0);
     }
   );
 });
+
+// scrollListItemLink();

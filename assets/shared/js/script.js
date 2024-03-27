@@ -19,6 +19,7 @@ const fadeInEffect = (entries, obs) => {
   });
 }
 
+// フェードインアニメーション
 const fadeObserver = new IntersectionObserver(fadeInEffect);
 const fadeInContents = document.querySelectorAll(".js-scrollfadein");
 

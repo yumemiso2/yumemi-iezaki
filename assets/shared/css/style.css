@@ -32,8 +32,8 @@
   src: url(/fonts/higuregothic-black.woff) format("woff");
 }
 
+/* フェードインアニメーションのため、不透明度を 0 にする */
 .fadein {
-  transition: 1s;
   opacity: 0;
 }
 

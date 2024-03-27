@@ -34,17 +34,17 @@
 サムネイル画像は、``/Users/yumemi/Documents/GitHub/yumemi-iezaki/index.html``の、以下をコピペで追加する（先頭に追加）
 
 ```html
-<li class="ScrollList__Item">
-  <a class="ScrollList__ItemLink js-modal js-modal3" data-micromodal-trigger="modal-1">
-    <div class="ScrollList__ItemLinkInner">
-      <div class="ScrollHover">
-        <h2 class="ScrollHover__Name">クリックカウンター</h2>
-        <p class="ScrollHover__Description">JavaScript を使用して制作したクリックカウンターです</p>
+  <li class="ScrollList__Item">
+    <a class="ScrollList__ItemLink js-modal" data-micromodal-trigger="modal-1">
+      <div class="ScrollList__ItemLinkInner">
+        <div class="ScrollHover">
+          <h2 class="ScrollHover__Name">大名古屋電脳博覧会 2023<br>図録掲載</h2>
+          <p class="ScrollHover__Description">大名古屋電脳博覧会 2023 の作品図録に Moogle が掲載されました！</p>
+        </div>
       </div>
-    </div>
-    <img class="ScrollList__ItemLinkImage" src="/assets/images/practice-counter.png" alt="クリックカウンター">
-  </a>
-</li>
+      <img class="ScrollList__ItemLinkImage" src="/assets/images/dennouhaku-topmv.jpg" alt="大名古屋電脳博覧会 2023">
+    </a>
+  </li>
 ```
 - 画像・タイトル・テキストを変更する
 - alt ="" を記述する（.ScrollHover__Name と同じテキストにする）
@@ -109,7 +109,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="いえざきゆめみのポートフォリオ">
   <title>つくったもの&nbsp;|&nbsp;いえざきゆめみのポートフォリオ</title>
-  <meta name="description" content="いえざきゆめみのポートフォリオです。たくさんいろんなものを作って、このポートフォリオを豊かにしていきます。"> 
+  <meta name="description" content="いえざきゆめみのポートフォリオです。たくさんいろんなものを作って、このポートフォリオを豊かにしていきます。">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
   <script src="/assets/shared/js/script.js" defer></script>
   <link rel="stylesheet" href="/assets/shared/css/reset.css">
@@ -120,4 +120,6 @@
 
 
 ### その他メモ
-- ``data-micromodal-trigger="modal-1 id= "modal-1"``は、Micromodal.js を発火させるため関係性の紐づけに使用している
+- ``data-micromodal-trigger="modal-1 id= "modal-1"``は、Micromodal.js を発火させるため、れんしゅうセクションのサムネイルとれんしゅうセクションの各ポップアップ内容を表示する場所と関係性の紐づけに使用している
+
+れんしゅう セクションのサムネイルと、クリックした際のモーダルの紐づけは「modal-1」で、コンテンツをクリックしたときのモーダルの表示条件を紐づけている。（モーダルの中でスワイパーが動作している。れんしゅうセクションのコンテンツをクリックしたときに開くモーダル１つのことを、「modal-1」と考えるので、れんしゅうセクションのコンテンツの数によって「modal-」の数字が増えるわけではない。（どこか別の場所で別なモーダルを作る場合、「modal-2」という別のモーダルとして作ってもいいかも））
