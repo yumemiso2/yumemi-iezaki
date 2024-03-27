@@ -117,6 +117,56 @@
   <link rel="stylesheet" href="/works/css/style.css">
 ```
 
+### つくったもの 下層ページに 作品導線を追加について
+- works / index.html に以下コピペ
+- 該当箇所を修正
+
+```html
+      <!-- Past and Future. -->
+      <section class="WorksItem">
+        <div class="WorksItem__Inner BackgroundRounded">
+          <div class="WorksItem__Slide js-scrollfadein fadein">
+            <div class="WorksItem__Img swiper mySwiper">
+              <div class="ImgList swiper-wrapper">
+                <div class="ImgList__Inner swiper-slide">
+                  <a href="/works/past-and-future/" class="ImgList__Link"><img src="/assets/images/past-and-future-mv.jpg" class="ImgList__LinkImage" alt="Past and Future.">
+                  </a>
+                </div>
+                <div class="swiper-slide ImgList__Inner">
+                  <a href="/works/past-and-future/" class="ImgList__Link"><img src="/assets/images/past-and-future-clock.jpg" class="ImgList__LinkImage" alt="Past and Future.">
+                  </a>
+                </div>
+                <div class="swiper-slide ImgList__Inner">
+                  <a href="/works/moogle/" class="ImgList__Link"><img src="/assets/images/past-and-future-sensor2.jpg" class="ImgList__LinkImage" alt="Past and Future.">
+                  </a>
+                </div>
+              </div>
+              <div class="SwiperButton">
+                <div class="SwiperButton_Inner">
+                  <div class="swiper-button-prev SwiperButton--L SwiperButtonArrow"></div>
+                  <div class="swiper-button-next SwiperButton--R SwiperButtonArrow"></div>
+                </div>
+              </div>
+            </div>
+            <div class="ScrollDot swiper-pagination"></div>
+          </div>
+
+          <div class="TextContainer js-scrollfadein fadein">
+            <div class="Introduce">
+              <h2 class="SectionTitleSub">Past and Future.</h2>
+              <p class="Introduce__Description">ゼミの後輩による作品のネットワーク制御を担当しました。<span class="TextBr">体験者の心拍数を時計の秒針の動きに反映して動作します。</p>
+            </div>
+            <div class="TextButton TextButton--Small">
+              <a href="/works/past-and-future/" class="Button Button--Small">
+                <span class="Button__Inner">もっとみる</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+  
+```
 
 
 ### その他メモ
