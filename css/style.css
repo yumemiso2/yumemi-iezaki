@@ -1042,11 +1042,16 @@
   }
 }
 
+
 @media screen and (max-width: 768px) {
   .About__InnerTextDescription {
     margin: 0 auto;
     width: calc(324 / 342 * 100%);
   }
+}
+
+.About__InnerSection {
+  margin: 0 auto calc(48 / (995 - 200 - 72) * 100%);
 }
 
 .About__InnerText__SkillsItem {

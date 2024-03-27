@@ -278,10 +278,6 @@
 }
 
 
-.Introduce__Description--Br {
+.TextBr {
   display: inline-block;
-}
-
-.TextBold {
-  font-family: "HigureGothic-Black";
 }
