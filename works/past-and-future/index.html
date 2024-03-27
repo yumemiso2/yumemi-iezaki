@@ -161,14 +161,14 @@
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentItem--Other WorkIntroduce__ComponentTitle">
               <h3 class=" WorkIntroduce__ComponentTitleInner">Past and Furure. &nbsp; 動作について</h3>
             </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentVideo">
-              <iframe class="WorkIntroduce__ComponentVideoInner" width="914" height="514" src="https://www.youtube.com/embed/T0ZMA0UCbQw" title="Past and Future. 基本動作" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
+              <p class="WorkIntroduce__ComponentTextInner">
+                時計は ESP32 という小型のコンピュータで制御されています。ESP32 が時計を「止める」「動かす」といった機能を Web API として公開しており、私はその仕様書にもとづき JavaScript で API を制御しています。
+              </p>
             </div>
+
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentVideo">
               <iframe class="WorkIntroduce__ComponentVideoInner" width="917" height="516" src="https://www.youtube.com/embed/VCfr4lsN4PE" title="Past and Future." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentImg">
-              <p class="WorkIntroduce__ComponentImgInner"><img src="/assets/images/past-and-future-sensor.jpg" alt="Past and Future. パルスセンサー" class="WorkIntroduce__ComponentImgInnerImage"></p>
             </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
               <ol class="WorkIntroduce__ComponentTextInnerNumber">
@@ -181,17 +181,26 @@
             </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
               <p class="WorkIntroduce__ComponentTextInner">
-                Past and Futute. は体験者がいない場合、すべての時計がバラバラの速さで秒針を刻んでいます。このときの各時計の秒針の速さは、過去の体験者の心拍数で決まっています。円状の木枠には 60 個の時計を配置しており、パルスセンサーで 6 秒間の測定が行われる度、時計と連動した JavaScript の配列の中へ心拍数がひとつ記録されていくしくみです。記録した心拍数と個々の時計を紐づけるようにしており、秒針の動き（開始・停止・準転・反転・動かす時計の数など）の API の制御には JavaScript の async / await と Promise 、fetch を使用し、非同期処理について学ぶことができました。
+               こちらの写真は、1. で心拍数を計測するため、パルスセンサーを設置していた場所です。
+               センサーの反応が体験者にも視覚的に分かるよう、頭上に電球を吊り下げています。
               </p>
             </div>
+            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentImg">
+              <p class="WorkIntroduce__ComponentImgInner"><img src="/assets/images/past-and-future-sensor.jpg" alt="Past and Future. パルスセンサー" class="WorkIntroduce__ComponentImgInnerImage"></p>
+            </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentVideo">
-              <iframe class="WorkIntroduce__ComponentVideoInner" width="910" height="512" src="https://www.youtube.com/embed/-ayafgwpDAs" title="Past and Future. 時計 秒針準転時の動作" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe class="WorkIntroduce__ComponentVideoInner" width="914" height="514" src="https://www.youtube.com/embed/T0ZMA0UCbQw" title="Past and Future. 基本動作" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
               <p class="WorkIntroduce__ComponentTextInner">
-                時計はESP32という小型のコンピュータで制御されており、ESP32が時計を「止める」「動かす」といった機能を Web API として公開していて、私はその仕様書にもとづき JavaScript で API を制御しています。
+                Past and Futute. は体験者がいない場合、すべての時計がバラバラの速さで秒針を刻んでいます。このときの各時計の秒針の速さは、過去の体験者の心拍数で決まっています。円状の木枠には 60 個の時計を配置しており、パルスセンサーで 6 秒間の測定が行われる度、時計と連動した JavaScript の配列の中へ心拍数がひとつ記録されていくしくみです。記録した心拍数と個々の時計を紐づけるようにしており、秒針の動き（開始・停止・準転・反転・動かす時計の数など）の API の制御には JavaScript の async / await と Promise 、fetch を使用しています。何度も繰り返し記述することで、同期処理、非同期処理について学ぶことができました。
               </p>
             </div>
+
+            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentVideo">
+              <iframe class="WorkIntroduce__ComponentVideoInner" width="910" height="512" src="https://www.youtube.com/embed/-ayafgwpDAs" title="Past and Future. 時計 秒針準転時の動作" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
           </section>
           <div class="Section__Footer">
             <div class="Section__FooterInner">
