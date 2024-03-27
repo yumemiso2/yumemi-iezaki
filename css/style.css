@@ -1049,6 +1049,13 @@
   }
 }
 
+.About__InnerText__SkillsItem {
+  margin: 0 0 calc(24 / (995 - 200 - 72) * 100%) 0;
+}
+
+.About__InnerText__SkillsItemTitle {
+  font-family: "HigureGothic-Black";
+}
 
 /* わたしについて　アイコン画像 */
 
