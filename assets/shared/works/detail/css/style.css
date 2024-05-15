@@ -243,7 +243,7 @@
 
 .WorkIntroduce__ComponentItem:last-child {
   /* 72px - 160px */
-  margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem);
+  /* margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem); */
 }
 
 
