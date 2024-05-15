@@ -278,6 +278,21 @@
   overflow: hidden;
 }
 
+/*WorkIntroduce__ComponentItem--Column: 複数カラムにするためのクラス。"WorkIntroduce__ComponentItem ごとこの div に追加して使用する*/
+.WorkIntroduce__ComponentItem--Column {
+  display: flex;
+}
+
+.WorkIntroduce__ComponentItem--Column .WorkIntroduce__ComponentItem {
+  /* 16px - 24px */
+  margin: 0 clamp(1rem, 0.5rem + 1.33vw, 1.5rem) 0 0;
+  height: 100%;
+
+}
+.WorkIntroduce__ComponentItem--Column .WorkIntroduce__ComponentItem:last-child {
+  margin: 0;
+}
+
 .WorkIntroduce__ComponentImgInnerImage {
   width: 100%;
 }
