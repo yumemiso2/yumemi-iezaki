@@ -175,3 +175,32 @@
 れんしゅう セクションのサムネイルと、クリックした際のモーダルの紐づけは「modal-1」で、コンテンツをクリックしたときのモーダルの表示条件を紐づけている。（モーダルの中でスワイパーが動作している。れんしゅうセクションのコンテンツをクリックしたときに開くモーダル１つのことを、「modal-1」と考えるので、れんしゅうセクションのコンテンツの数によって「modal-」の数字が増えるわけではない。（どこか別の場所で別なモーダルを作る場合、「modal-2」という別のモーダルとして作ってもいいかも））
 
 - メインビジュアルの画像サイズは**1600 * 1067** なので、下層ページを追加する場合は、Figma で画像をリサイズする必要あり
+- つくったもの下層ページ、番号リストの使い方
+
+
+```html
+            <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentText">
+              <ol class="WorkIntroduce__ComponentTextInnerNumber">
+                <li class="WorkIntroduce__ComponentTextInnerNumberList">パルスセンサーに人差し指を置く</li>
+                <li class="WorkIntroduce__ComponentTextInnerNumberList">心拍の感知に合わせすべての時計が秒針を刻みながら、6 秒かけて心拍の平均を測定</li>
+                <li class="WorkIntroduce__ComponentTextInnerNumberList">測定した平均心拍数に合わせ、すべての時計が同じ速さで秒針を刻み、その間頭上に吊り下がっている電球も秒針の動きに合わせて明滅する</li>
+                <li class="WorkIntroduce__ComponentTextInnerNumberList">秒針を刻み終えると、電球が強く発光</li>
+                <li class="WorkIntroduce__ComponentTextInnerNumberList">電球が光り終えると、測定前と同じようにすべての時計がバラバラの速さで秒針を刻みはじめる</li>
+              </ol>
+            </div>
+```
+(``WorkIntroduce__ComponentText``の中に、``WorkIntroduce__ComponentTextInnerNumber``と``WorkIntroduce__ComponentTextInnerNumberList``を追加する)
+
+- つくったもの下層ページ、複数カラムの使い方
+  
+```html
+            <div class="WorkIntroduce__ComponentItem--Column">
+              <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentImg">
+                <p class="WorkIntroduce__ComponentImgInner"><img src="/assets/images/okazaki-mv-1.jpg" alt="スイッチ あそび展フライヤー表" class="WorkIntroduce__ComponentImgInnerImage"></p>
+              </div>
+              <div class="WorkIntroduce__ComponentItem WorkIntroduce__ComponentImg">
+                <p class="WorkIntroduce__ComponentImgInner"><img src="/assets/images/okazaki-mv-2.jpg" alt="スイッチ あそび展フライヤー裏" class="WorkIntroduce__ComponentImgInnerImage"></p>
+              </div>
+            </div>
+```
+（``WorkIntroduce__ComponentItem--Column``の中に、``WorkIntroduce__ComponentItem ``（画像・テキストなどのコンポーネント）を入れる）
