@@ -525,12 +525,15 @@
 .TextContainerHover__Description {
   font-size: clamp(0.75rem, 0.64rem + 0.45vw, 1rem);
   /* line-height: 24 / 12 */
+  /* min: 768px max: 1280px、360px - 700px */
+  width: clamp(22.5rem, -9.375rem + 66.41vw, 43.75rem);
   line-height: 2;
 }
 
 @media screen and (max-width: 768px) {
   .TextContainerHover__Description {
     font-family: "HigureGothic-Regular";
+    width: 100%;
   }
 }
 

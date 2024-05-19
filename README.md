@@ -204,3 +204,6 @@
             </div>
 ```
 （``WorkIntroduce__ComponentItem--Column``の中に、``WorkIntroduce__ComponentItem ``（画像・テキストなどのコンポーネント）を入れる）
+
+- clamp: ブレイクポイントと同じ、768px - 1280px から考えて指定する
+- calc: コンテンツに合わせて、（そのときに指定したいサイズ感 / 親要素のサイズ * 100%)で計算する
