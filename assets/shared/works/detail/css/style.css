@@ -241,10 +241,10 @@
   margin-top: 0;
 }
 
-.WorkIntroduce__ComponentItem:last-child {
+/* .WorkIntroduce__ComponentItem:last-child { */
   /* 72px - 160px */
   /* margin: 0 0 clamp(4.5rem, 2.09rem + 9.89vw, 10rem); */
-}
+/* } */
 
 
 .WorkIntroduce__ComponentItem--Other.WorkIntroduce__ComponentTitle {
@@ -282,22 +282,25 @@
   width: 100%;
 }
 
-/*WorkIntroduce__ComponentItem--Column: 複数カラムにするためのクラス。"WorkIntroduce__ComponentItem ごとこの div に追加して使用する*/
+/*.WorkIntroduce__ComponentItem--Column: 複数カラムにするための flex コンテナ。margin を削除する意味もあるので、同時に.WorkIntroduce__ComponentItem は使わない（中のコンテンツには .WorkIntroduce__ComponentItem をつける）*/
 .WorkIntroduce__ComponentItem--Column {
   display: flex;
 }
 
+/* .WorkIntroduce__ComponentItem--Column .WorkIntroduce__ComponentItem: コンテンツ右に margin をつける*/
 .WorkIntroduce__ComponentItem--Column .WorkIntroduce__ComponentItem {
   /* 16px - 24px */
   margin: 0 clamp(1rem, 0.5rem + 1.33vw, 1.5rem) 0 0;
   height: 100%;
 
 }
+
+/*.WorkIntroduce__ComponentItem--Column .WorkIntroduce__ComponentItem:last-child: 右側の margin を消す */
 .WorkIntroduce__ComponentItem--Column .WorkIntroduce__ComponentItem:last-child {
-  margin: 0;
+  margin-right: 0;
 }
 
-/* 複数カラムレイアウトの際、コンテンツ前後の margin を管理するためのクラス。"WorkIntroduce__ComponentImg" などに追加して使用する */
+/* WorkIntroduce__ComponentItem--ColumnClose: 複数カラムレイアウトの際、コンテンツ前後の margin を管理するためのクラス。"WorkIntroduce__ComponentItem--Column" に追加して使用する */
 .WorkIntroduce__ComponentItem--ColumnClose {
   /* 16px - 24px */
   margin-bottom: clamp(1rem, 0.5rem + 1.33vw, 1.5rem);
