@@ -315,6 +315,16 @@
 
 } */
 
+.WorkIntroduce__ComponentTextInnerLink {
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
+
+}
+
+.WorkIntroduce__ComponentTextInnerLinkInner {
+  width: 16px;
+}
+
 .WorkIntroduce__ComponentVideo {
   aspect-ratio: 16 / 9;
   /* border-radius: 25px;
