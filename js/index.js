@@ -16,6 +16,7 @@ const swiper = new Swiper('#HomeWorks__swiper', {
   slidesPerView: "auto",//スライダーコンテナにスライドを-枚同時表示
   centeredSlides: true,//アクティブなスライドを中央に表示
   // spaceBetween: 40,//スライド間の距離
+  loop: true,
   pagination: {
     el: "#HomeWorks__swiper-pagination",//スライドの枚数と現在アクティブなスライドがわかる
     clickable: true,
