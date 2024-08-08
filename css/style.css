@@ -153,6 +153,7 @@
   text-align: left;
   margin: 0 auto;
   display: flex;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 768px) {
@@ -171,7 +172,7 @@
 
   /* border-radius: 25 - 50px; */
   /* border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem); */
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0 calc(40 / 940 * 100%) 0 0;
 }
 
@@ -183,7 +184,7 @@
   }
 }
 
-
+/*  */
 .PracticeModal .PopupItem__ImageContainer {
   /* .PracticeModal .PopupItem__Image のときも*/
   width: calc(500 / 940 * 100%);
@@ -191,13 +192,19 @@
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
 }
 
-
+@media screen and (max-width: 768px) {
+  .PracticeModal .PopupItem__ImageContainer {
+    /* .PracticeModal .PopupItem__Image　と同じ */
+    width: 100%;
+    margin: 0 auto 24px;
+  }
+}
 
 .PracticeModal .PracticeModal__Swiper .PopupItem__Image {
   margin: 0;
 }
 
-.PracticeModal .PracticeModal__Swiper .PopupItem__ImageCover {}
+/* .PracticeModal .PracticeModal__Swiper .PopupItem__ImageCover {} */
 
 /* .PracticeModal .PracticeModal__Swiper .PopupItem__ImageInner {
 

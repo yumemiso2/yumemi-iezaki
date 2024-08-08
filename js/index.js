@@ -22,8 +22,8 @@ const swiper = new Swiper('#HomeWorks__swiper', {
   }
 });
 
-
-const PopupItemImageSwiper = new Swiper('#HomePracticeModal__swiper', {
+// Modal
+const ModalItemImageSwiper = new Swiper('#HomePracticeModalImg__swiper', {
   loop: false,//スライドを繰り返しする
   // loop: true,
   keyboard: {
@@ -31,8 +31,8 @@ const PopupItemImageSwiper = new Swiper('#HomePracticeModal__swiper', {
   },
 
   // navigation: {
-  //   nextEl: '#HomePracticeModal__swiper-button-next',//次へボタン
-  //   prevEl: '#HomePracticeModal__swiper-button-prev',//前へボタン
+  //   nextEl: '#HomePracticeModalImg__swiper-button-next',//次へボタン
+  //   prevEl: '#HomePracticeModalImg__swiper-button-prev',//前へボタン
   // },
 
 
@@ -41,7 +41,7 @@ const PopupItemImageSwiper = new Swiper('#HomePracticeModal__swiper', {
   centeredSlides: true,//アクティブなスライドを中央に表示
   loop: true,
   pagination: {
-    el: "#HomePracticeModal__swiper-pagination",//スライドの枚数と現在アクティブなスライドがわかる
+    el: "#HomePracticeModalImg__swiper-pagination",//スライドの枚数と現在アクティブなスライドがわかる
     clickable: true,
   }
 });
@@ -51,7 +51,7 @@ const PopupItemImageSwiper = new Swiper('#HomePracticeModal__swiper', {
 // ModalSwiper の初期化
 const MicroModalSwiper = new Swiper('#HomePractice__swiper',{
   effect: "fade",
-  autoHeight: true,
+  autoHeight: false,
   navigation: {
     nextEl: "#HomePractice__swiper-button-next",
     prevEl: "#HomePractice__swiper-button-prev",
