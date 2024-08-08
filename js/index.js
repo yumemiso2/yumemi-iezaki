@@ -2,6 +2,7 @@
 
 const swiper = new Swiper('#HomeWorks__swiper', {
   loop: false,//スライドを繰り返しする
+  autoHeight: true,
   keyboard: {
     enabled: true,
   },
