@@ -22,8 +22,8 @@ const swiper = new Swiper('#HomeWorks__swiper', {
   }
 });
 
-// Modal
-const ModalItemImageSwiper = new Swiper('#HomePracticeModalImg__swiper', {
+// ModalItemImageSwiper　の初期化をする（モーダル内で複数回使うので、クラス名を使用する）
+const ModalItemImageSwiper = new Swiper('.HomePracticeModalImg__swiper', {
   loop: false,//スライドを繰り返しする
   // loop: true,
   keyboard: {
