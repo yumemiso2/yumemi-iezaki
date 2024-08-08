@@ -42,7 +42,7 @@ const ModalItemImageSwiper = new Swiper('.HomePracticeModalImg__swiper', {
   centeredSlides: true,//アクティブなスライドを中央に表示
   loop: true,
   pagination: {
-    el: "#HomePracticeModalImg__swiper-pagination",//スライドの枚数と現在アクティブなスライドがわかる
+    el: ".HomePracticeModalImg__swiper-pagination",//スライドの枚数と現在アクティブなスライドがわかる
     clickable: true,
   }
 });
