@@ -23,6 +23,29 @@ const swiper = new Swiper('#HomeWorks__swiper', {
 });
 
 
+const PopupItemImageSwiper = new Swiper('#HomePracticeModal__swiper', {
+  loop: false,//スライドを繰り返しする
+  // loop: true,
+  keyboard: {
+    enabled: true,
+  },
+
+  // navigation: {
+  //   nextEl: '#HomePracticeModal__swiper-button-next',//次へボタン
+  //   prevEl: '#HomePracticeModal__swiper-button-prev',//前へボタン
+  // },
+
+
+// https://codesandbox.io/p/sandbox/vf5lq2?file=/index.html:52,1
+  // slidesPerView: "auto",//スライダーコンテナにスライドを-枚同時表示
+  centeredSlides: true,//アクティブなスライドを中央に表示
+  loop: true,
+  pagination: {
+    el: "#HomePracticeModal__swiper-pagination",//スライドの枚数と現在アクティブなスライドがわかる
+    clickable: true,
+  }
+});
+
 
 
 // ModalSwiper の初期化
