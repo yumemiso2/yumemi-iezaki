@@ -389,7 +389,6 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  height: calc(50 / 500 * 100%);
   z-index: 3;
 }
 
