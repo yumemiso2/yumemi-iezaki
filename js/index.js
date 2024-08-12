@@ -73,7 +73,9 @@ modalImgList.forEach((modalImg, i) => {
       "click",
       function () {
         // console.log(i + " をクリックした!!");
+        MicroModalSwiper.update();
         MicroModalSwiper.slideTo(i, 0);
+
 
         modalImgSwiper.forEach(swiper => {
           swiper.slideTo(0, 0); // スライドを1枚目に戻す
