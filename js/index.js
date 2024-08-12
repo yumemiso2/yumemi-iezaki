@@ -37,50 +37,50 @@ modalImgList.forEach((modalImg, i) => {
     },
     centeredSlides: true,//アクティブなスライドを中央に表示
     pagination: {
-      clickable:true,
+      clickable: true,
       el: modalImg.querySelector(".HomePracticeModalImg__swiper-pagination"),  //スライドの枚数と現在アクティブなスライドがわかる
     },
   });
 });
-  // ModalSwiper の初期化
-  const MicroModalSwiper = new Swiper('#HomePractice__swiper', {
-    effect: "fade",
-    autoHeight: false,
-    navigation: {
-      nextEl: "#HomePractice__swiper-button-next",
-      prevEl: "#HomePractice__swiper-button-prev",
-    },
-    pagination: {
-      // el: "#HomePractice__swiper-pagination",
-      clickable: true,
-    },
-  });
+// ModalSwiper の初期化
+const MicroModalSwiper = new Swiper('#HomePractice__swiper', {
+  effect: "fade",
+  autoHeight: false,
+  navigation: {
+    nextEl: "#HomePractice__swiper-button-next",
+    prevEl: "#HomePractice__swiper-button-prev",
+  },
+  pagination: {
+    // el: "#HomePractice__swiper-pagination",
+    clickable: true,
+  },
+});
 
 
-  // MicroModalの初期化
-  MicroModal.init({ disableScroll: true });
+// MicroModalの初期化
+MicroModal.init({ disableScroll: true });
 
 
-  // クリックしたれんしゅう作品のサムネイルと、モーダルのスライドページが対応するようにした
-  const scrollListItemLink = document.querySelectorAll(".js-modal");
+// クリックしたれんしゅう作品のサムネイルと、モーダルのスライドページが対応するようにした
+const scrollListItemLink = document.querySelectorAll(".js-modal");
 
 
-  // モーダルのインデックスを切り替える
-  // forEach は scrollListItemLink の中身を一個づつ取り出す処理
-  scrollListItemLink.forEach(function (link, i) {
-    // console.log(i + ' 回目の処理', link, scrollListItemLink[i]);
-    link.addEventListener(
-      "click",
-      function () {
-        // console.log(i + " をクリックした!!");
-        MicroModalSwiper.update();
-        MicroModalSwiper.slideTo(i, 0);
+// モーダルのインデックスを切り替える
+// forEach は scrollListItemLink の中身を一個づつ取り出す処理
+scrollListItemLink.forEach(function (link, i) {
+  // console.log(i + ' 回目の処理', link, scrollListItemLink[i]);
+  link.addEventListener(
+    "click",
+    function () {
+      // console.log(i + " をクリックした!!");
+      MicroModalSwiper.update();
+      MicroModalSwiper.slideTo(i, 0);
 
 
-        modalImgSwiper.forEach(swiper => {
-          swiper.slideTo(0, 0); // スライドを1枚目に戻す
-          swiper.autoplay.start(); // 再生を開始する
-        });
-      }
-    );
-  });
+      modalImgSwiper.forEach(swiper => {
+        swiper.slideTo(0, 0); // スライドを1枚目に戻す
+        swiper.autoplay.start(); // 再生を開始する
+      });
+    }
+  );
+});
