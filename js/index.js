@@ -31,7 +31,6 @@ modalImgList.forEach((modalImg, i) => {
   modalImgSwiper[i] = new Swiper(modalImg, {
     loop: true,
     speed: 2000,//スライド切り替えアニメーションのスピードを指定
-    // allowTouchMove: false, // ユーザー操作を無効にする
     autoplay: {
       disableOnInteraction: false,  // ユーザーがページを触っても自動再生を続行する
     },
@@ -42,6 +41,7 @@ modalImgList.forEach((modalImg, i) => {
     },
   });
 });
+
 // ModalSwiper の初期化
 const MicroModalSwiper = new Swiper('#HomePractice__swiper', {
   effect: "fade",
