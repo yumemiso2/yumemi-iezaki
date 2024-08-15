@@ -45,7 +45,7 @@ modalImgList.forEach((modalImg, i) => {
 // ModalSwiper の初期化
 const MicroModalSwiper = new Swiper('#HomePractice__swiper', {
   effect: "fade",
-  autoHeight: false,
+  autoHeight: true,
   navigation: {
     nextEl: "#HomePractice__swiper-button-next",
     prevEl: "#HomePractice__swiper-button-prev",

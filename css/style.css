@@ -166,6 +166,7 @@
 
 .PracticeModal .PopupItem__Inner {
   width: calc(500 / 940 * 100%);
+  height: 100%;
   margin: 0 calc(40 / 940* 100%) 0 0;
 }
 
@@ -177,6 +178,9 @@
 }
 
 .PracticeModal .PopupItem__ImageContainer {
+  width: 100%;
+  /* height: 100%; */
+  overflow: hidden;
   border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
 }
@@ -186,14 +190,12 @@
 } */
 
 .PracticeModal .PopupItem__Image {
-  width: calc(500 / 940 * 100%);
-  height: 100%;
-  margin: 0 calc(40 / 940 * 100%) 0 0;
+  width: 100%;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
   .PracticeModal .PopupItem__Image {
-    margin: 0 auto 24px;
     width: 100%;
     height: auto;
   }
@@ -208,7 +210,7 @@
 
 
 .PracticeModal .PracticeModal__Swiper .PopupItem__Image {
-  margin: 0;
+  /* margin: 0; */
 }
 
 /* .PracticeModal .PracticeModal__Swiper .PopupItem__ImageInner {
