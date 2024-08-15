@@ -51,7 +51,6 @@ const MicroModalSwiper = new Swiper('#HomePractice__swiper', {
     prevEl: "#HomePractice__swiper-button-prev",
   },
   pagination: {
-    // el: "#HomePractice__swiper-pagination",
     clickable: true,
   },
 });
