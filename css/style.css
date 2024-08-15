@@ -131,7 +131,6 @@
 
 
 /* .PracticeModal .swiper {
-
 } */
 
 .PracticeModal .swiper-wrapper {
@@ -186,7 +185,6 @@
 }
 
 /* .PracticeModal .PopupItem__ImageContainerInner {
-
 } */
 
 .PracticeModal .PopupItem__Image {
@@ -201,7 +199,16 @@
   }
 }
 
+.PracticeModal .PopupItem__ImageInner {
+  width: 100%;
+}
+
+
 /* PracticeModal__Swiper */
+.PracticeModal .PracticeModal__Swiper.swiper {
+  margin-left: 0;
+}
+
 /* .PracticeModal .PracticeModal__Swiper.PopupItem__ImageContainer  {
 } */
 
@@ -209,21 +216,12 @@
 } */
 
 
-.PracticeModal .PracticeModal__Swiper .PopupItem__Image {
-  /* margin: 0; */
-}
-
-/* .PracticeModal .PracticeModal__Swiper .PopupItem__ImageInner {
-
+/* .PracticeModal .PracticeModal__Swiper .PopupItem__Image {
 } */
 
-.PracticeModal .PracticeModal__Swiper.swiper {
-  margin-left: 0;
-}
+/* .PracticeModal .PracticeModal__Swiper .PopupItem__ImageInner {
+} */
 
-.PracticeModal .PopupItem__ImageInner {
-  width: 100%;
-}
 
 .PracticeModal .PopupItem__Desctiption {
   display: flex;
@@ -240,7 +238,6 @@
 }
 
 /* .PracticeModal .PopupItem__DesctiptionInner {
-
 } */
 
 /* .PracticeModal .PopupItem__DesctiptionHeader {
@@ -733,7 +730,7 @@
   /* Introduce-Innerのrelative */
   position: relative;
   margin: calc(24px / 2);
-  /* 300pxの箱の縦横比を保持 */
+  /* 300 px の箱の縦横比を保持 */
   aspect-ratio: 1;
 }
 
@@ -784,7 +781,6 @@
   }
 }
 
-
 .Practice .SectionTitleImage {
   width: 100%;
   display: block;
@@ -819,7 +815,7 @@
   }
 }
 
-/* ul */
+/* .Practice .ScrollList */
 .Practice .ScrollList {
   display: flex;
   flex-wrap: wrap;
