@@ -75,7 +75,6 @@ scrollListItemLink.forEach(function (link, i) {
       MicroModalSwiper.update();
       MicroModalSwiper.slideTo(i, 0);
 
-
       modalImgSwiper.forEach(swiper => {
         swiper.slideTo(0, 0); // スライドを1枚目に戻す
         swiper.autoplay.start(); // 再生を開始する
