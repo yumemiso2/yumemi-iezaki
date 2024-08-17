@@ -674,23 +674,39 @@
 }
 
 
-.TextContainer--Vartical .Introduce__Description {
-  writing-mode: vertical-rl;
+.TextContainer--Vertical .Introduce__Description {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 768px) {
-  .TextContainer--Vartical .Introduce__Description {
-    writing-mode: horizontal-tb;
+  .TextContainer--Vertical .Introduce__Description {
+    display: block;
   }
 }
 
-.Practice .TextContainer--Vartical {
+.TextContainer--Vertical .Introduce__Description .Introduce__DescriptionVertical {
+  white-space: pre;
+  writing-mode: vertical-rl;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .TextContainer--Vertical .Introduce__Description .Introduce__DescriptionVertical {
+    white-space: normal;
+    writing-mode: horizontal-tb;
+    display: block;
+  }
+}
+
+.Practice .TextContainer--Vertical {
   width: 100%;
   position: absolute;
 }
 
 @media screen and (max-width: 768px) {
-  .Practice .TextContainer--Vartical {
+  .Practice .TextContainer--Vertical {
     position: relative;
     width: calc(342 / 390 * 100%);
     margin: 0 auto calc(24 / 390 * 100%);
