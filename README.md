@@ -1,36 +1,40 @@
-# yumemi-iezak
+# いえざきゆめみのポートフォリオ
 ## 命名規則について
 
 
-### HTMLクラス名ルール
+### HTML クラス名ルール
 
-【BEM ルール】
+【BEM ルール】  
+
 - Element は Block の中に必ず入れる必要がある
-- Elementのclass名には、必ず所属するBlock名を先頭に含める
+- Element の class 名には、必ず所属する Block 名を先頭に含める
 - Block の中に Block を含めることはできる
 - クラス名、クラス名 のときは、Button Button--Small のような形で名付ける
 
-【自分ルール】
+【自分ルール】  
+
 - Block = キャメルケース
-- Element が2語以上続く場合 = キャメルケースでまとめていく
-- 長く続く名前になりそうな場合 = 切りの良いところで、役割に近い名前のブロック名（Element名）に変換して続ける
-- 単独で扱いたいコンテンツは、Blockとして用意する
+- Element が 2 語以上続く場合 = キャメルケースでまとめていく
+- 長く続く名前になりそうな場合 = 切りの良いところで、役割に近い名前のブロック名（Element 名）に変換して続ける
+- 単独で扱いたいコンテンツは、Block として用意する
 
-**追加したルール**
-- Element名は、入っても入らなくても良い（長い名前になりすぎる、必ずにすると、クラス名追加時などの修正に弱くなるため）
+【追加したルール】 
+
+- Element 名は、入っても入らなくても良い（長い名前になりすぎる、必ずにすると、クラス名追加時などの修正に弱くなるため）
 
 
-### Githubブランチ名ルール
+### Github ブランチ名ルール
 
 - すべて小文字
-- 「すること - ディレクトリ名 or ファイル」(ex:add-readmetext)
+- 「すること - ディレクトリ名 or ファイル」(ex: add-readmetext)
 
 
 ### ディレクトリ名ルール
 - すべて小文字
 - 原則ページ名でつける（ex：works）
 
-### れんしゅう、モーダルの更新方法
+## トップページ - れんしゅうセクション更新方法
+###サムネイル画像 更新方法
 サムネイル画像は、``/Users/yumemi/Documents/GitHub/yumemi-iezaki/index.html``の、以下をコピペで追加する（先頭に追加）
 
 ```html
@@ -46,16 +50,34 @@
     </a>
   </li>
 ```
+
 - 画像・タイトル・テキストを変更する
-- alt ="" を記述する（.ScrollHover__Name と同じテキストにする）
+- alt = "" を記述する（.ScrollHover__Name と同じテキストにする）
+
+### モーダル画像 更新方法
 
 モーダルは、以下をコピペで追加する！！（先頭に追加）
+#### モーダル画像用 Swiper なしの場合
 
 ```html
 <div class="swiper-slide">
 
   <div class="PopupItem">
-    <p class="PopupItem__Image"><img src="/assets/images/practice-counter.png" alt="クリックカウンター" class="PopupItem__ImageInner"></p>
+    
+    <div class="PopupItem__Inner">
+      <!-- HomePracticeModalImg__swiperMove -->
+      <div class="PopupItem__ImageContainer swiper mySwiper HomePracticeModalImg__swiper">
+        <div class="PopupItem__ImageContainerInner swiper-wrapper">
+          <p class="PopupItem__Image swiper-slide"><img src="/assets/images/bp-intro.jpg" alt="ブルーピリオド展 メインビジュアル" class="PopupItem__ImageInner"></p>
+          <p class="PopupItem__Image swiper-slide"><img src="/assets/images/bp-ws-canvas.jpg" alt="ブルーピリオド展 ドローイングツール" class="PopupItem__ImageInner"></p>
+          <p class="PopupItem__Image swiper-slide"><img src="/assets/images/bp-ws-play.jpg" alt="ブルーピリオド展 ドローイングツール体験 壁面映像" class="PopupItem__ImageInner"></p>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="ScrollDot swiper-pagination HomePracticeModalImg__swiper-pagination"></div>
+      </div><!--/.HomePracticeModalImg__swiperMove -->
+    </div>
+
     <div class="PopupItem__Desctiption">
       <div class="PopupItem__DesctiptionHeader">
         <h2 class="PopupItem__DesctiptionTitle">クリックカウンター</h2>
@@ -87,18 +109,67 @@
 </div><!-- /.swiper-slide -->
 ```
 
+#### モーダル画像用 Swiper ありの場合
 
+```html
+<div class="swiper-slide">
+
+  <div class="PopupItem">
+    
+    <div class="PopupItem__Inner">
+      <!-- HomePracticeModalImg__swiperMove -->
+      <div class="PopupItem__ImageContainer PracticeModal__Swiper swiper mySwiper HomePracticeModalImg__swiper">
+        <div class="PopupItem__ImageContainerInner swiper-wrapper">
+          <p class="PopupItem__Image swiper-slide"><img src="/assets/images/bp-intro.jpg" alt="ブルーピリオド展 メインビジュアル" class="PopupItem__ImageInner"></p>
+          <p class="PopupItem__Image swiper-slide"><img src="/assets/images/bp-ws-canvas.jpg" alt="ブルーピリオド展 ドローイングツール" class="PopupItem__ImageInner"></p>
+          <p class="PopupItem__Image swiper-slide"><img src="/assets/images/bp-ws-play.jpg" alt="ブルーピリオド展 ドローイングツール体験 壁面映像" class="PopupItem__ImageInner"></p>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="ScrollDot swiper-pagination HomePracticeModalImg__swiper-pagination"></div>
+      </div><!--/.HomePracticeModalImg__swiperMove -->
+    </div>
+
+    <div class="PopupItem__Desctiption">
+      <div class="PopupItem__DesctiptionHeader">
+        <h2 class="PopupItem__DesctiptionTitle">クリックカウンター</h2>
+        <time datetime class="PopupItem__DesctiptionDate">2023&nbsp;年&nbsp;11&nbsp;月&nbsp;</time>
+      </div>
+      <div class="PopupItem__DescriptionTextContainer">
+        <div class="PopupItem__DescriptionTextContainerInner">
+          <div class="PopupItem__DescriptionText">
+            <p class="PopupItem__DescriptionTextInner">JavaScript の練習として、クリックすると値が増減するカウンターをつくりました！</p>
+
+            <div class="PopupItem__DesctiptionLinkButton">
+              <a class="PopupItem__DesctiptionLinkButtonInner" target="_blank" rel="noopener noreferrer" href="https://codepen.io/yumemiso07/pen/wvNeYLY">
+                <p class="PopupItem__DesctiptionLinkButtonInnerText">CodePen&nbsp;でみる</p>
+                <img class="PopupItem__ButtonArrow" src="/assets/images/link-arrow.svg" alt="ジャンプリンク用アイコン">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="PopupCloseButton">
+        <div class="PopupCloseButton__Inner">
+          <a class="Button Button--Small" aria-label="Close modal" data-micromodal-close><span class="Button__Inner">とじる</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.swiper-slide -->
+```
+- **`PracticeModal__Swiper`を追加すると、モーダル内画像用の Swiper にできる** 
 - 画像・タイトル・日付・テキストを変更する
-
-
-
 -  url  がある場合は必ず変更後リンク先を確認する。新規タブで開くので、
   ``target="_blank" rel="noopener noreferrer" ``をつける！！（`<a class="WorkIntroduce__LinkButtonInner" target="_blank" rel="noopener noreferrer" href="https://codepen.io/yumemiso07/pen/wvNeYLY">`）
 
 
-### つくったもの 新規ページ追加について
+## 下層ページ - つくったもの 新規ページ追加方法
+### つくったもの 新規ページを追加する
 - works > 作品名フォルダを作成 > index.html
-- htmlのheader 内、以下を適切に書き直す！！
+- html の header 内、以下を適切に書き直す！！
 
 
 ```html
@@ -117,8 +188,8 @@
   <link rel="stylesheet" href="/works/css/style.css">
 ```
 
-### つくったもの 下層ページに 作品導線を追加について
-- works / index.html に以下コピペ
+### つくったもの（下層ページ）に 作品導線を追加する
+- works / index.html に以下をコピペ
 - 該当箇所を修正
 
 ```html
@@ -169,12 +240,12 @@
 ```
 
 
-### その他メモ
+## その他メモ
 - ``data-micromodal-trigger="modal-1 id= "modal-1"``は、Micromodal.js を発火させるため、れんしゅうセクションのサムネイルとれんしゅうセクションの各ポップアップ内容を表示する場所と関係性の紐づけに使用している
 
-れんしゅう セクションのサムネイルと、クリックした際のモーダルの紐づけは「modal-1」で、コンテンツをクリックしたときのモーダルの表示条件を紐づけている。（モーダルの中でスワイパーが動作している。れんしゅうセクションのコンテンツをクリックしたときに開くモーダル１つのことを、「modal-1」と考えるので、れんしゅうセクションのコンテンツの数によって「modal-」の数字が増えるわけではない。（どこか別の場所で別なモーダルを作る場合、「modal-2」という別のモーダルとして作ってもいいかも））
+- れんしゅう セクションのサムネイルと、クリックした際のモーダルの紐づけは「modal-1」で、コンテンツをクリックしたときのモーダルの表示条件を紐づけている。（モーダルの中でスワイパーが動作している。れんしゅうセクションのコンテンツをクリックしたときに開くモーダル１つのことを、「modal-1」と考えるので、れんしゅうセクションのコンテンツの数によって「modal-」の数字が増えるわけではない。（どこか別の場所で別なモーダルを作る場合、「modal-2」という別のモーダルとして作ってもいいかも））
 
-- メインビジュアルの画像サイズは**1600 * 1067** なので、下層ページを追加する場合は、Figma で画像をリサイズする必要あり
+- トップページのメインビジュアル画像サイズは **1600 * 1067** なので、下層ページを追加する場合は、Figma で画像をリサイズする必要あり
 - つくったもの下層ページ、番号リストの使い方
 
 

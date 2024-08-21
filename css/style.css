@@ -125,13 +125,12 @@
 }
 
 
-.PracticeModal .modal__container::-webkit-scrollbar{
+.PracticeModal .modal__container::-webkit-scrollbar {
   display: none;
 }
 
 
 /* .PracticeModal .swiper {
-
 } */
 
 .PracticeModal .swiper-wrapper {
@@ -164,22 +163,37 @@
   }
 }
 
-
-
-.PracticeModal .PopupItem__Image {
+.PracticeModal .PopupItem__Inner {
   width: calc(500 / 940 * 100%);
   height: 100%;
-  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
+  margin: 0 calc(40 / 940* 100%) 0 0;
+}
 
-  /* border-radius: 25 - 50px; */
-  border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
+@media screen and (max-width: 768px) {
+  .PracticeModal .PopupItem__Inner {
+    width: 100%;
+    margin: 0 auto 24px;
+  }
+}
+
+.PracticeModal .PopupItem__ImageContainer {
+  width: 100%;
+  /* height: 100%; */
   overflow: hidden;
-  margin: 0 calc(40 / 940 * 100%) 0 0;
+  border-radius: clamp(1.563rem, 0.878rem + 2.81vw, 3.125rem);
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
+}
+
+/* .PracticeModal .PopupItem__ImageContainerInner {
+} */
+
+.PracticeModal .PopupItem__Image {
+  width: 100%;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
   .PracticeModal .PopupItem__Image {
-    margin: 0 auto 24px;
     width: 100%;
     height: auto;
   }
@@ -188,6 +202,26 @@
 .PracticeModal .PopupItem__ImageInner {
   width: 100%;
 }
+
+
+/* PracticeModal__Swiper */
+.PracticeModal .PracticeModal__Swiper.swiper {
+  margin-left: 0;
+}
+
+/* .PracticeModal .PracticeModal__Swiper.PopupItem__ImageContainer  {
+} */
+
+/* .PracticeModal .PracticeModal__Swiper .PopupItem__ImageContainerInner {
+} */
+
+
+/* .PracticeModal .PracticeModal__Swiper .PopupItem__Image {
+} */
+
+/* .PracticeModal .PracticeModal__Swiper .PopupItem__ImageInner {
+} */
+
 
 .PracticeModal .PopupItem__Desctiption {
   display: flex;
@@ -204,7 +238,6 @@
 }
 
 /* .PracticeModal .PopupItem__DesctiptionInner {
-
 } */
 
 /* .PracticeModal .PopupItem__DesctiptionHeader {
@@ -292,11 +325,11 @@
   height: calc(32 / 16 * 3em);
   display: block;
   /* 0deg(to top)は180degの逆、上が濃い→下へ薄くなる */
-  background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 60%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%);
   position: absolute;
   bottom: 0;
   left: 0;
-
+  z-index: 2;
 }
 
 @media screen and (max-width: 768px) {
@@ -317,7 +350,7 @@
 }
 
 
-.PopupItem__DescriptionTextContainerInner::-webkit-scrollbar{
+.PopupItem__DescriptionTextContainerInner::-webkit-scrollbar {
   display: none;
 }
 
@@ -341,7 +374,7 @@
 @media screen and (max-width: 768px) {
   .PracticeModal .PopupItem__DescriptionTextInner {
     /* .PopupItem__DescriptionTextContainer の line-height を使用。一行分の高さの margin */
-    margin:0 0 calc((24 / 14) * 1em) 0;
+    margin: 0 0 calc((24 / 14) * 1em) 0;
   }
 }
 
@@ -352,13 +385,14 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  /* height: calc(50 / 500 * 100%); */
+  z-index: 3;
 }
 
 @media screen and (max-width: 768px) {
   .PracticeModal .PopupCloseButton {
     position: relative;
     text-align: center;
+
   }
 }
 
@@ -603,11 +637,11 @@
 
 @media screen and (max-width: 768px) {
   .Works .ScrollDot {
-    padding: clamp(1rem, 0.562rem + 1.8vw, 2rem) 0  calc(24 / 390 * 100%) 0;
+    padding: clamp(1rem, 0.562rem + 1.8vw, 2rem) 0 calc(24 / 390 * 100%) 0;
   }
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 4px;
 }
@@ -640,23 +674,39 @@
 }
 
 
-.TextContainer--Vartical .Introduce__Description {
-  writing-mode: vertical-rl;
+.TextContainer--Vertical .Introduce__Description {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 768px) {
-  .TextContainer--Vartical .Introduce__Description {
-    writing-mode: horizontal-tb;
+  .TextContainer--Vertical .Introduce__Description {
+    display: block;
   }
 }
 
-.Practice .TextContainer--Vartical {
+.TextContainer--Vertical .Introduce__Description .Introduce__DescriptionVertical {
+  white-space: pre;
+  writing-mode: vertical-rl;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .TextContainer--Vertical .Introduce__Description .Introduce__DescriptionVertical {
+    white-space: normal;
+    writing-mode: horizontal-tb;
+    display: block;
+  }
+}
+
+.Practice .TextContainer--Vertical {
   width: 100%;
   position: absolute;
 }
 
 @media screen and (max-width: 768px) {
-  .Practice .TextContainer--Vartical {
+  .Practice .TextContainer--Vertical {
     position: relative;
     width: calc(342 / 390 * 100%);
     margin: 0 auto calc(24 / 390 * 100%);
@@ -696,7 +746,7 @@
   /* Introduce-Innerのrelative */
   position: relative;
   margin: calc(24px / 2);
-  /* 300pxの箱の縦横比を保持 */
+  /* 300 px の箱の縦横比を保持 */
   aspect-ratio: 1;
 }
 
@@ -747,7 +797,6 @@
   }
 }
 
-
 .Practice .SectionTitleImage {
   width: 100%;
   display: block;
@@ -755,7 +804,7 @@
 
 .Practice .Introduce__Description {
   line-height: 2;
-  margin: calc((240 / ( (980 - 24 - 24) / 3)) * 100%) calc((40 / ( (980 - 24 - 24) / 3)) * 100%) 0 0;
+  margin: calc((240 / ((980 - 24 - 24) / 3)) * 100%) calc((40 / ((980 - 24 - 24) / 3)) * 100%) 0 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -782,11 +831,11 @@
   }
 }
 
-/* ul */
+/* .Practice .ScrollList */
 .Practice .ScrollList {
   display: flex;
   flex-wrap: wrap;
-  margin: calc(-24px / 2) ;
+  margin: calc(-24px / 2);
   overflow: hidden;
 }
 
@@ -800,7 +849,7 @@
   content: "";
   display: block;
   /* width・marginは、liで決めたサイズと同じにする （構造を全く同じにする）*/
-    /* width: calc(326.666666667 / 980 * 100% - 24px);と同じ */
+  /* width: calc(326.666666667 / 980 * 100% - 24px);と同じ */
   width: calc(100% / 3 - 24px);
   margin: calc(24px / 2);
 }
@@ -835,7 +884,7 @@
 .Practice .ScrollList__Item {
   width: calc(100% / 3 - 24px);
   margin: calc(24px / 2);
-  border-radius: calc((50 / ( (980 - 24 - 24) / 3)) * 100%);
+  border-radius: calc((50 / ((980 - 24 - 24) / 3)) * 100%);
 }
 
 @media screen and (max-width: 768px) {
@@ -847,7 +896,7 @@
 
 /* li > a */
 .Practice .ScrollList__ItemLink {
-  border-radius: calc((50 / ( (980 - 24 - 24) / 3)) * 100%);
+  border-radius: calc((50 / ((980 - 24 - 24) / 3)) * 100%);
   display: block;
   overflow: hidden;
   width: 100%;
@@ -862,15 +911,15 @@
   animation-timing-function: ease-out;
 }
 
-  @keyframes SlideUpAnime {
-    from {
-      transform: translateY(100%);
-    }
-
-    to {
-      transform: translateY(0);
-    }
+@keyframes SlideUpAnime {
+  from {
+    transform: translateY(100%);
   }
+
+  to {
+    transform: translateY(0);
+  }
+}
 
 .Practice .ScrollList__ItemLinkInner {
   position: absolute;
@@ -1006,7 +1055,7 @@
   .About__Inner {
     flex-direction: column;
     width: calc(342 / 390 * 100%);
-/* calc((72 - (32 / 2)) / 390 * 100%) の 32 / 2は、
+    /* calc((72 - (32 / 2)) / 390 * 100%) の 32 / 2は、
  transform: translateY(-50%);かけたときの「わたしについて」の文字の高さ(390px時：32px) /2 の意味。
  （.SectionTitle--Home--about の親の高さが残っているので、
  この位置でpadding取るなら、指定した値の padding + 16px になる。
@@ -1019,7 +1068,7 @@
 .About__InnerText {
   /* display: flex; */
   /* flex-direction: column; */
-  padding : 0 0 0 calc(72 / 995 * 100%);
+  padding: 0 0 0 calc(72 / 995 * 100%);
   width: calc((995 - 200) / 995 * 100%);
   line-height: 2;
 }
